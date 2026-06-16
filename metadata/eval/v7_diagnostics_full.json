@@ -1,0 +1,1446 @@
+{
+  "config": {
+    "batch_size": 4096,
+    "begin": 0.95,
+    "device": "auto",
+    "end": 1.0,
+    "max_samples": 0,
+    "model": [
+      "v6_refine2:model_v6:model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+      "v6_meld_ft:model_v6:model/checkpoint/v6_meld_ft_095/mahjong_v6_meld_ft_best.pkl",
+      "v4:model_v4:model/checkpoint/v4_se_aug_095_long/best.pkl"
+    ],
+    "output": "eval/v7_diagnostics_full.json",
+    "progress": 0
+  },
+  "results": {
+    "v4": {
+      "by_type": {
+        "AnGang": {
+          "exact_acc": 0.859504132231405,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9752066115702479,
+          "top5": 0.9958677685950413,
+          "total": 242,
+          "type_recall": 0.859504132231405
+        },
+        "BuGang": {
+          "exact_acc": 0.9317697228144989,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9936034115138592,
+          "top5": 1.0,
+          "total": 469,
+          "type_recall": 0.9317697228144989
+        },
+        "Chi": {
+          "exact_acc": 0.8815270935960591,
+          "pred_pass_rate": 0.09433497536945813,
+          "top3": 0.9988505747126437,
+          "top5": 1.0,
+          "total": 12180,
+          "type_recall": 0.9044334975369458
+        },
+        "Gang": {
+          "exact_acc": 0.8409090909090909,
+          "pred_pass_rate": 0.15056818181818182,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 352,
+          "type_recall": 0.8409090909090909
+        },
+        "Hu": {
+          "exact_acc": 1.0,
+          "pred_pass_rate": 0.0,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 4843,
+          "type_recall": 1.0
+        },
+        "Pass": {
+          "exact_acc": 0.9473641326489041,
+          "pred_pass_rate": 0.9473641326489041,
+          "top3": 0.999972840109726,
+          "top5": 1.0,
+          "total": 36819,
+          "type_recall": 0.9473641326489041
+        },
+        "Peng": {
+          "exact_acc": 0.8935861684327941,
+          "pred_pass_rate": 0.10206358059118795,
+          "top3": 0.9997769102063581,
+          "top5": 1.0,
+          "total": 8965,
+          "type_recall": 0.8935861684327941
+        },
+        "Play": {
+          "exact_acc": 0.8552926493260838,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9874588114373567,
+          "top5": 0.9975470402535876,
+          "total": 231557,
+          "type_recall": 0.999732247351624
+        }
+      },
+      "discard": {
+        "hand_avg_on_play_sample": {
+          "B": 3.4944988612428722,
+          "Honor": 1.6722091888281931,
+          "T": 3.4354675753891466,
+          "W": 3.477725739335925
+        },
+        "honor_tiles": {
+          "F1": {
+            "exact_acc": 0.9114144939437487,
+            "pred_when_target_rate": 0.9114144939437487,
+            "target": 9742
+          },
+          "F2": {
+            "exact_acc": 0.9222073784811428,
+            "pred_when_target_rate": 0.9222073784811428,
+            "target": 9731
+          },
+          "F3": {
+            "exact_acc": 0.8993911876999278,
+            "pred_when_target_rate": 0.8993911876999278,
+            "target": 9691
+          },
+          "F4": {
+            "exact_acc": 0.9210096055589618,
+            "pred_when_target_rate": 0.9210096055589618,
+            "target": 9786
+          },
+          "J1": {
+            "exact_acc": 0.9392815513404684,
+            "pred_when_target_rate": 0.9392815513404684,
+            "target": 9437
+          },
+          "J2": {
+            "exact_acc": 0.9162890801993656,
+            "pred_when_target_rate": 0.9162890801993656,
+            "target": 8828
+          },
+          "J3": {
+            "exact_acc": 0.9265820083235514,
+            "pred_when_target_rate": 0.9265820083235514,
+            "target": 9371
+          }
+        },
+        "legal_group": {
+          "B": {
+            "label_rate_when_legal": 0.2504956793476999,
+            "legal": 215361,
+            "pred_rate_when_legal": 0.2559609214295996
+          },
+          "Honor": {
+            "label_rate_when_legal": 0.45702637033783133,
+            "legal": 145694,
+            "pred_rate_when_legal": 0.4640959819896495
+          },
+          "T": {
+            "label_rate_when_legal": 0.2623439929402866,
+            "legal": 214173,
+            "pred_rate_when_legal": 0.25466328622188605
+          },
+          "Terminal": {
+            "label_rate_when_legal": 0.2455892221132504,
+            "legal": 193730,
+            "pred_rate_when_legal": 0.239224694161978
+          },
+          "W": {
+            "label_rate_when_legal": 0.2560406773963105,
+            "legal": 214173,
+            "pred_rate_when_legal": 0.253435306971467
+          },
+          "Yaojiu": {
+            "label_rate_when_legal": 0.519612216103045,
+            "legal": 219710,
+            "pred_rate_when_legal": 0.5186882709025533
+          }
+        },
+        "play_total": 233588,
+        "singleton_honor": {
+          "exact_when_label": 0.9259758364312267,
+          "label_rate": 0.5352035613917282,
+          "opportunity": 120627,
+          "pred_rate": 0.5448780123852869,
+          "top3_when_label": 0.9953376703841388
+        },
+        "target_group": {
+          "B": {
+            "exact_acc": 0.8367471777856044,
+            "pred_same_group_rate": 0.886703616512503,
+            "target": 53947,
+            "target_rate_among_play_labels": 0.23297503422483448
+          },
+          "Honor": {
+            "exact_acc": 0.9193824527678491,
+            "pred_same_group_rate": 0.9555311927432193,
+            "target": 66586,
+            "target_rate_among_play_labels": 0.2875577071736117
+          },
+          "T": {
+            "exact_acc": 0.8179294142773239,
+            "pred_same_group_rate": 0.8660366276896792,
+            "target": 56187,
+            "target_rate_among_play_labels": 0.242648678295193
+          },
+          "Terminal": {
+            "exact_acc": 0.8358485014082139,
+            "pred_same_group_rate": 0.8695615620665014,
+            "target": 47578,
+            "target_rate_among_play_labels": 0.20546992749085538
+          },
+          "W": {
+            "exact_acc": 0.8339989423199664,
+            "pred_same_group_rate": 0.8772361726571476,
+            "target": 54837,
+            "target_rate_among_play_labels": 0.23681858030636085
+          },
+          "Yaojiu": {
+            "exact_acc": 0.8845695665884167,
+            "pred_same_group_rate": 0.9375722644616516,
+            "target": 114164,
+            "target_rate_among_play_labels": 0.4930276346644671
+          }
+        },
+        "target_play_exact_acc": 0.8552926493260838,
+        "target_play_total": 231557
+      },
+      "model": {
+        "ckpt": "model/checkpoint/v4_se_aug_095_long/best.pkl",
+        "module": "model_v4",
+        "name": "v4"
+      },
+      "opportunities": {
+        "angang_legal_opportunity": {
+          "exact_acc": 0.8546562228024369,
+          "group_precision": 0.8739495798319328,
+          "group_recall": 0.859504132231405,
+          "label_group_rate": 0.21061792863359444,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 2,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 10,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 895
+          },
+          "pred_group_rate": 0.2071366405570061,
+          "pred_pass_rate": 0.0,
+          "pred_play_rate": 0.7824194952132288,
+          "pred_type_hist": {
+            "AnGang": 238,
+            "BuGang": 2,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 10,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 899
+          },
+          "total": 1149
+        },
+        "bugang_legal_opportunity": {
+          "exact_acc": 0.8961593172119487,
+          "group_precision": 0.9317697228144989,
+          "group_recall": 0.9317697228144989,
+          "label_group_rate": 0.3335704125177809,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 20,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 917
+          },
+          "pred_group_rate": 0.3335704125177809,
+          "pred_pass_rate": 0.0,
+          "pred_play_rate": 0.6522048364153628,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 20,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 917
+          },
+          "total": 1406
+        },
+        "chi_legal_opportunity": {
+          "exact_acc": 0.924333109746659,
+          "group_precision": 0.8846771602955349,
+          "group_recall": 0.9044334975369458,
+          "label_group_rate": 0.31422527217377844,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12180,
+            "Gang": 1,
+            "Hu": 747,
+            "Pass": 25666,
+            "Peng": 168,
+            "Play": 0
+          },
+          "pred_group_rate": 0.3212424539497446,
+          "pred_pass_rate": 0.6560806975904236,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12452,
+            "Gang": 3,
+            "Hu": 747,
+            "Pass": 25431,
+            "Peng": 129,
+            "Play": 0
+          },
+          "total": 38762
+        },
+        "gang_legal_opportunity": {
+          "exact_acc": 0.8400303260045489,
+          "group_precision": 0.8087431693989071,
+          "group_recall": 0.8409090909090909,
+          "label_group_rate": 0.266868840030326,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 21,
+            "Gang": 352,
+            "Hu": 9,
+            "Pass": 756,
+            "Peng": 181,
+            "Play": 0
+          },
+          "pred_group_rate": 0.27748294162244125,
+          "pred_pass_rate": 0.5883244882486732,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 24,
+            "Gang": 366,
+            "Hu": 9,
+            "Pass": 776,
+            "Peng": 144,
+            "Play": 0
+          },
+          "total": 1319
+        },
+        "kong_opportunity": {
+          "exact_acc": 0.8645994832041344,
+          "group_precision": 0.8769804287045666,
+          "group_recall": 0.8852304797742239,
+          "label_group_rate": 0.2746770025839793,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 469,
+            "Chi": 21,
+            "Gang": 352,
+            "Hu": 39,
+            "Pass": 756,
+            "Peng": 181,
+            "Play": 1810
+          },
+          "pred_group_rate": 0.2772609819121447,
+          "pred_pass_rate": 0.20051679586563306,
+          "pred_play_rate": 0.468733850129199,
+          "pred_type_hist": {
+            "AnGang": 238,
+            "BuGang": 469,
+            "Chi": 24,
+            "Gang": 366,
+            "Hu": 39,
+            "Pass": 776,
+            "Peng": 144,
+            "Play": 1814
+          },
+          "total": 3870
+        },
+        "open_meld_opportunity": {
+          "exact_acc": 0.9254396055875103,
+          "group_precision": 0.9095791068068114,
+          "group_recall": 0.9021669853409815,
+          "label_group_rate": 0.3609860312243221,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1148,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 917
+          },
+          "pred_group_rate": 0.3580443714050945,
+          "pred_pass_rate": 0.6080197206244864,
+          "pred_play_rate": 0.015069843878389482,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 12452,
+            "Gang": 366,
+            "Hu": 1148,
+            "Pass": 36998,
+            "Peng": 8500,
+            "Play": 917
+          },
+          "total": 60850
+        },
+        "peng_legal_opportunity": {
+          "exact_acc": 0.9232456140350878,
+          "group_precision": 0.9424705882352942,
+          "group_recall": 0.8935861684327941,
+          "label_group_rate": 0.40958516081871343,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 256,
+            "Gang": 352,
+            "Hu": 404,
+            "Pass": 11911,
+            "Peng": 8965,
+            "Play": 0
+          },
+          "pred_group_rate": 0.3883406432748538,
+          "pred_pass_rate": 0.5654239766081871,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 242,
+            "Gang": 366,
+            "Hu": 404,
+            "Pass": 12376,
+            "Peng": 8500,
+            "Play": 0
+          },
+          "total": 21888
+        },
+        "respond_meld_opportunity": {
+          "exact_acc": 0.926132157997443,
+          "group_precision": 0.9090909090909091,
+          "group_recall": 0.9015211424849979,
+          "label_group_rate": 0.36163447951012717,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1128,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 0
+          },
+          "pred_group_rate": 0.35862324204293117,
+          "pred_pass_rate": 0.6224009151470291,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12452,
+            "Gang": 366,
+            "Hu": 1128,
+            "Pass": 36998,
+            "Peng": 8500,
+            "Play": 0
+          },
+          "total": 59444
+        },
+        "set_opportunity_including_angang": {
+          "exact_acc": 0.9241229131381563,
+          "group_precision": 0.9091940976163451,
+          "group_recall": 0.9017020893371758,
+          "label_group_rate": 0.3582224372933301,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 469,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1158,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 1810
+          },
+          "pred_group_rate": 0.3552705863376079,
+          "pred_pass_rate": 0.5967900637148157,
+          "pred_play_rate": 0.029260424227760304,
+          "pred_type_hist": {
+            "AnGang": 238,
+            "BuGang": 469,
+            "Chi": 12452,
+            "Gang": 366,
+            "Hu": 1158,
+            "Pass": 36998,
+            "Peng": 8500,
+            "Play": 1814
+          },
+          "total": 61995
+        }
+      },
+      "overall": {
+        "exact_acc": 0.8714910959390983,
+        "top3": 0.9900821522745044,
+        "top5": 0.9980739742812945
+      },
+      "total": 295427
+    },
+    "v6_meld_ft": {
+      "by_type": {
+        "AnGang": {
+          "exact_acc": 0.871900826446281,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9793388429752066,
+          "top5": 1.0,
+          "total": 242,
+          "type_recall": 0.871900826446281
+        },
+        "BuGang": {
+          "exact_acc": 0.9424307036247335,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9957356076759062,
+          "top5": 1.0,
+          "total": 469,
+          "type_recall": 0.9424307036247335
+        },
+        "Chi": {
+          "exact_acc": 0.9151888341543514,
+          "pred_pass_rate": 0.06313628899835796,
+          "top3": 0.9995894909688013,
+          "top5": 1.0,
+          "total": 12180,
+          "type_recall": 0.9353858784893267
+        },
+        "Gang": {
+          "exact_acc": 0.9204545454545454,
+          "pred_pass_rate": 0.06534090909090909,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 352,
+          "type_recall": 0.9204545454545454
+        },
+        "Hu": {
+          "exact_acc": 1.0,
+          "pred_pass_rate": 0.0,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 4843,
+          "type_recall": 1.0
+        },
+        "Pass": {
+          "exact_acc": 0.9342730655368152,
+          "pred_pass_rate": 0.9342730655368152,
+          "top3": 0.999945680219452,
+          "top5": 1.0,
+          "total": 36819,
+          "type_recall": 0.9342730655368152
+        },
+        "Peng": {
+          "exact_acc": 0.9566090351366425,
+          "pred_pass_rate": 0.04082543223647518,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 8965,
+          "type_recall": 0.9566090351366425
+        },
+        "Play": {
+          "exact_acc": 0.8671730934499928,
+          "pred_pass_rate": 0.0,
+          "top3": 0.990127700738911,
+          "top5": 0.998367572563127,
+          "total": 231557,
+          "type_recall": 0.9997452031249325
+        }
+      },
+      "discard": {
+        "hand_avg_on_play_sample": {
+          "B": 3.4944988612428722,
+          "Honor": 1.6722091888281931,
+          "T": 3.4354675753891466,
+          "W": 3.477725739335925
+        },
+        "honor_tiles": {
+          "F1": {
+            "exact_acc": 0.9211660849928146,
+            "pred_when_target_rate": 0.9211660849928146,
+            "target": 9742
+          },
+          "F2": {
+            "exact_acc": 0.9312506422772583,
+            "pred_when_target_rate": 0.9312506422772583,
+            "target": 9731
+          },
+          "F3": {
+            "exact_acc": 0.9120833763285523,
+            "pred_when_target_rate": 0.9120833763285523,
+            "target": 9691
+          },
+          "F4": {
+            "exact_acc": 0.9177396280400573,
+            "pred_when_target_rate": 0.9177396280400573,
+            "target": 9786
+          },
+          "J1": {
+            "exact_acc": 0.92455229416128,
+            "pred_when_target_rate": 0.92455229416128,
+            "target": 9437
+          },
+          "J2": {
+            "exact_acc": 0.9193475305845038,
+            "pred_when_target_rate": 0.9193475305845038,
+            "target": 8828
+          },
+          "J3": {
+            "exact_acc": 0.9146302422366877,
+            "pred_when_target_rate": 0.9146302422366877,
+            "target": 9371
+          }
+        },
+        "legal_group": {
+          "B": {
+            "label_rate_when_legal": 0.2504956793476999,
+            "legal": 215361,
+            "pred_rate_when_legal": 0.25466077887825556
+          },
+          "Honor": {
+            "label_rate_when_legal": 0.45702637033783133,
+            "legal": 145694,
+            "pred_rate_when_legal": 0.45572913091822587
+          },
+          "T": {
+            "label_rate_when_legal": 0.2623439929402866,
+            "legal": 214173,
+            "pred_rate_when_legal": 0.2560733612546866
+          },
+          "Terminal": {
+            "label_rate_when_legal": 0.2455892221132504,
+            "legal": 193730,
+            "pred_rate_when_legal": 0.24868115418365766
+          },
+          "W": {
+            "label_rate_when_legal": 0.2560406773963105,
+            "legal": 214173,
+            "pred_rate_when_legal": 0.25900090114066665
+          },
+          "Yaojiu": {
+            "label_rate_when_legal": 0.519612216103045,
+            "legal": 219710,
+            "pred_rate_when_legal": 0.5214783123207865
+          }
+        },
+        "play_total": 233588,
+        "singleton_honor": {
+          "exact_when_label": 0.9257125154894672,
+          "label_rate": 0.5352035613917282,
+          "opportunity": 120627,
+          "pred_rate": 0.5344242997007304,
+          "top3_when_label": 0.9948729863692689
+        },
+        "target_group": {
+          "B": {
+            "exact_acc": 0.8485921367267873,
+            "pred_same_group_rate": 0.8945261089587929,
+            "target": 53947,
+            "target_rate_among_play_labels": 0.23297503422483448
+          },
+          "Honor": {
+            "exact_acc": 0.9201333613672544,
+            "pred_same_group_rate": 0.9516414861982999,
+            "target": 66586,
+            "target_rate_among_play_labels": 0.2875577071736117
+          },
+          "T": {
+            "exact_acc": 0.831366686244149,
+            "pred_same_group_rate": 0.876519479594924,
+            "target": 56187,
+            "target_rate_among_play_labels": 0.242648678295193
+          },
+          "Terminal": {
+            "exact_acc": 0.8639497246626592,
+            "pred_same_group_rate": 0.8965908613224599,
+            "target": 47578,
+            "target_rate_among_play_labels": 0.20546992749085538
+          },
+          "W": {
+            "exact_acc": 0.8578332148002261,
+            "pred_same_group_rate": 0.8973320932946733,
+            "target": 54837,
+            "target_rate_among_play_labels": 0.23681858030636085
+          },
+          "Yaojiu": {
+            "exact_acc": 0.8967187554745805,
+            "pred_same_group_rate": 0.9449826565292037,
+            "target": 114164,
+            "target_rate_among_play_labels": 0.4930276346644671
+          }
+        },
+        "target_play_exact_acc": 0.8671730934499928,
+        "target_play_total": 231557
+      },
+      "model": {
+        "ckpt": "model/checkpoint/v6_meld_ft_095/mahjong_v6_meld_ft_best.pkl",
+        "module": "model_v6",
+        "name": "v6_meld_ft"
+      },
+      "opportunities": {
+        "angang_legal_opportunity": {
+          "exact_acc": 0.8720626631853786,
+          "group_precision": 0.8828451882845189,
+          "group_recall": 0.871900826446281,
+          "label_group_rate": 0.21061792863359444,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 2,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 10,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 895
+          },
+          "pred_group_rate": 0.20800696257615317,
+          "pred_pass_rate": 0.0,
+          "pred_play_rate": 0.7798085291557877,
+          "pred_type_hist": {
+            "AnGang": 239,
+            "BuGang": 4,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 10,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 896
+          },
+          "total": 1149
+        },
+        "bugang_legal_opportunity": {
+          "exact_acc": 0.8961593172119487,
+          "group_precision": 0.9344608879492601,
+          "group_recall": 0.9424307036247335,
+          "label_group_rate": 0.3335704125177809,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 20,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 917
+          },
+          "pred_group_rate": 0.3364153627311522,
+          "pred_pass_rate": 0.0,
+          "pred_play_rate": 0.6493598862019915,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 473,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 20,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 913
+          },
+          "total": 1406
+        },
+        "chi_legal_opportunity": {
+          "exact_acc": 0.9332077808162633,
+          "group_precision": 0.8829045257284563,
+          "group_recall": 0.9353858784893267,
+          "label_group_rate": 0.31422527217377844,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12180,
+            "Gang": 1,
+            "Hu": 747,
+            "Pass": 25666,
+            "Peng": 168,
+            "Play": 0
+          },
+          "pred_group_rate": 0.332903358959806,
+          "pred_pass_rate": 0.6431298694597802,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12904,
+            "Gang": 1,
+            "Hu": 747,
+            "Pass": 24929,
+            "Peng": 181,
+            "Play": 0
+          },
+          "total": 38762
+        },
+        "gang_legal_opportunity": {
+          "exact_acc": 0.8756633813495072,
+          "group_precision": 0.8307692307692308,
+          "group_recall": 0.9204545454545454,
+          "label_group_rate": 0.266868840030326,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 21,
+            "Gang": 352,
+            "Hu": 9,
+            "Pass": 756,
+            "Peng": 181,
+            "Play": 0
+          },
+          "pred_group_rate": 0.29567854435178165,
+          "pred_pass_rate": 0.5216072782410918,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 20,
+            "Gang": 390,
+            "Hu": 9,
+            "Pass": 688,
+            "Peng": 212,
+            "Play": 0
+          },
+          "total": 1319
+        },
+        "kong_opportunity": {
+          "exact_acc": 0.8824289405684754,
+          "group_precision": 0.8865698729582577,
+          "group_recall": 0.9190968955785512,
+          "label_group_rate": 0.2746770025839793,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 469,
+            "Chi": 21,
+            "Gang": 352,
+            "Hu": 39,
+            "Pass": 756,
+            "Peng": 181,
+            "Play": 1810
+          },
+          "pred_group_rate": 0.2847545219638243,
+          "pred_pass_rate": 0.17777777777777778,
+          "pred_play_rate": 0.46744186046511627,
+          "pred_type_hist": {
+            "AnGang": 239,
+            "BuGang": 473,
+            "Chi": 20,
+            "Gang": 390,
+            "Hu": 39,
+            "Pass": 688,
+            "Peng": 212,
+            "Play": 1809
+          },
+          "total": 3870
+        },
+        "open_meld_opportunity": {
+          "exact_acc": 0.9340016433853738,
+          "group_precision": 0.8944989669421488,
+          "group_recall": 0.9460529909860694,
+          "label_group_rate": 0.3609860312243221,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1148,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 917
+          },
+          "pred_group_rate": 0.3817912900575185,
+          "pred_pass_rate": 0.5843385373870172,
+          "pred_play_rate": 0.015004108463434675,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 473,
+            "Chi": 12904,
+            "Gang": 390,
+            "Hu": 1148,
+            "Pass": 35557,
+            "Peng": 9465,
+            "Play": 913
+          },
+          "total": 60850
+        },
+        "peng_legal_opportunity": {
+          "exact_acc": 0.9330683479532164,
+          "group_precision": 0.9060750132065505,
+          "group_recall": 0.9566090351366425,
+          "label_group_rate": 0.40958516081871343,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 256,
+            "Gang": 352,
+            "Hu": 404,
+            "Pass": 11911,
+            "Peng": 8965,
+            "Play": 0
+          },
+          "pred_group_rate": 0.43242872807017546,
+          "pred_pass_rate": 0.5191885964912281,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 265,
+            "Gang": 390,
+            "Hu": 404,
+            "Pass": 11364,
+            "Peng": 9465,
+            "Play": 0
+          },
+          "total": 21888
+        },
+        "respond_meld_opportunity": {
+          "exact_acc": 0.9348967095081084,
+          "group_precision": 0.8936684388593523,
+          "group_recall": 0.946132018421175,
+          "label_group_rate": 0.36163447951012717,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1128,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 0
+          },
+          "pred_group_rate": 0.3828645447816432,
+          "pred_pass_rate": 0.598159612408317,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12904,
+            "Gang": 390,
+            "Hu": 1128,
+            "Pass": 35557,
+            "Peng": 9465,
+            "Play": 0
+          },
+          "total": 59444
+        },
+        "set_opportunity_including_angang": {
+          "exact_acc": 0.9328816840067747,
+          "group_precision": 0.8943802990924972,
+          "group_recall": 0.9452449567723343,
+          "label_group_rate": 0.3582224372933301,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 469,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1158,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 1810
+          },
+          "pred_group_rate": 0.37859504798774096,
+          "pred_pass_rate": 0.5735462537301396,
+          "pred_play_rate": 0.029179772562303412,
+          "pred_type_hist": {
+            "AnGang": 239,
+            "BuGang": 473,
+            "Chi": 12904,
+            "Gang": 390,
+            "Hu": 1158,
+            "Pass": 35557,
+            "Peng": 9465,
+            "Play": 1809
+          },
+          "total": 61995
+        }
+      },
+      "overall": {
+        "exact_acc": 0.8825936695021105,
+        "top3": 0.9922146587820342,
+        "top5": 0.9987204960954821
+      },
+      "total": 295427
+    },
+    "v6_refine2": {
+      "by_type": {
+        "AnGang": {
+          "exact_acc": 0.8553719008264463,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9834710743801653,
+          "top5": 1.0,
+          "total": 242,
+          "type_recall": 0.8553719008264463
+        },
+        "BuGang": {
+          "exact_acc": 0.929637526652452,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9893390191897654,
+          "top5": 1.0,
+          "total": 469,
+          "type_recall": 0.929637526652452
+        },
+        "Chi": {
+          "exact_acc": 0.8781609195402299,
+          "pred_pass_rate": 0.10123152709359606,
+          "top3": 0.9995073891625615,
+          "top5": 1.0,
+          "total": 12180,
+          "type_recall": 0.8973727422003284
+        },
+        "Gang": {
+          "exact_acc": 0.9034090909090909,
+          "pred_pass_rate": 0.08806818181818182,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 352,
+          "type_recall": 0.9034090909090909
+        },
+        "Hu": {
+          "exact_acc": 1.0,
+          "pred_pass_rate": 0.0,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 4843,
+          "type_recall": 1.0
+        },
+        "Pass": {
+          "exact_acc": 0.9583095684293436,
+          "pred_pass_rate": 0.9583095684293436,
+          "top3": 1.0,
+          "top5": 1.0,
+          "total": 36819,
+          "type_recall": 0.9583095684293436
+        },
+        "Peng": {
+          "exact_acc": 0.9312883435582822,
+          "pred_pass_rate": 0.06625766871165645,
+          "top3": 0.999888455103179,
+          "top5": 1.0,
+          "total": 8965,
+          "type_recall": 0.9312883435582822
+        },
+        "Play": {
+          "exact_acc": 0.8676697314268194,
+          "pred_pass_rate": 0.0,
+          "top3": 0.9902097539698649,
+          "top5": 0.9982768821499673,
+          "total": 231557,
+          "type_recall": 0.9997927076270637
+        }
+      },
+      "discard": {
+        "hand_avg_on_play_sample": {
+          "B": 3.4944988612428722,
+          "Honor": 1.6722091888281931,
+          "T": 3.4354675753891466,
+          "W": 3.477725739335925
+        },
+        "honor_tiles": {
+          "F1": {
+            "exact_acc": 0.9161363169780332,
+            "pred_when_target_rate": 0.9161363169780332,
+            "target": 9742
+          },
+          "F2": {
+            "exact_acc": 0.9287842976055903,
+            "pred_when_target_rate": 0.9287842976055903,
+            "target": 9731
+          },
+          "F3": {
+            "exact_acc": 0.9080590238365494,
+            "pred_when_target_rate": 0.9080590238365494,
+            "target": 9691
+          },
+          "F4": {
+            "exact_acc": 0.919578990394441,
+            "pred_when_target_rate": 0.919578990394441,
+            "target": 9786
+          },
+          "J1": {
+            "exact_acc": 0.927837236409876,
+            "pred_when_target_rate": 0.927837236409876,
+            "target": 9437
+          },
+          "J2": {
+            "exact_acc": 0.9173085636610784,
+            "pred_when_target_rate": 0.9173085636610784,
+            "target": 8828
+          },
+          "J3": {
+            "exact_acc": 0.9158040764059332,
+            "pred_when_target_rate": 0.9158040764059332,
+            "target": 9371
+          }
+        },
+        "legal_group": {
+          "B": {
+            "label_rate_when_legal": 0.2504956793476999,
+            "legal": 215361,
+            "pred_rate_when_legal": 0.2580272194129856
+          },
+          "Honor": {
+            "label_rate_when_legal": 0.45702637033783133,
+            "legal": 145694,
+            "pred_rate_when_legal": 0.4548025313327934
+          },
+          "T": {
+            "label_rate_when_legal": 0.2623439929402866,
+            "legal": 214173,
+            "pred_rate_when_legal": 0.2568204208747134
+          },
+          "Terminal": {
+            "label_rate_when_legal": 0.2455892221132504,
+            "legal": 193730,
+            "pred_rate_when_legal": 0.24843854849532854
+          },
+          "W": {
+            "label_rate_when_legal": 0.2560406773963105,
+            "legal": 214173,
+            "pred_rate_when_legal": 0.25559711074691954
+          },
+          "Yaojiu": {
+            "label_rate_when_legal": 0.519612216103045,
+            "legal": 219710,
+            "pred_rate_when_legal": 0.5206499476582768
+          }
+        },
+        "play_total": 233588,
+        "singleton_honor": {
+          "exact_when_label": 0.9245662949194547,
+          "label_rate": 0.5352035613917282,
+          "opportunity": 120627,
+          "pred_rate": 0.533023286660532,
+          "top3_when_label": 0.9950588599752168
+        },
+        "target_group": {
+          "B": {
+            "exact_acc": 0.8547092516729382,
+            "pred_same_group_rate": 0.9007359074647339,
+            "target": 53947,
+            "target_rate_among_play_labels": 0.23297503422483448
+          },
+          "Honor": {
+            "exact_acc": 0.919082089328087,
+            "pred_same_group_rate": 0.9501997416874418,
+            "target": 66586,
+            "target_rate_among_play_labels": 0.2875577071736117
+          },
+          "T": {
+            "exact_acc": 0.8351575987328029,
+            "pred_same_group_rate": 0.878673002651859,
+            "target": 56187,
+            "target_rate_among_play_labels": 0.242648678295193
+          },
+          "Terminal": {
+            "exact_acc": 0.8647484131321199,
+            "pred_same_group_rate": 0.8968851149691034,
+            "target": 47578,
+            "target_rate_among_play_labels": 0.20546992749085538
+          },
+          "W": {
+            "exact_acc": 0.8513047759724274,
+            "pred_same_group_rate": 0.8908765979174645,
+            "target": 54837,
+            "target_rate_among_play_labels": 0.23681858030636085
+          },
+          "Yaojiu": {
+            "exact_acc": 0.8964384569566588,
+            "pred_same_group_rate": 0.9441154829893837,
+            "target": 114164,
+            "target_rate_among_play_labels": 0.4930276346644671
+          }
+        },
+        "target_play_exact_acc": 0.8676697314268194,
+        "target_play_total": 231557
+      },
+      "model": {
+        "ckpt": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+        "module": "model_v6",
+        "name": "v6_refine2"
+      },
+      "opportunities": {
+        "angang_legal_opportunity": {
+          "exact_acc": 0.8677110530896431,
+          "group_precision": 0.8922413793103449,
+          "group_recall": 0.8553719008264463,
+          "label_group_rate": 0.21061792863359444,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 2,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 10,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 895
+          },
+          "pred_group_rate": 0.20191470844212359,
+          "pred_pass_rate": 0.0,
+          "pred_play_rate": 0.7859007832898173,
+          "pred_type_hist": {
+            "AnGang": 232,
+            "BuGang": 4,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 10,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 903
+          },
+          "total": 1149
+        },
+        "bugang_legal_opportunity": {
+          "exact_acc": 0.8982930298719772,
+          "group_precision": 0.9498910675381264,
+          "group_recall": 0.929637526652452,
+          "label_group_rate": 0.3335704125177809,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 20,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 917
+          },
+          "pred_group_rate": 0.3264580369843528,
+          "pred_pass_rate": 0.0,
+          "pred_play_rate": 0.6593172119487909,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 459,
+            "Chi": 0,
+            "Gang": 0,
+            "Hu": 20,
+            "Pass": 0,
+            "Peng": 0,
+            "Play": 927
+          },
+          "total": 1406
+        },
+        "chi_legal_opportunity": {
+          "exact_acc": 0.9364325886177184,
+          "group_precision": 0.9208087615838247,
+          "group_recall": 0.8973727422003284,
+          "label_group_rate": 0.31422527217377844,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12180,
+            "Gang": 1,
+            "Hu": 747,
+            "Pass": 25666,
+            "Peng": 168,
+            "Play": 0
+          },
+          "pred_group_rate": 0.30622774882617,
+          "pred_pass_rate": 0.6704504411537072,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 11870,
+            "Gang": 1,
+            "Hu": 747,
+            "Pass": 25988,
+            "Peng": 156,
+            "Play": 0
+          },
+          "total": 38762
+        },
+        "gang_legal_opportunity": {
+          "exact_acc": 0.8832448824867324,
+          "group_precision": 0.8368421052631579,
+          "group_recall": 0.9034090909090909,
+          "label_group_rate": 0.266868840030326,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 21,
+            "Gang": 352,
+            "Hu": 9,
+            "Pass": 756,
+            "Peng": 181,
+            "Play": 0
+          },
+          "pred_group_rate": 0.2880970432145565,
+          "pred_pass_rate": 0.5648218347232752,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 13,
+            "Gang": 380,
+            "Hu": 9,
+            "Pass": 745,
+            "Peng": 172,
+            "Play": 0
+          },
+          "total": 1319
+        },
+        "kong_opportunity": {
+          "exact_acc": 0.8844961240310077,
+          "group_precision": 0.8972922502334267,
+          "group_recall": 0.9040451552210724,
+          "label_group_rate": 0.2746770025839793,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 469,
+            "Chi": 21,
+            "Gang": 352,
+            "Hu": 39,
+            "Pass": 756,
+            "Peng": 181,
+            "Play": 1810
+          },
+          "pred_group_rate": 0.27674418604651163,
+          "pred_pass_rate": 0.1925064599483204,
+          "pred_play_rate": 0.4728682170542636,
+          "pred_type_hist": {
+            "AnGang": 232,
+            "BuGang": 459,
+            "Chi": 13,
+            "Gang": 380,
+            "Hu": 39,
+            "Pass": 745,
+            "Peng": 172,
+            "Play": 1830
+          },
+          "total": 3870
+        },
+        "open_meld_opportunity": {
+          "exact_acc": 0.9373541495480691,
+          "group_precision": 0.9279804003143346,
+          "group_recall": 0.9139124100883184,
+          "label_group_rate": 0.3609860312243221,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 469,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1148,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 917
+          },
+          "pred_group_rate": 0.3555135579293344,
+          "pred_pass_rate": 0.6103861955628594,
+          "pred_play_rate": 0.015234182415776499,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 459,
+            "Chi": 11870,
+            "Gang": 380,
+            "Hu": 1148,
+            "Pass": 37142,
+            "Peng": 8924,
+            "Play": 927
+          },
+          "total": 60850
+        },
+        "peng_legal_opportunity": {
+          "exact_acc": 0.936860380116959,
+          "group_precision": 0.9355670103092784,
+          "group_recall": 0.9312883435582822,
+          "label_group_rate": 0.40958516081871343,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 256,
+            "Gang": 352,
+            "Hu": 404,
+            "Pass": 11911,
+            "Peng": 8965,
+            "Play": 0
+          },
+          "pred_group_rate": 0.40771198830409355,
+          "pred_pass_rate": 0.5471948099415205,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 203,
+            "Gang": 380,
+            "Hu": 404,
+            "Pass": 11977,
+            "Peng": 8924,
+            "Play": 0
+          },
+          "total": 21888
+        },
+        "respond_meld_opportunity": {
+          "exact_acc": 0.938278043200323,
+          "group_precision": 0.9275054311891943,
+          "group_recall": 0.9135693352560822,
+          "label_group_rate": 0.36163447951012717,
+          "label_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1128,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 0
+          },
+          "pred_group_rate": 0.35620079402462823,
+          "pred_pass_rate": 0.624823363165332,
+          "pred_play_rate": 0.0,
+          "pred_type_hist": {
+            "AnGang": 0,
+            "BuGang": 0,
+            "Chi": 11870,
+            "Gang": 380,
+            "Hu": 1128,
+            "Pass": 37142,
+            "Peng": 8924,
+            "Play": 0
+          },
+          "total": 59444
+        },
+        "set_opportunity_including_angang": {
+          "exact_acc": 0.936091620291959,
+          "group_precision": 0.927601189115024,
+          "group_recall": 0.9132744956772334,
+          "label_group_rate": 0.3582224372933301,
+          "label_type_hist": {
+            "AnGang": 242,
+            "BuGang": 469,
+            "Chi": 12180,
+            "Gang": 352,
+            "Hu": 1158,
+            "Pass": 36819,
+            "Peng": 8965,
+            "Play": 1810
+          },
+          "pred_group_rate": 0.35268973304298734,
+          "pred_pass_rate": 0.5991128316799742,
+          "pred_play_rate": 0.029518509557222357,
+          "pred_type_hist": {
+            "AnGang": 232,
+            "BuGang": 459,
+            "Chi": 11870,
+            "Gang": 380,
+            "Hu": 1158,
+            "Pass": 37142,
+            "Peng": 8924,
+            "Play": 1830
+          },
+          "total": 61995
+        }
+      },
+      "overall": {
+        "exact_acc": 0.8836294583771964,
+        "top3": 0.9922722026084279,
+        "top5": 0.9986494125452311
+      },
+      "total": 295427
+    }
+  }
+}

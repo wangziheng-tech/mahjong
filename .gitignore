@@ -1,0 +1,17 @@
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.zip
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/
+data_*/
+model/checkpoint/
+log/*.pid
+.DS_Store
+Thumbs.db

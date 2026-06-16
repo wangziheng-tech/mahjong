@@ -1,0 +1,248 @@
+{
+  "config": {
+    "device": "cuda",
+    "games": 4000,
+    "players": [
+      {
+        "ckpt": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+        "module": "model_v6",
+        "name": "v6_refine2"
+      },
+      {
+        "ckpt": "model/checkpoint/v6_meld_ft_095/mahjong_v6_meld_ft_best.pkl",
+        "module": "model_v6",
+        "name": "v6_meld_ft"
+      },
+      {
+        "ckpt": "model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_best.pkl",
+        "module": "model_v6",
+        "name": "v7_calibrated"
+      },
+      {
+        "ckpt": "model/checkpoint/v4_se_aug_095_long/best.pkl",
+        "module": "model_v4",
+        "name": "v4_long"
+      }
+    ],
+    "rotation_count": 24,
+    "seed": 15000,
+    "sharded": true
+  },
+  "global": {
+    "avg_turns": 43.3785,
+    "draw_rate": 0.02475,
+    "draws": 99,
+    "games": 4000,
+    "reasons": {
+      "huang": 99,
+      "rob_kong": 8,
+      "ron": 2803,
+      "tsumo": 1090
+    },
+    "wins": 3901
+  },
+  "players": {
+    "v4_long": {
+      "action_counts": {
+        "AnGang": 50,
+        "BuGang": 101,
+        "Chi": 2554,
+        "Gang": 69,
+        "Hu": 1010,
+        "Pass": 136718,
+        "Peng": 1658,
+        "Play": 47059
+      },
+      "avg_final_shanten": 0.36625,
+      "avg_non_win_final_shanten": 0.8192410119840213,
+      "avg_turns": 43.3785,
+      "best_shanten_rate": 0.2515,
+      "calls": 4281,
+      "calls_per_game": 1.07025,
+      "deal_in": 674,
+      "deal_in_rate": 0.1685,
+      "draw_rate": 0.02475,
+      "draws": 99,
+      "expected_non_draw_share": 0.25,
+      "games": 4000,
+      "non_draw_win_share": 0.2553191489361702,
+      "rob_kong_wins": 4,
+      "ron_wins": 717,
+      "seat_games": {
+        "0": 984,
+        "1": 1000,
+        "2": 1008,
+        "3": 1008
+      },
+      "seat_win_rates": {
+        "0": 0.2784552845528455,
+        "1": 0.235,
+        "2": 0.24305555555555555,
+        "3": 0.2400793650793651
+      },
+      "seat_wins": {
+        "0": 274,
+        "1": 235,
+        "2": 245,
+        "3": 242
+      },
+      "tied_best_shanten_rate": 0.2635,
+      "tsumo_wins": 275,
+      "win_rate": 0.249,
+      "wins": 996
+    },
+    "v6_meld_ft": {
+      "action_counts": {
+        "AnGang": 53,
+        "BuGang": 108,
+        "Chi": 2662,
+        "Gang": 79,
+        "Hu": 1005,
+        "Pass": 136212,
+        "Peng": 1923,
+        "Play": 47175
+      },
+      "avg_final_shanten": 0.372,
+      "avg_non_win_final_shanten": 0.8232558139534883,
+      "avg_turns": 43.3785,
+      "best_shanten_rate": 0.24825,
+      "calls": 4664,
+      "calls_per_game": 1.166,
+      "deal_in": 719,
+      "deal_in_rate": 0.17975,
+      "draw_rate": 0.02475,
+      "draws": 99,
+      "expected_non_draw_share": 0.25,
+      "games": 4000,
+      "non_draw_win_share": 0.2537810817739041,
+      "rob_kong_wins": 2,
+      "ron_wins": 716,
+      "seat_games": {
+        "0": 1008,
+        "1": 1000,
+        "2": 996,
+        "3": 996
+      },
+      "seat_win_rates": {
+        "0": 0.2628968253968254,
+        "1": 0.253,
+        "2": 0.2469879518072289,
+        "3": 0.22690763052208834
+      },
+      "seat_wins": {
+        "0": 265,
+        "1": 253,
+        "2": 246,
+        "3": 226
+      },
+      "tied_best_shanten_rate": 0.2605,
+      "tsumo_wins": 272,
+      "win_rate": 0.2475,
+      "wins": 990
+    },
+    "v6_refine2": {
+      "action_counts": {
+        "AnGang": 40,
+        "BuGang": 103,
+        "Chi": 2410,
+        "Gang": 84,
+        "Hu": 972,
+        "Pass": 136777,
+        "Peng": 1697,
+        "Play": 47116
+      },
+      "avg_final_shanten": 0.39675,
+      "avg_non_win_final_shanten": 0.8384336952945047,
+      "avg_turns": 43.3785,
+      "best_shanten_rate": 0.2425,
+      "calls": 4191,
+      "calls_per_game": 1.04775,
+      "deal_in": 696,
+      "deal_in_rate": 0.174,
+      "draw_rate": 0.02475,
+      "draws": 99,
+      "expected_non_draw_share": 0.25,
+      "games": 4000,
+      "non_draw_win_share": 0.24634709048961806,
+      "rob_kong_wins": 0,
+      "ron_wins": 692,
+      "seat_games": {
+        "0": 1008,
+        "1": 1000,
+        "2": 996,
+        "3": 996
+      },
+      "seat_win_rates": {
+        "0": 0.25297619047619047,
+        "1": 0.242,
+        "2": 0.23393574297188754,
+        "3": 0.2319277108433735
+      },
+      "seat_wins": {
+        "0": 255,
+        "1": 242,
+        "2": 233,
+        "3": 231
+      },
+      "tied_best_shanten_rate": 0.25275,
+      "tsumo_wins": 269,
+      "win_rate": 0.24025,
+      "wins": 961
+    },
+    "v7_calibrated": {
+      "action_counts": {
+        "AnGang": 53,
+        "BuGang": 87,
+        "Chi": 2398,
+        "Gang": 76,
+        "Hu": 960,
+        "Pass": 136658,
+        "Peng": 1840,
+        "Play": 47145
+      },
+      "avg_final_shanten": 0.384,
+      "avg_non_win_final_shanten": 0.8174655285620486,
+      "avg_turns": 43.3785,
+      "best_shanten_rate": 0.23975,
+      "calls": 4314,
+      "calls_per_game": 1.0785,
+      "deal_in": 722,
+      "deal_in_rate": 0.1805,
+      "draw_rate": 0.02475,
+      "draws": 99,
+      "expected_non_draw_share": 0.25,
+      "games": 4000,
+      "non_draw_win_share": 0.24455267880030762,
+      "rob_kong_wins": 2,
+      "ron_wins": 678,
+      "seat_games": {
+        "0": 1000,
+        "1": 1000,
+        "2": 1000,
+        "3": 1000
+      },
+      "seat_win_rates": {
+        "0": 0.269,
+        "1": 0.243,
+        "2": 0.231,
+        "3": 0.211
+      },
+      "seat_wins": {
+        "0": 269,
+        "1": 243,
+        "2": 231,
+        "3": 211
+      },
+      "tied_best_shanten_rate": 0.25225,
+      "tsumo_wins": 274,
+      "win_rate": 0.2385,
+      "wins": 954
+    }
+  },
+  "shards": [
+    "eval/fourway_v6refine2_v6meld_v7_v4_4000_shard0.json",
+    "eval/fourway_v6refine2_v6meld_v7_v4_4000_shard1.json",
+    "eval/fourway_v6refine2_v6meld_v7_v4_4000_shard2.json",
+    "eval/fourway_v6refine2_v6meld_v7_v4_4000_shard3.json"
+  ]
+}

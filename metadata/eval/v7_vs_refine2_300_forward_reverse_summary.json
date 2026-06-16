@@ -1,0 +1,47 @@
+{
+  "combined_one_seat_equivalent": {
+    "non_draw_games_equivalent": 582,
+    "v7_equivalent_non_draw_share": 0.23997709049255445,
+    "v7_equivalent_wins": 139.66666666666669,
+    "v7_non_draw_share_avg_of_forward_and_reverse": 0.23984133545935943
+  },
+  "forward_v7_single_vs_3_v6": {
+    "draws": 13,
+    "v6_avg_shanten": 0.3933333333333333,
+    "v6_wins_total": 221,
+    "v7_action_counts": {
+      "AnGang": 2,
+      "BuGang": 8,
+      "Chi": 156,
+      "Gang": 8,
+      "Hu": 67,
+      "Pass": 10304,
+      "Peng": 133,
+      "Play": 3554
+    },
+    "v7_avg_shanten": 0.43666666666666665,
+    "v7_non_draw_share": 0.22996515679442509,
+    "v7_raw_win_rate": 0.22,
+    "v7_wins": 66
+  },
+  "reverse_v6_single_vs_3_v7": {
+    "draws": 5,
+    "v6_action_counts": {
+      "AnGang": 6,
+      "BuGang": 7,
+      "Chi": 175,
+      "Gang": 7,
+      "Hu": 75,
+      "Pass": 10148,
+      "Peng": 122,
+      "Play": 3484
+    },
+    "v6_avg_shanten": 0.39,
+    "v6_non_draw_share": 0.25084745762711863,
+    "v6_raw_win_rate": 0.24666666666666667,
+    "v6_wins": 74,
+    "v7_avg_shanten": 0.41,
+    "v7_avg_single_non_draw_share_from_total": 0.2497175141242938,
+    "v7_wins_total": 221
+  }
+}

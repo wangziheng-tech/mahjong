@@ -1,0 +1,58 @@
+device: cuda
+split: 0.95 1.0
+loading 0
+loading 128
+loading 256
+loading 384
+loading 512
+loading 640
+loading 768
+loading 896
+loading 1024
+loading 1152
+loading 1280
+loading 1408
+loading 1536
+loading 1664
+loading 1792
+loading 1920
+loading 2048
+loading 2176
+loading 2304
+loading 2432
+loading 2560
+loading 2688
+loading 2816
+loading 2944
+loading 3072
+loading 3200
+loading 3328
+loading 3456
+loading 3584
+loading 3712
+loading 3840
+loading 3968
+loading 4096
+loading 4224
+loading 4352
+loading 4480
+loading 4608
+loading 4736
+loading 4864
+samples: 295427
+loading model: v6_refine2 model_v6 model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl
+loading model: v6_meld_ft model_v6 model/checkpoint/v6_meld_ft_095/mahjong_v6_meld_ft_best.pkl
+loading model: v4 model_v4 model/checkpoint/v4_se_aug_095_long/best.pkl
+wrote: eval/v7_diagnostics_full.json
+
+=== Compact Comparison ===
+model                 acc     top3    play    pass    chi     peng    resp_pred resp_prec honor_pred singleton_pred
+v6_refine2            0.8836  0.9923  0.8677  0.9583  0.8782  0.9313    0.3562    0.9275     0.4548         0.5330
+v6_meld_ft            0.8826  0.9922  0.8672  0.9343  0.9152  0.9566    0.3829    0.8937     0.4557         0.5344
+v4                    0.8715  0.9901  0.8553  0.9474  0.8815  0.8936    0.3586    0.9091     0.4641         0.5449
+
+=== Suit Discard Rates When Legal ===
+model                 W_label W_pred  T_label T_pred  B_label B_pred  H_label H_pred
+v6_refine2            0.2560  0.2556  0.2623  0.2568  0.2505  0.2580  0.4570  0.4548
+v6_meld_ft            0.2560  0.2590  0.2623  0.2561  0.2505  0.2547  0.4570  0.4557
+v4                    0.2560  0.2534  0.2623  0.2547  0.2505  0.2560  0.4570  0.4641

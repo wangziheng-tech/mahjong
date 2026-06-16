@@ -1,0 +1,1109 @@
+device: cuda
+torch: 2.7.1
+args: {
+  "augment_mode": "batch",
+  "batch_size": 1536,
+  "call_label_bonus": 1.8,
+  "call_opportunity_bonus": 0.35,
+  "call_pass_bonus": 0.9,
+  "distill_coef": 0.35,
+  "distill_temp": 2.0,
+  "epochs": 4,
+  "init_ckpt": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+  "legacy_save": true,
+  "lr": 5e-05,
+  "model_module": "model_v6",
+  "out_dir": "model/checkpoint/v7_calibrated_095",
+  "reward_dir": "data_reward_v5",
+  "reward_scale": 64.0,
+  "save_prefix": "mahjong_v7_calibrated",
+  "seed": 2026,
+  "teacher_ckpt": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+  "teacher_module": "model_v6",
+  "train_end": 0.95,
+  "type_coef": 0.08,
+  "val_begin": 0.95,
+  "val_end": 1.0,
+  "value_coef": 0.04
+}
+loading 0
+loading 128
+loading 256
+loading 384
+loading 512
+loading 640
+loading 768
+loading 896
+loading 1024
+loading 1152
+loading 1280
+loading 1408
+loading 1536
+loading 1664
+loading 1792
+loading 1920
+loading 2048
+loading 2176
+loading 2304
+loading 2432
+loading 2560
+loading 2688
+loading 2816
+loading 2944
+loading 3072
+loading 3200
+loading 3328
+loading 3456
+loading 3584
+loading 3712
+loading 3840
+loading 3968
+loading 4096
+loading 4224
+loading 4352
+loading 4480
+loading 4608
+loading 4736
+loading 4864
+loading 4992
+loading 5120
+loading 5248
+loading 5376
+loading 5504
+loading 5632
+loading 5760
+loading 5888
+loading 6016
+loading 6144
+loading 6272
+loading 6400
+loading 6528
+loading 6656
+loading 6784
+loading 6912
+loading 7040
+loading 7168
+loading 7296
+loading 7424
+loading 7552
+loading 7680
+loading 7808
+loading 7936
+loading 8064
+loading 8192
+loading 8320
+loading 8448
+loading 8576
+loading 8704
+loading 8832
+loading 8960
+loading 9088
+loading 9216
+loading 9344
+loading 9472
+loading 9600
+loading 9728
+loading 9856
+loading 9984
+loading 10112
+loading 10240
+loading 10368
+loading 10496
+loading 10624
+loading 10752
+loading 10880
+loading 11008
+loading 11136
+loading 11264
+loading 11392
+loading 11520
+loading 11648
+loading 11776
+loading 11904
+loading 12032
+loading 12160
+loading 12288
+loading 12416
+loading 12544
+loading 12672
+loading 12800
+loading 12928
+loading 13056
+loading 13184
+loading 13312
+loading 13440
+loading 13568
+loading 13696
+loading 13824
+loading 13952
+loading 14080
+loading 14208
+loading 14336
+loading 14464
+loading 14592
+loading 14720
+loading 14848
+loading 14976
+loading 15104
+loading 15232
+loading 15360
+loading 15488
+loading 15616
+loading 15744
+loading 15872
+loading 16000
+loading 16128
+loading 16256
+loading 16384
+loading 16512
+loading 16640
+loading 16768
+loading 16896
+loading 17024
+loading 17152
+loading 17280
+loading 17408
+loading 17536
+loading 17664
+loading 17792
+loading 17920
+loading 18048
+loading 18176
+loading 18304
+loading 18432
+loading 18560
+loading 18688
+loading 18816
+loading 18944
+loading 19072
+loading 19200
+loading 19328
+loading 19456
+loading 19584
+loading 19712
+loading 19840
+loading 19968
+loading 20096
+loading 20224
+loading 20352
+loading 20480
+loading 20608
+loading 20736
+loading 20864
+loading 20992
+loading 21120
+loading 21248
+loading 21376
+loading 21504
+loading 21632
+loading 21760
+loading 21888
+loading 22016
+loading 22144
+loading 22272
+loading 22400
+loading 22528
+loading 22656
+loading 22784
+loading 22912
+loading 23040
+loading 23168
+loading 23296
+loading 23424
+loading 23552
+loading 23680
+loading 23808
+loading 23936
+loading 24064
+loading 24192
+loading 24320
+loading 24448
+loading 24576
+loading 24704
+loading 24832
+loading 24960
+loading 25088
+loading 25216
+loading 25344
+loading 25472
+loading 25600
+loading 25728
+loading 25856
+loading 25984
+loading 26112
+loading 26240
+loading 26368
+loading 26496
+loading 26624
+loading 26752
+loading 26880
+loading 27008
+loading 27136
+loading 27264
+loading 27392
+loading 27520
+loading 27648
+loading 27776
+loading 27904
+loading 28032
+loading 28160
+loading 28288
+loading 28416
+loading 28544
+loading 28672
+loading 28800
+loading 28928
+loading 29056
+loading 29184
+loading 29312
+loading 29440
+loading 29568
+loading 29696
+loading 29824
+loading 29952
+loading 30080
+loading 30208
+loading 30336
+loading 30464
+loading 30592
+loading 30720
+loading 30848
+loading 30976
+loading 31104
+loading 31232
+loading 31360
+loading 31488
+loading 31616
+loading 31744
+loading 31872
+loading 32000
+loading 32128
+loading 32256
+loading 32384
+loading 32512
+loading 32640
+loading 32768
+loading 32896
+loading 33024
+loading 33152
+loading 33280
+loading 33408
+loading 33536
+loading 33664
+loading 33792
+loading 33920
+loading 34048
+loading 34176
+loading 34304
+loading 34432
+loading 34560
+loading 34688
+loading 34816
+loading 34944
+loading 35072
+loading 35200
+loading 35328
+loading 35456
+loading 35584
+loading 35712
+loading 35840
+loading 35968
+loading 36096
+loading 36224
+loading 36352
+loading 36480
+loading 36608
+loading 36736
+loading 36864
+loading 36992
+loading 37120
+loading 37248
+loading 37376
+loading 37504
+loading 37632
+loading 37760
+loading 37888
+loading 38016
+loading 38144
+loading 38272
+loading 38400
+loading 38528
+loading 38656
+loading 38784
+loading 38912
+loading 39040
+loading 39168
+loading 39296
+loading 39424
+loading 39552
+loading 39680
+loading 39808
+loading 39936
+loading 40064
+loading 40192
+loading 40320
+loading 40448
+loading 40576
+loading 40704
+loading 40832
+loading 40960
+loading 41088
+loading 41216
+loading 41344
+loading 41472
+loading 41600
+loading 41728
+loading 41856
+loading 41984
+loading 42112
+loading 42240
+loading 42368
+loading 42496
+loading 42624
+loading 42752
+loading 42880
+loading 43008
+loading 43136
+loading 43264
+loading 43392
+loading 43520
+loading 43648
+loading 43776
+loading 43904
+loading 44032
+loading 44160
+loading 44288
+loading 44416
+loading 44544
+loading 44672
+loading 44800
+loading 44928
+loading 45056
+loading 45184
+loading 45312
+loading 45440
+loading 45568
+loading 45696
+loading 45824
+loading 45952
+loading 46080
+loading 46208
+loading 46336
+loading 46464
+loading 46592
+loading 46720
+loading 46848
+loading 46976
+loading 47104
+loading 47232
+loading 47360
+loading 47488
+loading 47616
+loading 47744
+loading 47872
+loading 48000
+loading 48128
+loading 48256
+loading 48384
+loading 48512
+loading 48640
+loading 48768
+loading 48896
+loading 49024
+loading 49152
+loading 49280
+loading 49408
+loading 49536
+loading 49664
+loading 49792
+loading 49920
+loading 50048
+loading 50176
+loading 50304
+loading 50432
+loading 50560
+loading 50688
+loading 50816
+loading 50944
+loading 51072
+loading 51200
+loading 51328
+loading 51456
+loading 51584
+loading 51712
+loading 51840
+loading 51968
+loading 52096
+loading 52224
+loading 52352
+loading 52480
+loading 52608
+loading 52736
+loading 52864
+loading 52992
+loading 53120
+loading 53248
+loading 53376
+loading 53504
+loading 53632
+loading 53760
+loading 53888
+loading 54016
+loading 54144
+loading 54272
+loading 54400
+loading 54528
+loading 54656
+loading 54784
+loading 54912
+loading 55040
+loading 55168
+loading 55296
+loading 55424
+loading 55552
+loading 55680
+loading 55808
+loading 55936
+loading 56064
+loading 56192
+loading 56320
+loading 56448
+loading 56576
+loading 56704
+loading 56832
+loading 56960
+loading 57088
+loading 57216
+loading 57344
+loading 57472
+loading 57600
+loading 57728
+loading 57856
+loading 57984
+loading 58112
+loading 58240
+loading 58368
+loading 58496
+loading 58624
+loading 58752
+loading 58880
+loading 59008
+loading 59136
+loading 59264
+loading 59392
+loading 59520
+loading 59648
+loading 59776
+loading 59904
+loading 60032
+loading 60160
+loading 60288
+loading 60416
+loading 60544
+loading 60672
+loading 60800
+loading 60928
+loading 61056
+loading 61184
+loading 61312
+loading 61440
+loading 61568
+loading 61696
+loading 61824
+loading 61952
+loading 62080
+loading 62208
+loading 62336
+loading 62464
+loading 62592
+loading 62720
+loading 62848
+loading 62976
+loading 63104
+loading 63232
+loading 63360
+loading 63488
+loading 63616
+loading 63744
+loading 63872
+loading 64000
+loading 64128
+loading 64256
+loading 64384
+loading 64512
+loading 64640
+loading 64768
+loading 64896
+loading 65024
+loading 65152
+loading 65280
+loading 65408
+loading 65536
+loading 65664
+loading 65792
+loading 65920
+loading 66048
+loading 66176
+loading 66304
+loading 66432
+loading 66560
+loading 66688
+loading 66816
+loading 66944
+loading 67072
+loading 67200
+loading 67328
+loading 67456
+loading 67584
+loading 67712
+loading 67840
+loading 67968
+loading 68096
+loading 68224
+loading 68352
+loading 68480
+loading 68608
+loading 68736
+loading 68864
+loading 68992
+loading 69120
+loading 69248
+loading 69376
+loading 69504
+loading 69632
+loading 69760
+loading 69888
+loading 70016
+loading 70144
+loading 70272
+loading 70400
+loading 70528
+loading 70656
+loading 70784
+loading 70912
+loading 71040
+loading 71168
+loading 71296
+loading 71424
+loading 71552
+loading 71680
+loading 71808
+loading 71936
+loading 72064
+loading 72192
+loading 72320
+loading 72448
+loading 72576
+loading 72704
+loading 72832
+loading 72960
+loading 73088
+loading 73216
+loading 73344
+loading 73472
+loading 73600
+loading 73728
+loading 73856
+loading 73984
+loading 74112
+loading 74240
+loading 74368
+loading 74496
+loading 74624
+loading 74752
+loading 74880
+loading 75008
+loading 75136
+loading 75264
+loading 75392
+loading 75520
+loading 75648
+loading 75776
+loading 75904
+loading 76032
+loading 76160
+loading 76288
+loading 76416
+loading 76544
+loading 76672
+loading 76800
+loading 76928
+loading 77056
+loading 77184
+loading 77312
+loading 77440
+loading 77568
+loading 77696
+loading 77824
+loading 77952
+loading 78080
+loading 78208
+loading 78336
+loading 78464
+loading 78592
+loading 78720
+loading 78848
+loading 78976
+loading 79104
+loading 79232
+loading 79360
+loading 79488
+loading 79616
+loading 79744
+loading 79872
+loading 80000
+loading 80128
+loading 80256
+loading 80384
+loading 80512
+loading 80640
+loading 80768
+loading 80896
+loading 81024
+loading 81152
+loading 81280
+loading 81408
+loading 81536
+loading 81664
+loading 81792
+loading 81920
+loading 82048
+loading 82176
+loading 82304
+loading 82432
+loading 82560
+loading 82688
+loading 82816
+loading 82944
+loading 83072
+loading 83200
+loading 83328
+loading 83456
+loading 83584
+loading 83712
+loading 83840
+loading 83968
+loading 84096
+loading 84224
+loading 84352
+loading 84480
+loading 84608
+loading 84736
+loading 84864
+loading 84992
+loading 85120
+loading 85248
+loading 85376
+loading 85504
+loading 85632
+loading 85760
+loading 85888
+loading 86016
+loading 86144
+loading 86272
+loading 86400
+loading 86528
+loading 86656
+loading 86784
+loading 86912
+loading 87040
+loading 87168
+loading 87296
+loading 87424
+loading 87552
+loading 87680
+loading 87808
+loading 87936
+loading 88064
+loading 88192
+loading 88320
+loading 88448
+loading 88576
+loading 88704
+loading 88832
+loading 88960
+loading 89088
+loading 89216
+loading 89344
+loading 89472
+loading 89600
+loading 89728
+loading 89856
+loading 89984
+loading 90112
+loading 90240
+loading 90368
+loading 90496
+loading 90624
+loading 90752
+loading 90880
+loading 91008
+loading 91136
+loading 91264
+loading 91392
+loading 91520
+loading 91648
+loading 91776
+loading 91904
+loading 92032
+loading 92160
+loading 92288
+loading 92416
+loading 92544
+loading 92672
+loading 92800
+loading 92928
+loading 93056
+loading 93184
+loading 0
+loading 128
+loading 256
+loading 384
+loading 512
+loading 640
+loading 768
+loading 896
+loading 1024
+loading 1152
+loading 1280
+loading 1408
+loading 1536
+loading 1664
+loading 1792
+loading 1920
+loading 2048
+loading 2176
+loading 2304
+loading 2432
+loading 2560
+loading 2688
+loading 2816
+loading 2944
+loading 3072
+loading 3200
+loading 3328
+loading 3456
+loading 3584
+loading 3712
+loading 3840
+loading 3968
+loading 4096
+loading 4224
+loading 4352
+loading 4480
+loading 4608
+loading 4736
+loading 4864
+train samples: 5570389
+val samples: 295427
+epoch=0 iter=0/3627 loss=0.2722 policy=0.2484 distill=0.0326 type=0.0663 value=0.1780 call_opp_batch=332 call_label_batch=113
+epoch=0 iter=50/3627 loss=0.2671 policy=0.2381 distill=0.0446 type=0.0735 value=0.1867 call_opp_batch=306 call_label_batch=119
+epoch=0 iter=100/3627 loss=0.2664 policy=0.2379 distill=0.0428 type=0.0777 value=0.1806 call_opp_batch=301 call_label_batch=98
+epoch=0 iter=150/3627 loss=0.2601 policy=0.2341 distill=0.0428 type=0.0476 value=0.1792 call_opp_batch=306 call_label_batch=111
+epoch=0 iter=200/3627 loss=0.2608 policy=0.2303 distill=0.0475 type=0.0865 value=0.1745 call_opp_batch=332 call_label_batch=135
+epoch=0 iter=250/3627 loss=0.2656 policy=0.2371 distill=0.0410 type=0.0901 value=0.1744 call_opp_batch=330 call_label_batch=103
+epoch=0 iter=300/3627 loss=0.2630 policy=0.2343 distill=0.0454 type=0.0707 value=0.1788 call_opp_batch=313 call_label_batch=118
+epoch=0 iter=350/3627 loss=0.2848 policy=0.2544 distill=0.0445 type=0.0895 value=0.1925 call_opp_batch=302 call_label_batch=104
+epoch=0 iter=400/3627 loss=0.2811 policy=0.2514 distill=0.0464 type=0.0857 value=0.1650 call_opp_batch=346 call_label_batch=126
+epoch=0 iter=450/3627 loss=0.2519 policy=0.2223 distill=0.0438 type=0.0896 value=0.1774 call_opp_batch=332 call_label_batch=106
+epoch=0 iter=500/3627 loss=0.2859 policy=0.2561 distill=0.0491 type=0.0680 value=0.1806 call_opp_batch=281 call_label_batch=75
+epoch=0 iter=550/3627 loss=0.2604 policy=0.2317 distill=0.0466 type=0.0636 value=0.1813 call_opp_batch=297 call_label_batch=106
+epoch=0 iter=600/3627 loss=0.2753 policy=0.2459 distill=0.0463 type=0.0783 value=0.1752 call_opp_batch=296 call_label_batch=105
+epoch=0 iter=650/3627 loss=0.2596 policy=0.2313 distill=0.0453 type=0.0691 value=0.1742 call_opp_batch=312 call_label_batch=115
+epoch=0 iter=700/3627 loss=0.2429 policy=0.2146 distill=0.0456 type=0.0620 value=0.1847 call_opp_batch=300 call_label_batch=118
+epoch=0 iter=750/3627 loss=0.2440 policy=0.2139 distill=0.0522 type=0.0628 value=0.1699 call_opp_batch=333 call_label_batch=128
+epoch=0 iter=800/3627 loss=0.2527 policy=0.2244 distill=0.0436 type=0.0726 value=0.1822 call_opp_batch=298 call_label_batch=100
+epoch=0 iter=850/3627 loss=0.2650 policy=0.2354 distill=0.0460 type=0.0795 value=0.1766 call_opp_batch=351 call_label_batch=136
+epoch=0 iter=900/3627 loss=0.2448 policy=0.2172 distill=0.0454 type=0.0566 value=0.1781 call_opp_batch=331 call_label_batch=120
+epoch=0 iter=950/3627 loss=0.2582 policy=0.2284 distill=0.0498 type=0.0640 value=0.1801 call_opp_batch=286 call_label_batch=101
+epoch=0 iter=1000/3627 loss=0.2649 policy=0.2343 distill=0.0521 type=0.0601 value=0.1886 call_opp_batch=306 call_label_batch=102
+epoch=0 iter=1050/3627 loss=0.2562 policy=0.2254 distill=0.0500 type=0.0794 value=0.1747 call_opp_batch=312 call_label_batch=121
+epoch=0 iter=1100/3627 loss=0.2656 policy=0.2386 distill=0.0436 type=0.0669 value=0.1605 call_opp_batch=312 call_label_batch=107
+epoch=0 iter=1150/3627 loss=0.2488 policy=0.2194 distill=0.0526 type=0.0514 value=0.1698 call_opp_batch=315 call_label_batch=93
+epoch=0 iter=1200/3627 loss=0.2867 policy=0.2587 distill=0.0455 type=0.0566 value=0.1893 call_opp_batch=301 call_label_batch=104
+epoch=0 iter=1250/3627 loss=0.2609 policy=0.2317 distill=0.0478 type=0.0681 value=0.1747 call_opp_batch=334 call_label_batch=118
+epoch=0 iter=1300/3627 loss=0.2539 policy=0.2253 distill=0.0423 type=0.0848 value=0.1756 call_opp_batch=330 call_label_batch=122
+epoch=0 iter=1350/3627 loss=0.2855 policy=0.2509 distill=0.0575 type=0.0948 value=0.1729 call_opp_batch=330 call_label_batch=117
+epoch=0 iter=1400/3627 loss=0.2526 policy=0.2248 distill=0.0425 type=0.0684 value=0.1876 call_opp_batch=316 call_label_batch=116
+epoch=0 iter=1450/3627 loss=0.2302 policy=0.2027 distill=0.0434 type=0.0707 value=0.1644 call_opp_batch=352 call_label_batch=131
+epoch=0 iter=1500/3627 loss=0.2781 policy=0.2472 distill=0.0445 type=0.1048 value=0.1722 call_opp_batch=343 call_label_batch=145
+epoch=0 iter=1550/3627 loss=0.2734 policy=0.2452 distill=0.0430 type=0.0799 value=0.1669 call_opp_batch=313 call_label_batch=110
+epoch=0 iter=1600/3627 loss=0.2568 policy=0.2284 distill=0.0447 type=0.0600 value=0.1967 call_opp_batch=307 call_label_batch=130
+epoch=0 iter=1650/3627 loss=0.2652 policy=0.2375 distill=0.0432 type=0.0781 value=0.1607 call_opp_batch=316 call_label_batch=104
+epoch=0 iter=1700/3627 loss=0.2648 policy=0.2376 distill=0.0453 type=0.0571 value=0.1692 call_opp_batch=332 call_label_batch=115
+epoch=0 iter=1750/3627 loss=0.2613 policy=0.2303 distill=0.0451 type=0.1015 value=0.1764 call_opp_batch=321 call_label_batch=113
+epoch=0 iter=1800/3627 loss=0.2504 policy=0.2218 distill=0.0482 type=0.0572 value=0.1799 call_opp_batch=350 call_label_batch=130
+epoch=0 iter=1850/3627 loss=0.2475 policy=0.2183 distill=0.0455 type=0.0663 value=0.1998 call_opp_batch=311 call_label_batch=105
+epoch=0 iter=1900/3627 loss=0.2693 policy=0.2383 distill=0.0474 type=0.0853 value=0.1882 call_opp_batch=314 call_label_batch=118
+epoch=0 iter=1950/3627 loss=0.2762 policy=0.2455 distill=0.0501 type=0.0753 value=0.1781 call_opp_batch=309 call_label_batch=112
+epoch=0 iter=2000/3627 loss=0.2655 policy=0.2382 distill=0.0440 type=0.0569 value=0.1820 call_opp_batch=294 call_label_batch=95
+epoch=0 iter=2050/3627 loss=0.2656 policy=0.2356 distill=0.0493 type=0.0652 value=0.1883 call_opp_batch=325 call_label_batch=119
+epoch=0 iter=2100/3627 loss=0.2751 policy=0.2460 distill=0.0459 type=0.0745 value=0.1779 call_opp_batch=283 call_label_batch=110
+epoch=0 iter=2150/3627 loss=0.2861 policy=0.2580 distill=0.0478 type=0.0564 value=0.1734 call_opp_batch=308 call_label_batch=108
+epoch=0 iter=2200/3627 loss=0.2422 policy=0.2133 distill=0.0503 type=0.0502 value=0.1823 call_opp_batch=329 call_label_batch=122
+epoch=0 iter=2250/3627 loss=0.2451 policy=0.2175 distill=0.0442 type=0.0624 value=0.1776 call_opp_batch=319 call_label_batch=111
+epoch=0 iter=2300/3627 loss=0.2748 policy=0.2420 distill=0.0564 type=0.0721 value=0.1831 call_opp_batch=337 call_label_batch=122
+epoch=0 iter=2350/3627 loss=0.2543 policy=0.2254 distill=0.0495 type=0.0521 value=0.1853 call_opp_batch=334 call_label_batch=123
+epoch=0 iter=2400/3627 loss=0.2472 policy=0.2203 distill=0.0467 type=0.0536 value=0.1585 call_opp_batch=302 call_label_batch=111
+epoch=0 iter=2450/3627 loss=0.2543 policy=0.2223 distill=0.0564 type=0.0638 value=0.1788 call_opp_batch=329 call_label_batch=124
+epoch=0 iter=2500/3627 loss=0.2388 policy=0.2100 distill=0.0491 type=0.0592 value=0.1718 call_opp_batch=311 call_label_batch=114
+epoch=0 iter=2550/3627 loss=0.2720 policy=0.2431 distill=0.0456 type=0.0646 value=0.1950 call_opp_batch=303 call_label_batch=99
+epoch=0 iter=2600/3627 loss=0.2470 policy=0.2195 distill=0.0416 type=0.0701 value=0.1829 call_opp_batch=324 call_label_batch=115
+epoch=0 iter=2650/3627 loss=0.2563 policy=0.2301 distill=0.0431 type=0.0529 value=0.1717 call_opp_batch=300 call_label_batch=102
+epoch=0 iter=2700/3627 loss=0.2294 policy=0.2020 distill=0.0416 type=0.0697 value=0.1804 call_opp_batch=328 call_label_batch=126
+epoch=0 iter=2750/3627 loss=0.2802 policy=0.2531 distill=0.0463 type=0.0462 value=0.1802 call_opp_batch=350 call_label_batch=120
+epoch=0 iter=2800/3627 loss=0.2642 policy=0.2353 distill=0.0486 type=0.0589 value=0.1790 call_opp_batch=320 call_label_batch=110
+epoch=0 iter=2850/3627 loss=0.2518 policy=0.2242 distill=0.0439 type=0.0717 value=0.1636 call_opp_batch=321 call_label_batch=119
+epoch=0 iter=2900/3627 loss=0.2645 policy=0.2349 distill=0.0469 type=0.0769 value=0.1764 call_opp_batch=326 call_label_batch=128
+epoch=0 iter=2950/3627 loss=0.2751 policy=0.2462 distill=0.0462 type=0.0628 value=0.1945 call_opp_batch=311 call_label_batch=111
+epoch=0 iter=3000/3627 loss=0.2357 policy=0.2080 distill=0.0474 type=0.0499 value=0.1777 call_opp_batch=312 call_label_batch=109
+epoch=0 iter=3050/3627 loss=0.2663 policy=0.2362 distill=0.0519 type=0.0657 value=0.1667 call_opp_batch=293 call_label_batch=112
+epoch=0 iter=3100/3627 loss=0.2506 policy=0.2237 distill=0.0431 type=0.0613 value=0.1715 call_opp_batch=326 call_label_batch=111
+epoch=0 iter=3150/3627 loss=0.2492 policy=0.2224 distill=0.0469 type=0.0509 value=0.1565 call_opp_batch=292 call_label_batch=108
+epoch=0 iter=3200/3627 loss=0.2514 policy=0.2248 distill=0.0420 type=0.0596 value=0.1778 call_opp_batch=301 call_label_batch=102
+epoch=0 iter=3250/3627 loss=0.2456 policy=0.2185 distill=0.0445 type=0.0491 value=0.1907 call_opp_batch=301 call_label_batch=117
+epoch=0 iter=3300/3627 loss=0.2405 policy=0.2112 distill=0.0471 type=0.0663 value=0.1876 call_opp_batch=315 call_label_batch=124
+epoch=0 iter=3350/3627 loss=0.2746 policy=0.2436 distill=0.0521 type=0.0738 value=0.1720 call_opp_batch=339 call_label_batch=96
+epoch=0 iter=3400/3627 loss=0.2433 policy=0.2149 distill=0.0499 type=0.0517 value=0.1701 call_opp_batch=329 call_label_batch=118
+epoch=0 iter=3450/3627 loss=0.2543 policy=0.2260 distill=0.0439 type=0.0746 value=0.1733 call_opp_batch=332 call_label_batch=118
+epoch=0 iter=3500/3627 loss=0.2510 policy=0.2196 distill=0.0503 type=0.0876 value=0.1696 call_opp_batch=317 call_label_batch=108
+epoch=0 iter=3550/3627 loss=0.2603 policy=0.2277 distill=0.0563 type=0.0712 value=0.1795 call_opp_batch=338 call_label_batch=134
+epoch=0 iter=3600/3627 loss=0.2515 policy=0.2229 distill=0.0462 type=0.0541 value=0.2027 call_opp_batch=308 call_label_batch=119
+epoch=0 avg_loss=0.2587 policy=0.2300 distill=0.0456 type=0.0694 value=0.1790 train_call_opp=1144422 train_call_label=416390 val_acc=0.8821 top3=0.9922 call_f1=0.9216 call_precision=0.9178 call_recall=0.9255 call_pred_rate=0.3640 call_label_rate=0.3610 select_score=0.937851
+type_acc: {"AnGang": 0.859504132231405, "BuGang": 0.9402985074626866, "Chi": 0.8914614121510673, "Gang": 0.8920454545454546, "Hu": 1.0, "Pass": 0.9513023167386404, "Peng": 0.9403234802007808, "Play": 0.865804100070393}
+call_metrics: {"call_action_acc": 0.9124556132204316, "call_action_total": 21966, "call_decision_acc": 0.9431717337715695, "call_f1": 0.921615740320972, "call_label_rate": 0.3609860312243221, "call_opp_total": 60850, "call_precision": 0.9177878103837471, "call_pred_rate": 0.3640098603122432, "call_recall": 0.9254757352271693}
+saved: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_epoch_0.pkl
+saved best: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_best.pkl select_score: 0.9378512283863385
+epoch=1 iter=0/3627 loss=0.2556 policy=0.2284 distill=0.0421 type=0.0656 value=0.1796 call_opp_batch=314 call_label_batch=97
+epoch=1 iter=50/3627 loss=0.2643 policy=0.2373 distill=0.0452 type=0.0511 value=0.1771 call_opp_batch=308 call_label_batch=114
+epoch=1 iter=100/3627 loss=0.2663 policy=0.2365 distill=0.0465 type=0.0764 value=0.1872 call_opp_batch=305 call_label_batch=128
+epoch=1 iter=150/3627 loss=0.2584 policy=0.2318 distill=0.0415 type=0.0645 value=0.1731 call_opp_batch=318 call_label_batch=115
+epoch=1 iter=200/3627 loss=0.2848 policy=0.2553 distill=0.0490 type=0.0612 value=0.1864 call_opp_batch=288 call_label_batch=91
+epoch=1 iter=250/3627 loss=0.2629 policy=0.2338 distill=0.0472 type=0.0639 value=0.1860 call_opp_batch=295 call_label_batch=106
+epoch=1 iter=300/3627 loss=0.2762 policy=0.2481 distill=0.0430 type=0.0762 value=0.1742 call_opp_batch=317 call_label_batch=117
+epoch=1 iter=350/3627 loss=0.2574 policy=0.2276 distill=0.0448 type=0.0834 value=0.1868 call_opp_batch=289 call_label_batch=129
+epoch=1 iter=400/3627 loss=0.2483 policy=0.2185 distill=0.0476 type=0.0760 value=0.1765 call_opp_batch=328 call_label_batch=112
+epoch=1 iter=450/3627 loss=0.2318 policy=0.2039 distill=0.0462 type=0.0453 value=0.2034 call_opp_batch=319 call_label_batch=125
+epoch=1 iter=500/3627 loss=0.2611 policy=0.2331 distill=0.0487 type=0.0466 value=0.1806 call_opp_batch=296 call_label_batch=102
+epoch=1 iter=550/3627 loss=0.2462 policy=0.2172 distill=0.0434 type=0.0747 value=0.1964 call_opp_batch=299 call_label_batch=106
+epoch=1 iter=600/3627 loss=0.2423 policy=0.2163 distill=0.0419 type=0.0559 value=0.1721 call_opp_batch=296 call_label_batch=101
+epoch=1 iter=650/3627 loss=0.2311 policy=0.2024 distill=0.0451 type=0.0742 value=0.1728 call_opp_batch=320 call_label_batch=115
+epoch=1 iter=700/3627 loss=0.2621 policy=0.2330 distill=0.0461 type=0.0807 value=0.1644 call_opp_batch=324 call_label_batch=107
+epoch=1 iter=750/3627 loss=0.2510 policy=0.2217 distill=0.0436 type=0.0841 value=0.1808 call_opp_batch=333 call_label_batch=113
+epoch=1 iter=800/3627 loss=0.2468 policy=0.2168 distill=0.0474 type=0.0784 value=0.1782 call_opp_batch=309 call_label_batch=135
+epoch=1 iter=850/3627 loss=0.2731 policy=0.2463 distill=0.0430 type=0.0649 value=0.1658 call_opp_batch=317 call_label_batch=116
+epoch=1 iter=900/3627 loss=0.2658 policy=0.2378 distill=0.0447 type=0.0641 value=0.1801 call_opp_batch=294 call_label_batch=113
+epoch=1 iter=950/3627 loss=0.2752 policy=0.2469 distill=0.0470 type=0.0646 value=0.1680 call_opp_batch=307 call_label_batch=102
+epoch=1 iter=1000/3627 loss=0.2601 policy=0.2326 distill=0.0423 type=0.0758 value=0.1661 call_opp_batch=322 call_label_batch=109
+epoch=1 iter=1050/3627 loss=0.2539 policy=0.2231 distill=0.0470 type=0.0761 value=0.2064 call_opp_batch=334 call_label_batch=121
+epoch=1 iter=1100/3627 loss=0.2207 policy=0.1961 distill=0.0402 type=0.0463 value=0.1710 call_opp_batch=344 call_label_batch=129
+epoch=1 iter=1150/3627 loss=0.2609 policy=0.2319 distill=0.0446 type=0.0761 value=0.1825 call_opp_batch=344 call_label_batch=141
+epoch=1 iter=1200/3627 loss=0.2390 policy=0.2115 distill=0.0486 type=0.0467 value=0.1697 call_opp_batch=320 call_label_batch=114
+epoch=1 iter=1250/3627 loss=0.2327 policy=0.2060 distill=0.0423 type=0.0677 value=0.1631 call_opp_batch=326 call_label_batch=114
+epoch=1 iter=1300/3627 loss=0.2470 policy=0.2178 distill=0.0444 type=0.0753 value=0.1913 call_opp_batch=319 call_label_batch=122
+epoch=1 iter=1350/3627 loss=0.2564 policy=0.2271 distill=0.0436 type=0.0870 value=0.1770 call_opp_batch=348 call_label_batch=111
+epoch=1 iter=1400/3627 loss=0.2535 policy=0.2263 distill=0.0449 type=0.0601 value=0.1669 call_opp_batch=319 call_label_batch=119
+epoch=1 iter=1450/3627 loss=0.2332 policy=0.2071 distill=0.0441 type=0.0464 value=0.1744 call_opp_batch=308 call_label_batch=114
+epoch=1 iter=1500/3627 loss=0.2347 policy=0.2077 distill=0.0416 type=0.0651 value=0.1800 call_opp_batch=340 call_label_batch=137
+epoch=1 iter=1550/3627 loss=0.2352 policy=0.2070 distill=0.0439 type=0.0652 value=0.1904 call_opp_batch=330 call_label_batch=126
+epoch=1 iter=1600/3627 loss=0.2632 policy=0.2369 distill=0.0440 type=0.0507 value=0.1703 call_opp_batch=266 call_label_batch=103
+epoch=1 iter=1650/3627 loss=0.2481 policy=0.2198 distill=0.0451 type=0.0747 value=0.1620 call_opp_batch=319 call_label_batch=103
+epoch=1 iter=1700/3627 loss=0.2557 policy=0.2280 distill=0.0471 type=0.0516 value=0.1761 call_opp_batch=305 call_label_batch=106
+epoch=1 iter=1750/3627 loss=0.2856 policy=0.2551 distill=0.0453 type=0.0916 value=0.1831 call_opp_batch=335 call_label_batch=124
+epoch=1 iter=1800/3627 loss=0.2622 policy=0.2331 distill=0.0443 type=0.0773 value=0.1851 call_opp_batch=326 call_label_batch=107
+epoch=1 iter=1850/3627 loss=0.2840 policy=0.2550 distill=0.0452 type=0.0805 value=0.1684 call_opp_batch=314 call_label_batch=110
+epoch=1 iter=1900/3627 loss=0.2544 policy=0.2255 distill=0.0453 type=0.0740 value=0.1772 call_opp_batch=331 call_label_batch=118
+epoch=1 iter=1950/3627 loss=0.2409 policy=0.2126 distill=0.0464 type=0.0598 value=0.1817 call_opp_batch=326 call_label_batch=112
+epoch=1 iter=2000/3627 loss=0.2402 policy=0.2108 distill=0.0493 type=0.0674 value=0.1667 call_opp_batch=339 call_label_batch=122
+epoch=1 iter=2050/3627 loss=0.2618 policy=0.2340 distill=0.0425 type=0.0797 value=0.1639 call_opp_batch=333 call_label_batch=123
+epoch=1 iter=2100/3627 loss=0.2533 policy=0.2244 distill=0.0513 type=0.0485 value=0.1762 call_opp_batch=314 call_label_batch=102
+epoch=1 iter=2150/3627 loss=0.2693 policy=0.2389 distill=0.0502 type=0.0715 value=0.1779 call_opp_batch=303 call_label_batch=114
+epoch=1 iter=2200/3627 loss=0.2571 policy=0.2283 distill=0.0443 type=0.0660 value=0.1998 call_opp_batch=328 call_label_batch=123
+epoch=1 iter=2250/3627 loss=0.2695 policy=0.2398 distill=0.0457 type=0.0919 value=0.1571 call_opp_batch=314 call_label_batch=118
+epoch=1 iter=2300/3627 loss=0.2749 policy=0.2460 distill=0.0476 type=0.0691 value=0.1691 call_opp_batch=326 call_label_batch=113
+epoch=1 iter=2350/3627 loss=0.2444 policy=0.2165 distill=0.0418 type=0.0689 value=0.1933 call_opp_batch=313 call_label_batch=104
+epoch=1 iter=2400/3627 loss=0.2208 policy=0.1965 distill=0.0424 type=0.0352 value=0.1652 call_opp_batch=309 call_label_batch=118
+epoch=1 iter=2450/3627 loss=0.2480 policy=0.2177 distill=0.0495 type=0.0753 value=0.1743 call_opp_batch=301 call_label_batch=124
+epoch=1 iter=2500/3627 loss=0.2538 policy=0.2271 distill=0.0439 type=0.0559 value=0.1709 call_opp_batch=298 call_label_batch=106
+epoch=1 iter=2550/3627 loss=0.2308 policy=0.2049 distill=0.0412 type=0.0580 value=0.1704 call_opp_batch=337 call_label_batch=116
+epoch=1 iter=2600/3627 loss=0.2528 policy=0.2229 distill=0.0426 type=0.0810 value=0.2114 call_opp_batch=310 call_label_batch=101
+epoch=1 iter=2650/3627 loss=0.2602 policy=0.2327 distill=0.0447 type=0.0583 value=0.1802 call_opp_batch=309 call_label_batch=115
+epoch=1 iter=2700/3627 loss=0.2559 policy=0.2296 distill=0.0425 type=0.0574 value=0.1702 call_opp_batch=305 call_label_batch=108
+epoch=1 iter=2750/3627 loss=0.2370 policy=0.2088 distill=0.0442 type=0.0685 value=0.1816 call_opp_batch=329 call_label_batch=132
+epoch=1 iter=2800/3627 loss=0.2572 policy=0.2287 distill=0.0483 type=0.0516 value=0.1878 call_opp_batch=316 call_label_batch=108
+epoch=1 iter=2850/3627 loss=0.2386 policy=0.2123 distill=0.0433 type=0.0552 value=0.1672 call_opp_batch=296 call_label_batch=115
+epoch=1 iter=2900/3627 loss=0.2541 policy=0.2260 distill=0.0447 type=0.0696 value=0.1736 call_opp_batch=285 call_label_batch=112
+epoch=1 iter=2950/3627 loss=0.2739 policy=0.2460 distill=0.0417 type=0.0754 value=0.1814 call_opp_batch=315 call_label_batch=113
+epoch=1 iter=3000/3627 loss=0.2406 policy=0.2133 distill=0.0403 type=0.0807 value=0.1689 call_opp_batch=355 call_label_batch=139
+epoch=1 iter=3050/3627 loss=0.2411 policy=0.2131 distill=0.0448 type=0.0653 value=0.1775 call_opp_batch=325 call_label_batch=116
+epoch=1 iter=3100/3627 loss=0.2406 policy=0.2120 distill=0.0445 type=0.0752 value=0.1759 call_opp_batch=338 call_label_batch=115
+epoch=1 iter=3150/3627 loss=0.2325 policy=0.2062 distill=0.0423 type=0.0527 value=0.1838 call_opp_batch=319 call_label_batch=121
+epoch=1 iter=3200/3627 loss=0.2553 policy=0.2261 distill=0.0496 type=0.0565 value=0.1813 call_opp_batch=333 call_label_batch=123
+epoch=1 iter=3250/3627 loss=0.2601 policy=0.2312 distill=0.0466 type=0.0588 value=0.1979 call_opp_batch=303 call_label_batch=96
+epoch=1 iter=3300/3627 loss=0.2485 policy=0.2192 distill=0.0517 type=0.0473 value=0.1857 call_opp_batch=301 call_label_batch=106
+epoch=1 iter=3350/3627 loss=0.2497 policy=0.2211 distill=0.0426 type=0.0758 value=0.1896 call_opp_batch=317 call_label_batch=104
+epoch=1 iter=3400/3627 loss=0.2716 policy=0.2433 distill=0.0438 type=0.0649 value=0.1952 call_opp_batch=316 call_label_batch=110
+epoch=1 iter=3450/3627 loss=0.2426 policy=0.2137 distill=0.0470 type=0.0675 value=0.1761 call_opp_batch=321 call_label_batch=125
+epoch=1 iter=3500/3627 loss=0.2809 policy=0.2494 distill=0.0464 type=0.0979 value=0.1862 call_opp_batch=301 call_label_batch=109
+epoch=1 iter=3550/3627 loss=0.2574 policy=0.2297 distill=0.0460 type=0.0484 value=0.1945 call_opp_batch=317 call_label_batch=117
+epoch=1 iter=3600/3627 loss=0.2768 policy=0.2472 distill=0.0493 type=0.0628 value=0.1835 call_opp_batch=301 call_label_batch=104
+epoch=1 avg_loss=0.2547 policy=0.2264 distill=0.0453 type=0.0659 value=0.1785 train_call_opp=1144422 train_call_label=416390 val_acc=0.8837 top3=0.9923 call_f1=0.9228 call_precision=0.9182 call_recall=0.9274 call_pred_rate=0.3646 call_label_rate=0.3610 select_score=0.939520
+type_acc: {"AnGang": 0.8677685950413223, "BuGang": 0.9381663113006397, "Chi": 0.8929392446633826, "Gang": 0.9005681818181818, "Hu": 1.0, "Pass": 0.9515195958608327, "Peng": 0.9438929168990519, "Play": 0.8675833596047625}
+call_metrics: {"call_action_acc": 0.9148229081307475, "call_action_total": 21966, "call_decision_acc": 0.9439934264585045, "call_f1": 0.9228121036419641, "call_label_rate": 0.3609860312243221, "call_opp_total": 60850, "call_precision": 0.918236725863157, "call_pred_rate": 0.3646014790468365, "call_recall": 0.927433306018392}
+saved: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_epoch_1.pkl
+saved best: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_best.pkl select_score: 0.9395199740500108
+epoch=2 iter=0/3627 loss=0.2408 policy=0.2146 distill=0.0412 type=0.0592 value=0.1759 call_opp_batch=333 call_label_batch=125
+epoch=2 iter=50/3627 loss=0.2472 policy=0.2183 distill=0.0453 type=0.0744 value=0.1785 call_opp_batch=316 call_label_batch=99
+epoch=2 iter=100/3627 loss=0.2649 policy=0.2370 distill=0.0417 type=0.0696 value=0.1948 call_opp_batch=299 call_label_batch=104
+epoch=2 iter=150/3627 loss=0.2330 policy=0.2077 distill=0.0382 type=0.0625 value=0.1737 call_opp_batch=309 call_label_batch=114
+epoch=2 iter=200/3627 loss=0.2748 policy=0.2464 distill=0.0452 type=0.0674 value=0.1779 call_opp_batch=320 call_label_batch=109
+epoch=2 iter=250/3627 loss=0.2299 policy=0.2040 distill=0.0419 type=0.0483 value=0.1864 call_opp_batch=324 call_label_batch=117
+epoch=2 iter=300/3627 loss=0.2554 policy=0.2280 distill=0.0461 type=0.0492 value=0.1822 call_opp_batch=309 call_label_batch=111
+epoch=2 iter=350/3627 loss=0.2567 policy=0.2283 distill=0.0421 type=0.0790 value=0.1831 call_opp_batch=327 call_label_batch=139
+epoch=2 iter=400/3627 loss=0.2675 policy=0.2396 distill=0.0421 type=0.0718 value=0.1865 call_opp_batch=312 call_label_batch=109
+epoch=2 iter=450/3627 loss=0.2316 policy=0.2067 distill=0.0405 type=0.0443 value=0.1787 call_opp_batch=316 call_label_batch=110
+epoch=2 iter=500/3627 loss=0.2416 policy=0.2148 distill=0.0459 type=0.0501 value=0.1691 call_opp_batch=324 call_label_batch=121
+epoch=2 iter=550/3627 loss=0.2631 policy=0.2372 distill=0.0412 type=0.0541 value=0.1789 call_opp_batch=267 call_label_batch=90
+epoch=2 iter=600/3627 loss=0.2428 policy=0.2136 distill=0.0441 type=0.0828 value=0.1781 call_opp_batch=330 call_label_batch=129
+epoch=2 iter=650/3627 loss=0.2660 policy=0.2383 distill=0.0466 type=0.0560 value=0.1724 call_opp_batch=320 call_label_batch=107
+epoch=2 iter=700/3627 loss=0.2630 policy=0.2356 distill=0.0445 type=0.0628 value=0.1693 call_opp_batch=309 call_label_batch=101
+epoch=2 iter=750/3627 loss=0.2522 policy=0.2235 distill=0.0469 type=0.0716 value=0.1632 call_opp_batch=318 call_label_batch=107
+epoch=2 iter=800/3627 loss=0.2378 policy=0.2112 distill=0.0416 type=0.0551 value=0.1893 call_opp_batch=327 call_label_batch=110
+epoch=2 iter=850/3627 loss=0.2293 policy=0.2036 distill=0.0416 type=0.0532 value=0.1730 call_opp_batch=296 call_label_batch=120
+epoch=2 iter=900/3627 loss=0.2524 policy=0.2241 distill=0.0440 type=0.0723 value=0.1792 call_opp_batch=313 call_label_batch=123
+epoch=2 iter=950/3627 loss=0.2535 policy=0.2255 distill=0.0447 type=0.0644 value=0.1821 call_opp_batch=323 call_label_batch=124
+epoch=2 iter=1000/3627 loss=0.2546 policy=0.2272 distill=0.0424 type=0.0702 value=0.1755 call_opp_batch=324 call_label_batch=121
+epoch=2 iter=1050/3627 loss=0.2459 policy=0.2168 distill=0.0481 type=0.0675 value=0.1737 call_opp_batch=320 call_label_batch=113
+epoch=2 iter=1100/3627 loss=0.2461 policy=0.2170 distill=0.0496 type=0.0534 value=0.1860 call_opp_batch=302 call_label_batch=98
+epoch=2 iter=1150/3627 loss=0.2419 policy=0.2155 distill=0.0418 type=0.0662 value=0.1633 call_opp_batch=310 call_label_batch=105
+epoch=2 iter=1200/3627 loss=0.2601 policy=0.2317 distill=0.0425 type=0.0759 value=0.1852 call_opp_batch=333 call_label_batch=120
+epoch=2 iter=1250/3627 loss=0.2355 policy=0.2099 distill=0.0427 type=0.0469 value=0.1724 call_opp_batch=318 call_label_batch=122
+epoch=2 iter=1300/3627 loss=0.2336 policy=0.2074 distill=0.0419 type=0.0557 value=0.1763 call_opp_batch=299 call_label_batch=103
+epoch=2 iter=1350/3627 loss=0.2533 policy=0.2262 distill=0.0410 type=0.0695 value=0.1809 call_opp_batch=291 call_label_batch=99
+epoch=2 iter=1400/3627 loss=0.2603 policy=0.2311 distill=0.0489 type=0.0608 value=0.1813 call_opp_batch=288 call_label_batch=103
+epoch=2 iter=1450/3627 loss=0.2669 policy=0.2381 distill=0.0403 type=0.0827 value=0.2023 call_opp_batch=334 call_label_batch=127
+epoch=2 iter=1500/3627 loss=0.2495 policy=0.2224 distill=0.0406 type=0.0672 value=0.1893 call_opp_batch=307 call_label_batch=119
+epoch=2 iter=1550/3627 loss=0.2726 policy=0.2439 distill=0.0467 type=0.0709 value=0.1657 call_opp_batch=298 call_label_batch=114
+epoch=2 iter=1600/3627 loss=0.2577 policy=0.2293 distill=0.0435 type=0.0776 value=0.1749 call_opp_batch=324 call_label_batch=125
+epoch=2 iter=1650/3627 loss=0.2643 policy=0.2343 distill=0.0440 type=0.0983 value=0.1668 call_opp_batch=332 call_label_batch=128
+epoch=2 iter=1700/3627 loss=0.2886 policy=0.2605 distill=0.0439 type=0.0749 value=0.1665 call_opp_batch=295 call_label_batch=110
+epoch=2 iter=1750/3627 loss=0.2526 policy=0.2252 distill=0.0430 type=0.0680 value=0.1732 call_opp_batch=324 call_label_batch=102
+epoch=2 iter=1800/3627 loss=0.2637 policy=0.2344 distill=0.0437 type=0.0779 value=0.1932 call_opp_batch=331 call_label_batch=110
+epoch=2 iter=1850/3627 loss=0.2709 policy=0.2420 distill=0.0494 type=0.0576 value=0.1763 call_opp_batch=288 call_label_batch=102
+epoch=2 iter=1900/3627 loss=0.2311 policy=0.2027 distill=0.0490 type=0.0590 value=0.1647 call_opp_batch=324 call_label_batch=101
+epoch=2 iter=1950/3627 loss=0.2481 policy=0.2206 distill=0.0449 type=0.0567 value=0.1797 call_opp_batch=331 call_label_batch=116
+epoch=2 iter=2000/3627 loss=0.2470 policy=0.2196 distill=0.0433 type=0.0646 value=0.1754 call_opp_batch=327 call_label_batch=124
+epoch=2 iter=2050/3627 loss=0.2378 policy=0.2120 distill=0.0425 type=0.0505 value=0.1735 call_opp_batch=304 call_label_batch=109
+epoch=2 iter=2100/3627 loss=0.2302 policy=0.2063 distill=0.0368 type=0.0502 value=0.1763 call_opp_batch=323 call_label_batch=120
+epoch=2 iter=2150/3627 loss=0.2508 policy=0.2236 distill=0.0396 type=0.0666 value=0.1982 call_opp_batch=305 call_label_batch=100
+epoch=2 iter=2200/3627 loss=0.2275 policy=0.2004 distill=0.0439 type=0.0588 value=0.1785 call_opp_batch=326 call_label_batch=118
+epoch=2 iter=2250/3627 loss=0.2459 policy=0.2166 distill=0.0488 type=0.0674 value=0.1697 call_opp_batch=335 call_label_batch=114
+epoch=2 iter=2300/3627 loss=0.2263 policy=0.2006 distill=0.0406 type=0.0601 value=0.1665 call_opp_batch=323 call_label_batch=127
+epoch=2 iter=2350/3627 loss=0.2583 policy=0.2295 distill=0.0492 type=0.0632 value=0.1649 call_opp_batch=309 call_label_batch=128
+epoch=2 iter=2400/3627 loss=0.2704 policy=0.2427 distill=0.0441 type=0.0661 value=0.1753 call_opp_batch=314 call_label_batch=128
+epoch=2 iter=2450/3627 loss=0.2242 policy=0.1987 distill=0.0407 type=0.0541 value=0.1734 call_opp_batch=309 call_label_batch=106
+epoch=2 iter=2500/3627 loss=0.2879 policy=0.2605 distill=0.0393 type=0.0807 value=0.1811 call_opp_batch=306 call_label_batch=121
+epoch=2 iter=2550/3627 loss=0.2231 policy=0.1990 distill=0.0416 type=0.0372 value=0.1634 call_opp_batch=280 call_label_batch=100
+epoch=2 iter=2600/3627 loss=0.2575 policy=0.2312 distill=0.0402 type=0.0587 value=0.1882 call_opp_batch=305 call_label_batch=109
+epoch=2 iter=2650/3627 loss=0.2697 policy=0.2384 distill=0.0449 type=0.1006 value=0.1882 call_opp_batch=310 call_label_batch=135
+epoch=2 iter=2700/3627 loss=0.2605 policy=0.2350 distill=0.0427 type=0.0434 value=0.1782 call_opp_batch=310 call_label_batch=107
+epoch=2 iter=2750/3627 loss=0.2436 policy=0.2173 distill=0.0413 type=0.0622 value=0.1716 call_opp_batch=291 call_label_batch=100
+epoch=2 iter=2800/3627 loss=0.2260 policy=0.1968 distill=0.0473 type=0.0616 value=0.1935 call_opp_batch=298 call_label_batch=99
+epoch=2 iter=2850/3627 loss=0.2337 policy=0.2066 distill=0.0435 type=0.0582 value=0.1793 call_opp_batch=301 call_label_batch=100
+epoch=2 iter=2900/3627 loss=0.2368 policy=0.2116 distill=0.0383 type=0.0554 value=0.1829 call_opp_batch=328 call_label_batch=129
+epoch=2 iter=2950/3627 loss=0.2532 policy=0.2252 distill=0.0430 type=0.0657 value=0.1924 call_opp_batch=294 call_label_batch=123
+epoch=2 iter=3000/3627 loss=0.2539 policy=0.2265 distill=0.0421 type=0.0662 value=0.1843 call_opp_batch=323 call_label_batch=133
+epoch=2 iter=3050/3627 loss=0.2571 policy=0.2299 distill=0.0423 type=0.0670 value=0.1747 call_opp_batch=300 call_label_batch=101
+epoch=2 iter=3100/3627 loss=0.2569 policy=0.2307 distill=0.0407 type=0.0598 value=0.1799 call_opp_batch=311 call_label_batch=105
+epoch=2 iter=3150/3627 loss=0.2741 policy=0.2477 distill=0.0403 type=0.0575 value=0.1923 call_opp_batch=301 call_label_batch=106
+epoch=2 iter=3200/3627 loss=0.2395 policy=0.2135 distill=0.0392 type=0.0608 value=0.1856 call_opp_batch=329 call_label_batch=114
+epoch=2 iter=3250/3627 loss=0.2487 policy=0.2231 distill=0.0389 type=0.0648 value=0.1695 call_opp_batch=316 call_label_batch=111
+epoch=2 iter=3300/3627 loss=0.2278 policy=0.2017 distill=0.0437 type=0.0462 value=0.1773 call_opp_batch=324 call_label_batch=105
+epoch=2 iter=3350/3627 loss=0.2645 policy=0.2353 distill=0.0509 type=0.0568 value=0.1715 call_opp_batch=314 call_label_batch=98
+epoch=2 iter=3400/3627 loss=0.2582 policy=0.2318 distill=0.0415 type=0.0614 value=0.1745 call_opp_batch=315 call_label_batch=108
+epoch=2 iter=3450/3627 loss=0.2661 policy=0.2390 distill=0.0411 type=0.0696 value=0.1803 call_opp_batch=303 call_label_batch=114
+epoch=2 iter=3500/3627 loss=0.2585 policy=0.2316 distill=0.0382 type=0.0836 value=0.1710 call_opp_batch=321 call_label_batch=123
+epoch=2 iter=3550/3627 loss=0.2433 policy=0.2186 distill=0.0382 type=0.0533 value=0.1758 call_opp_batch=330 call_label_batch=121
+epoch=2 iter=3600/3627 loss=0.2538 policy=0.2266 distill=0.0431 type=0.0587 value=0.1866 call_opp_batch=299 call_label_batch=122
+epoch=2 avg_loss=0.2488 policy=0.2218 distill=0.0426 type=0.0625 value=0.1780 train_call_opp=1144422 train_call_label=416390 val_acc=0.8836 top3=0.9922 call_f1=0.9236 call_precision=0.9174 call_recall=0.9298 call_pred_rate=0.3659 call_label_rate=0.3610 select_score=0.939421
+type_acc: {"AnGang": 0.8636363636363636, "BuGang": 0.9402985074626866, "Chi": 0.8963875205254516, "Gang": 0.8863636363636364, "Hu": 1.0, "Pass": 0.9508949183845298, "Peng": 0.9456776352481874, "Play": 0.867276739636461}
+call_metrics: {"call_action_acc": 0.9172812528453064, "call_action_total": 21966, "call_decision_acc": 0.9444535743631882, "call_f1": 0.923581279674429, "call_label_rate": 0.3609860312243221, "call_opp_total": 60850, "call_precision": 0.917400287459576, "call_pred_rate": 0.3658833196384552, "call_recall": 0.9298461258308295}
+saved: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_epoch_2.pkl
+epoch=3 iter=0/3627 loss=0.2389 policy=0.2122 distill=0.0415 type=0.0633 value=0.1789 call_opp_batch=332 call_label_batch=124
+epoch=3 iter=50/3627 loss=0.2680 policy=0.2416 distill=0.0399 type=0.0672 value=0.1779 call_opp_batch=331 call_label_batch=130
+epoch=3 iter=100/3627 loss=0.2384 policy=0.2112 distill=0.0414 type=0.0726 value=0.1729 call_opp_batch=324 call_label_batch=120
+epoch=3 iter=150/3627 loss=0.2189 policy=0.1939 distill=0.0417 type=0.0429 value=0.1737 call_opp_batch=312 call_label_batch=103
+epoch=3 iter=200/3627 loss=0.2094 policy=0.1851 distill=0.0381 type=0.0428 value=0.1884 call_opp_batch=311 call_label_batch=112
+epoch=3 iter=250/3627 loss=0.2444 policy=0.2196 distill=0.0354 type=0.0564 value=0.1990 call_opp_batch=320 call_label_batch=108
+epoch=3 iter=300/3627 loss=0.2911 policy=0.2660 distill=0.0390 type=0.0552 value=0.1754 call_opp_batch=306 call_label_batch=101
+epoch=3 iter=350/3627 loss=0.2205 policy=0.1948 distill=0.0418 type=0.0519 value=0.1721 call_opp_batch=324 call_label_batch=120
+epoch=3 iter=400/3627 loss=0.2476 policy=0.2207 distill=0.0386 type=0.0799 value=0.1767 call_opp_batch=306 call_label_batch=123
+epoch=3 iter=450/3627 loss=0.2359 policy=0.2099 distill=0.0396 type=0.0688 value=0.1650 call_opp_batch=334 call_label_batch=130
+epoch=3 iter=500/3627 loss=0.2337 policy=0.2082 distill=0.0389 type=0.0637 value=0.1712 call_opp_batch=303 call_label_batch=117
+epoch=3 iter=550/3627 loss=0.2442 policy=0.2189 distill=0.0409 type=0.0513 value=0.1719 call_opp_batch=313 call_label_batch=107
+epoch=3 iter=600/3627 loss=0.2423 policy=0.2186 distill=0.0384 type=0.0480 value=0.1608 call_opp_batch=329 call_label_batch=136
+epoch=3 iter=650/3627 loss=0.2456 policy=0.2209 distill=0.0397 type=0.0439 value=0.1835 call_opp_batch=298 call_label_batch=115
+epoch=3 iter=700/3627 loss=0.2645 policy=0.2377 distill=0.0396 type=0.0748 value=0.1745 call_opp_batch=331 call_label_batch=122
+epoch=3 iter=750/3627 loss=0.2613 policy=0.2337 distill=0.0419 type=0.0788 value=0.1653 call_opp_batch=333 call_label_batch=123
+epoch=3 iter=800/3627 loss=0.2375 policy=0.2093 distill=0.0469 type=0.0646 value=0.1646 call_opp_batch=304 call_label_batch=122
+epoch=3 iter=850/3627 loss=0.2406 policy=0.2155 distill=0.0378 type=0.0516 value=0.1924 call_opp_batch=315 call_label_batch=98
+epoch=3 iter=900/3627 loss=0.2223 policy=0.1984 distill=0.0371 type=0.0518 value=0.1695 call_opp_batch=312 call_label_batch=100
+epoch=3 iter=950/3627 loss=0.2641 policy=0.2370 distill=0.0394 type=0.0818 value=0.1683 call_opp_batch=331 call_label_batch=108
+epoch=3 iter=1000/3627 loss=0.2602 policy=0.2327 distill=0.0411 type=0.0731 value=0.1806 call_opp_batch=292 call_label_batch=114
+epoch=3 iter=1050/3627 loss=0.2349 policy=0.2110 distill=0.0364 type=0.0471 value=0.1844 call_opp_batch=307 call_label_batch=114
+epoch=3 iter=1100/3627 loss=0.2316 policy=0.2040 distill=0.0423 type=0.0685 value=0.1840 call_opp_batch=316 call_label_batch=119
+epoch=3 iter=1150/3627 loss=0.2566 policy=0.2289 distill=0.0443 type=0.0576 value=0.1888 call_opp_batch=296 call_label_batch=119
+epoch=3 iter=1200/3627 loss=0.2396 policy=0.2139 distill=0.0437 type=0.0478 value=0.1641 call_opp_batch=296 call_label_batch=101
+epoch=3 iter=1250/3627 loss=0.2429 policy=0.2165 distill=0.0441 type=0.0562 value=0.1615 call_opp_batch=310 call_label_batch=109
+epoch=3 iter=1300/3627 loss=0.2305 policy=0.2047 distill=0.0389 type=0.0641 value=0.1756 call_opp_batch=305 call_label_batch=124
+epoch=3 iter=1350/3627 loss=0.2749 policy=0.2432 distill=0.0547 type=0.0698 value=0.1732 call_opp_batch=300 call_label_batch=94
+epoch=3 iter=1400/3627 loss=0.2437 policy=0.2155 distill=0.0424 type=0.0628 value=0.2069 call_opp_batch=312 call_label_batch=116
+epoch=3 iter=1450/3627 loss=0.2447 policy=0.2197 distill=0.0407 type=0.0468 value=0.1750 call_opp_batch=331 call_label_batch=100
+epoch=3 iter=1500/3627 loss=0.2369 policy=0.2125 distill=0.0399 type=0.0437 value=0.1735 call_opp_batch=309 call_label_batch=109
+epoch=3 iter=1550/3627 loss=0.2376 policy=0.2127 distill=0.0418 type=0.0414 value=0.1728 call_opp_batch=305 call_label_batch=117
+epoch=3 iter=1600/3627 loss=0.2547 policy=0.2275 distill=0.0411 type=0.0673 value=0.1859 call_opp_batch=325 call_label_batch=118
+epoch=3 iter=1650/3627 loss=0.2753 policy=0.2475 distill=0.0425 type=0.0763 value=0.1709 call_opp_batch=308 call_label_batch=101
+epoch=3 iter=1700/3627 loss=0.2452 policy=0.2220 distill=0.0376 type=0.0429 value=0.1652 call_opp_batch=317 call_label_batch=117
+epoch=3 iter=1750/3627 loss=0.2588 policy=0.2301 distill=0.0411 type=0.0883 value=0.1810 call_opp_batch=348 call_label_batch=111
+epoch=3 iter=1800/3627 loss=0.2608 policy=0.2347 distill=0.0408 type=0.0554 value=0.1853 call_opp_batch=292 call_label_batch=99
+epoch=3 iter=1850/3627 loss=0.2802 policy=0.2497 distill=0.0517 type=0.0643 value=0.1824 call_opp_batch=302 call_label_batch=110
+epoch=3 iter=1900/3627 loss=0.2500 policy=0.2238 distill=0.0408 type=0.0662 value=0.1663 call_opp_batch=300 call_label_batch=107
+epoch=3 iter=1950/3627 loss=0.2715 policy=0.2429 distill=0.0424 type=0.0777 value=0.1903 call_opp_batch=303 call_label_batch=100
+epoch=3 iter=2000/3627 loss=0.2603 policy=0.2338 distill=0.0420 type=0.0621 value=0.1701 call_opp_batch=291 call_label_batch=113
+epoch=3 iter=2050/3627 loss=0.2434 policy=0.2158 distill=0.0447 type=0.0555 value=0.1862 call_opp_batch=333 call_label_batch=110
+epoch=3 iter=2100/3627 loss=0.2376 policy=0.2132 distill=0.0378 type=0.0554 value=0.1705 call_opp_batch=316 call_label_batch=111
+epoch=3 iter=2150/3627 loss=0.2280 policy=0.2030 distill=0.0390 type=0.0573 value=0.1685 call_opp_batch=313 call_label_batch=128
+epoch=3 iter=2200/3627 loss=0.2722 policy=0.2453 distill=0.0421 type=0.0700 value=0.1638 call_opp_batch=311 call_label_batch=116
+epoch=3 iter=2250/3627 loss=0.2207 policy=0.1950 distill=0.0401 type=0.0596 value=0.1717 call_opp_batch=321 call_label_batch=117
+epoch=3 iter=2300/3627 loss=0.2320 policy=0.2061 distill=0.0422 type=0.0498 value=0.1779 call_opp_batch=294 call_label_batch=113
+epoch=3 iter=2350/3627 loss=0.2658 policy=0.2389 distill=0.0405 type=0.0782 value=0.1625 call_opp_batch=309 call_label_batch=112
+epoch=3 iter=2400/3627 loss=0.2378 policy=0.2140 distill=0.0351 type=0.0539 value=0.1806 call_opp_batch=320 call_label_batch=129
+epoch=3 iter=2450/3627 loss=0.2360 policy=0.2104 distill=0.0410 type=0.0572 value=0.1677 call_opp_batch=327 call_label_batch=118
+epoch=3 iter=2500/3627 loss=0.2485 policy=0.2232 distill=0.0369 type=0.0614 value=0.1866 call_opp_batch=328 call_label_batch=121
+epoch=3 iter=2550/3627 loss=0.2659 policy=0.2387 distill=0.0433 type=0.0682 value=0.1659 call_opp_batch=307 call_label_batch=109
+epoch=3 iter=2600/3627 loss=0.2312 policy=0.2068 distill=0.0374 type=0.0470 value=0.1876 call_opp_batch=334 call_label_batch=124
+epoch=3 iter=2650/3627 loss=0.2473 policy=0.2196 distill=0.0412 type=0.0680 value=0.1973 call_opp_batch=331 call_label_batch=119
+epoch=3 iter=2700/3627 loss=0.2416 policy=0.2161 distill=0.0403 type=0.0612 value=0.1627 call_opp_batch=341 call_label_batch=125
+epoch=3 iter=2750/3627 loss=0.2689 policy=0.2423 distill=0.0405 type=0.0625 value=0.1848 call_opp_batch=314 call_label_batch=129
+epoch=3 iter=2800/3627 loss=0.2656 policy=0.2392 distill=0.0420 type=0.0613 value=0.1698 call_opp_batch=328 call_label_batch=134
+epoch=3 iter=2850/3627 loss=0.2392 policy=0.2148 distill=0.0398 type=0.0448 value=0.1724 call_opp_batch=301 call_label_batch=97
+epoch=3 iter=2900/3627 loss=0.2305 policy=0.2074 distill=0.0382 type=0.0422 value=0.1586 call_opp_batch=294 call_label_batch=103
+epoch=3 iter=2950/3627 loss=0.2573 policy=0.2307 distill=0.0436 type=0.0570 value=0.1699 call_opp_batch=308 call_label_batch=133
+epoch=3 iter=3000/3627 loss=0.2465 policy=0.2200 distill=0.0400 type=0.0668 value=0.1785 call_opp_batch=317 call_label_batch=112
+epoch=3 iter=3050/3627 loss=0.2316 policy=0.2071 distill=0.0375 type=0.0596 value=0.1669 call_opp_batch=338 call_label_batch=123
+epoch=3 iter=3100/3627 loss=0.2298 policy=0.2057 distill=0.0375 type=0.0510 value=0.1732 call_opp_batch=330 call_label_batch=111
+epoch=3 iter=3150/3627 loss=0.2336 policy=0.2094 distill=0.0380 type=0.0465 value=0.1783 call_opp_batch=313 call_label_batch=93
+epoch=3 iter=3200/3627 loss=0.2162 policy=0.1932 distill=0.0385 type=0.0394 value=0.1599 call_opp_batch=312 call_label_batch=108
+epoch=3 iter=3250/3627 loss=0.2403 policy=0.2145 distill=0.0388 type=0.0619 value=0.1809 call_opp_batch=315 call_label_batch=106
+epoch=3 iter=3300/3627 loss=0.2034 policy=0.1797 distill=0.0380 type=0.0361 value=0.1883 call_opp_batch=333 call_label_batch=113
+epoch=3 iter=3350/3627 loss=0.2723 policy=0.2450 distill=0.0417 type=0.0762 value=0.1663 call_opp_batch=311 call_label_batch=113
+epoch=3 iter=3400/3627 loss=0.2545 policy=0.2272 distill=0.0409 type=0.0735 value=0.1778 call_opp_batch=309 call_label_batch=118
+epoch=3 iter=3450/3627 loss=0.2497 policy=0.2246 distill=0.0376 type=0.0725 value=0.1541 call_opp_batch=303 call_label_batch=111
+epoch=3 iter=3500/3627 loss=0.2442 policy=0.2172 distill=0.0433 type=0.0548 value=0.1863 call_opp_batch=304 call_label_batch=106
+epoch=3 iter=3550/3627 loss=0.2486 policy=0.2252 distill=0.0375 type=0.0448 value=0.1664 call_opp_batch=303 call_label_batch=93
+epoch=3 iter=3600/3627 loss=0.2250 policy=0.1992 distill=0.0389 type=0.0638 value=0.1780 call_opp_batch=308 call_label_batch=118
+epoch=3 avg_loss=0.2442 policy=0.2182 distill=0.0400 type=0.0601 value=0.1777 train_call_opp=1144422 train_call_label=416390 val_acc=0.8843 top3=0.9924 call_f1=0.9239 call_precision=0.9207 call_recall=0.9272 call_pred_rate=0.3635 call_label_rate=0.3610 select_score=0.940136
+type_acc: {"AnGang": 0.8636363636363636, "BuGang": 0.9381663113006397, "Chi": 0.8914614121510673, "Gang": 0.9261363636363636, "Hu": 1.0, "Pass": 0.9530948694967273, "Peng": 0.9460122699386503, "Play": 0.8680022629417379}
+call_metrics: {"call_action_acc": 0.9152781571519621, "call_action_total": 21966, "call_decision_acc": 0.9448644207066557, "call_f1": 0.9239004695261642, "call_label_rate": 0.3609860312243221, "call_opp_total": 60850, "call_precision": 0.9206636228018625, "call_pred_rate": 0.3635332785538209, "call_recall": 0.9271601566056633}
+saved: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_epoch_3.pkl
+saved best: model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_best.pkl select_score: 0.9401360572484924

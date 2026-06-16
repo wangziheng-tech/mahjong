@@ -1,0 +1,7 @@
+{
+  "base": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+  "teacher": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+  "diagnostics": "eval/v7_diagnostics_full.json",
+  "decision": "mild call improvement with stronger distillation; no suit/honor hard bias because offline discard distribution is already close to labels",
+  "main_tradeoff": "v6_meld_ft improved Chi/Peng/Gang but overcalled and did not beat v6_refine2 in 240 forward games"
+}

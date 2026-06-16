@@ -1,0 +1,33 @@
+{
+  "base": {
+    "avg_turns": 42.946666666666665,
+    "base_avg_shanten": 0.41,
+    "base_win": 221,
+    "best_shanten_rate": 0.24666666666666667,
+    "candidate_action_counts": {
+      "AnGang": 6,
+      "BuGang": 7,
+      "Chi": 175,
+      "Gang": 7,
+      "Hu": 75,
+      "Pass": 10148,
+      "Peng": 122,
+      "Play": 3484
+    },
+    "candidate_avg_shanten": 0.39,
+    "candidate_win": 74,
+    "draw": 5,
+    "errors": 0,
+    "games": 300,
+    "non_draw_win_share": 0.25084745762711863,
+    "reasons": {
+      "huang": 5,
+      "rob_kong": 0,
+      "ron": 207,
+      "tsumo": 88
+    },
+    "shanten_edge": 0.019999999999999962,
+    "tied_best_shanten_rate": 0.25666666666666665,
+    "win_rate": 0.24666666666666667
+  }
+}

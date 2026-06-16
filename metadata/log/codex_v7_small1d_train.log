@@ -1,0 +1,1149 @@
+device: cuda
+torch: 2.7.1
+model_module: model_v7_small1d
+teacher_module: model_v6
+teacher_ckpt: model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl
+distill_coef: 0.35
+distill_temp: 2.0
+type_coef: 0.06
+value_coef: 0.03
+advantage_beta: 0.0
+augment_mode: batch
+loading 0
+loading 128
+loading 256
+loading 384
+loading 512
+loading 640
+loading 768
+loading 896
+loading 1024
+loading 1152
+loading 1280
+loading 1408
+loading 1536
+loading 1664
+loading 1792
+loading 1920
+loading 2048
+loading 2176
+loading 2304
+loading 2432
+loading 2560
+loading 2688
+loading 2816
+loading 2944
+loading 3072
+loading 3200
+loading 3328
+loading 3456
+loading 3584
+loading 3712
+loading 3840
+loading 3968
+loading 4096
+loading 4224
+loading 4352
+loading 4480
+loading 4608
+loading 4736
+loading 4864
+loading 4992
+loading 5120
+loading 5248
+loading 5376
+loading 5504
+loading 5632
+loading 5760
+loading 5888
+loading 6016
+loading 6144
+loading 6272
+loading 6400
+loading 6528
+loading 6656
+loading 6784
+loading 6912
+loading 7040
+loading 7168
+loading 7296
+loading 7424
+loading 7552
+loading 7680
+loading 7808
+loading 7936
+loading 8064
+loading 8192
+loading 8320
+loading 8448
+loading 8576
+loading 8704
+loading 8832
+loading 8960
+loading 9088
+loading 9216
+loading 9344
+loading 9472
+loading 9600
+loading 9728
+loading 9856
+loading 9984
+loading 10112
+loading 10240
+loading 10368
+loading 10496
+loading 10624
+loading 10752
+loading 10880
+loading 11008
+loading 11136
+loading 11264
+loading 11392
+loading 11520
+loading 11648
+loading 11776
+loading 11904
+loading 12032
+loading 12160
+loading 12288
+loading 12416
+loading 12544
+loading 12672
+loading 12800
+loading 12928
+loading 13056
+loading 13184
+loading 13312
+loading 13440
+loading 13568
+loading 13696
+loading 13824
+loading 13952
+loading 14080
+loading 14208
+loading 14336
+loading 14464
+loading 14592
+loading 14720
+loading 14848
+loading 14976
+loading 15104
+loading 15232
+loading 15360
+loading 15488
+loading 15616
+loading 15744
+loading 15872
+loading 16000
+loading 16128
+loading 16256
+loading 16384
+loading 16512
+loading 16640
+loading 16768
+loading 16896
+loading 17024
+loading 17152
+loading 17280
+loading 17408
+loading 17536
+loading 17664
+loading 17792
+loading 17920
+loading 18048
+loading 18176
+loading 18304
+loading 18432
+loading 18560
+loading 18688
+loading 18816
+loading 18944
+loading 19072
+loading 19200
+loading 19328
+loading 19456
+loading 19584
+loading 19712
+loading 19840
+loading 19968
+loading 20096
+loading 20224
+loading 20352
+loading 20480
+loading 20608
+loading 20736
+loading 20864
+loading 20992
+loading 21120
+loading 21248
+loading 21376
+loading 21504
+loading 21632
+loading 21760
+loading 21888
+loading 22016
+loading 22144
+loading 22272
+loading 22400
+loading 22528
+loading 22656
+loading 22784
+loading 22912
+loading 23040
+loading 23168
+loading 23296
+loading 23424
+loading 23552
+loading 23680
+loading 23808
+loading 23936
+loading 24064
+loading 24192
+loading 24320
+loading 24448
+loading 24576
+loading 24704
+loading 24832
+loading 24960
+loading 25088
+loading 25216
+loading 25344
+loading 25472
+loading 25600
+loading 25728
+loading 25856
+loading 25984
+loading 26112
+loading 26240
+loading 26368
+loading 26496
+loading 26624
+loading 26752
+loading 26880
+loading 27008
+loading 27136
+loading 27264
+loading 27392
+loading 27520
+loading 27648
+loading 27776
+loading 27904
+loading 28032
+loading 28160
+loading 28288
+loading 28416
+loading 28544
+loading 28672
+loading 28800
+loading 28928
+loading 29056
+loading 29184
+loading 29312
+loading 29440
+loading 29568
+loading 29696
+loading 29824
+loading 29952
+loading 30080
+loading 30208
+loading 30336
+loading 30464
+loading 30592
+loading 30720
+loading 30848
+loading 30976
+loading 31104
+loading 31232
+loading 31360
+loading 31488
+loading 31616
+loading 31744
+loading 31872
+loading 32000
+loading 32128
+loading 32256
+loading 32384
+loading 32512
+loading 32640
+loading 32768
+loading 32896
+loading 33024
+loading 33152
+loading 33280
+loading 33408
+loading 33536
+loading 33664
+loading 33792
+loading 33920
+loading 34048
+loading 34176
+loading 34304
+loading 34432
+loading 34560
+loading 34688
+loading 34816
+loading 34944
+loading 35072
+loading 35200
+loading 35328
+loading 35456
+loading 35584
+loading 35712
+loading 35840
+loading 35968
+loading 36096
+loading 36224
+loading 36352
+loading 36480
+loading 36608
+loading 36736
+loading 36864
+loading 36992
+loading 37120
+loading 37248
+loading 37376
+loading 37504
+loading 37632
+loading 37760
+loading 37888
+loading 38016
+loading 38144
+loading 38272
+loading 38400
+loading 38528
+loading 38656
+loading 38784
+loading 38912
+loading 39040
+loading 39168
+loading 39296
+loading 39424
+loading 39552
+loading 39680
+loading 39808
+loading 39936
+loading 40064
+loading 40192
+loading 40320
+loading 40448
+loading 40576
+loading 40704
+loading 40832
+loading 40960
+loading 41088
+loading 41216
+loading 41344
+loading 41472
+loading 41600
+loading 41728
+loading 41856
+loading 41984
+loading 42112
+loading 42240
+loading 42368
+loading 42496
+loading 42624
+loading 42752
+loading 42880
+loading 43008
+loading 43136
+loading 43264
+loading 43392
+loading 43520
+loading 43648
+loading 43776
+loading 43904
+loading 44032
+loading 44160
+loading 44288
+loading 44416
+loading 44544
+loading 44672
+loading 44800
+loading 44928
+loading 45056
+loading 45184
+loading 45312
+loading 45440
+loading 45568
+loading 45696
+loading 45824
+loading 45952
+loading 46080
+loading 46208
+loading 46336
+loading 46464
+loading 46592
+loading 46720
+loading 46848
+loading 46976
+loading 47104
+loading 47232
+loading 47360
+loading 47488
+loading 47616
+loading 47744
+loading 47872
+loading 48000
+loading 48128
+loading 48256
+loading 48384
+loading 48512
+loading 48640
+loading 48768
+loading 48896
+loading 49024
+loading 49152
+loading 49280
+loading 49408
+loading 49536
+loading 49664
+loading 49792
+loading 49920
+loading 50048
+loading 50176
+loading 50304
+loading 50432
+loading 50560
+loading 50688
+loading 50816
+loading 50944
+loading 51072
+loading 51200
+loading 51328
+loading 51456
+loading 51584
+loading 51712
+loading 51840
+loading 51968
+loading 52096
+loading 52224
+loading 52352
+loading 52480
+loading 52608
+loading 52736
+loading 52864
+loading 52992
+loading 53120
+loading 53248
+loading 53376
+loading 53504
+loading 53632
+loading 53760
+loading 53888
+loading 54016
+loading 54144
+loading 54272
+loading 54400
+loading 54528
+loading 54656
+loading 54784
+loading 54912
+loading 55040
+loading 55168
+loading 55296
+loading 55424
+loading 55552
+loading 55680
+loading 55808
+loading 55936
+loading 56064
+loading 56192
+loading 56320
+loading 56448
+loading 56576
+loading 56704
+loading 56832
+loading 56960
+loading 57088
+loading 57216
+loading 57344
+loading 57472
+loading 57600
+loading 57728
+loading 57856
+loading 57984
+loading 58112
+loading 58240
+loading 58368
+loading 58496
+loading 58624
+loading 58752
+loading 58880
+loading 59008
+loading 59136
+loading 59264
+loading 59392
+loading 59520
+loading 59648
+loading 59776
+loading 59904
+loading 60032
+loading 60160
+loading 60288
+loading 60416
+loading 60544
+loading 60672
+loading 60800
+loading 60928
+loading 61056
+loading 61184
+loading 61312
+loading 61440
+loading 61568
+loading 61696
+loading 61824
+loading 61952
+loading 62080
+loading 62208
+loading 62336
+loading 62464
+loading 62592
+loading 62720
+loading 62848
+loading 62976
+loading 63104
+loading 63232
+loading 63360
+loading 63488
+loading 63616
+loading 63744
+loading 63872
+loading 64000
+loading 64128
+loading 64256
+loading 64384
+loading 64512
+loading 64640
+loading 64768
+loading 64896
+loading 65024
+loading 65152
+loading 65280
+loading 65408
+loading 65536
+loading 65664
+loading 65792
+loading 65920
+loading 66048
+loading 66176
+loading 66304
+loading 66432
+loading 66560
+loading 66688
+loading 66816
+loading 66944
+loading 67072
+loading 67200
+loading 67328
+loading 67456
+loading 67584
+loading 67712
+loading 67840
+loading 67968
+loading 68096
+loading 68224
+loading 68352
+loading 68480
+loading 68608
+loading 68736
+loading 68864
+loading 68992
+loading 69120
+loading 69248
+loading 69376
+loading 69504
+loading 69632
+loading 69760
+loading 69888
+loading 70016
+loading 70144
+loading 70272
+loading 70400
+loading 70528
+loading 70656
+loading 70784
+loading 70912
+loading 71040
+loading 71168
+loading 71296
+loading 71424
+loading 71552
+loading 71680
+loading 71808
+loading 71936
+loading 72064
+loading 72192
+loading 72320
+loading 72448
+loading 72576
+loading 72704
+loading 72832
+loading 72960
+loading 73088
+loading 73216
+loading 73344
+loading 73472
+loading 73600
+loading 73728
+loading 73856
+loading 73984
+loading 74112
+loading 74240
+loading 74368
+loading 74496
+loading 74624
+loading 74752
+loading 74880
+loading 75008
+loading 75136
+loading 75264
+loading 75392
+loading 75520
+loading 75648
+loading 75776
+loading 75904
+loading 76032
+loading 76160
+loading 76288
+loading 76416
+loading 76544
+loading 76672
+loading 76800
+loading 76928
+loading 77056
+loading 77184
+loading 77312
+loading 77440
+loading 77568
+loading 77696
+loading 77824
+loading 77952
+loading 78080
+loading 78208
+loading 78336
+loading 78464
+loading 78592
+loading 78720
+loading 78848
+loading 78976
+loading 79104
+loading 79232
+loading 79360
+loading 79488
+loading 79616
+loading 79744
+loading 79872
+loading 80000
+loading 80128
+loading 80256
+loading 80384
+loading 80512
+loading 80640
+loading 80768
+loading 80896
+loading 81024
+loading 81152
+loading 81280
+loading 81408
+loading 81536
+loading 81664
+loading 81792
+loading 81920
+loading 82048
+loading 82176
+loading 82304
+loading 82432
+loading 82560
+loading 82688
+loading 82816
+loading 82944
+loading 83072
+loading 83200
+loading 83328
+loading 83456
+loading 83584
+loading 83712
+loading 83840
+loading 83968
+loading 84096
+loading 84224
+loading 84352
+loading 84480
+loading 84608
+loading 84736
+loading 84864
+loading 84992
+loading 85120
+loading 85248
+loading 85376
+loading 85504
+loading 85632
+loading 85760
+loading 85888
+loading 86016
+loading 86144
+loading 86272
+loading 86400
+loading 86528
+loading 86656
+loading 86784
+loading 86912
+loading 87040
+loading 87168
+loading 87296
+loading 87424
+loading 87552
+loading 87680
+loading 87808
+loading 87936
+loading 88064
+loading 88192
+loading 88320
+loading 88448
+loading 88576
+loading 88704
+loading 88832
+loading 88960
+loading 89088
+loading 89216
+loading 89344
+loading 89472
+loading 89600
+loading 89728
+loading 89856
+loading 89984
+loading 90112
+loading 90240
+loading 90368
+loading 90496
+loading 90624
+loading 90752
+loading 90880
+loading 91008
+loading 91136
+loading 91264
+loading 91392
+loading 91520
+loading 91648
+loading 91776
+loading 91904
+loading 92032
+loading 92160
+loading 92288
+loading 92416
+loading 92544
+loading 92672
+loading 92800
+loading 92928
+loading 93056
+loading 93184
+loading 0
+loading 128
+loading 256
+loading 384
+loading 512
+loading 640
+loading 768
+loading 896
+loading 1024
+loading 1152
+loading 1280
+loading 1408
+loading 1536
+loading 1664
+loading 1792
+loading 1920
+loading 2048
+loading 2176
+loading 2304
+loading 2432
+loading 2560
+loading 2688
+loading 2816
+loading 2944
+loading 3072
+loading 3200
+loading 3328
+loading 3456
+loading 3584
+loading 3712
+loading 3840
+loading 3968
+loading 4096
+loading 4224
+loading 4352
+loading 4480
+loading 4608
+loading 4736
+loading 4864
+train samples: 5570389
+val samples: 295427
+epoch=0 iter=0/2720 loss=7.7724 policy=4.0853 distill=8.3724 type=7.2703 value=10.6834
+epoch=0 iter=50/2720 loss=3.5061 policy=1.7469 distill=4.8309 type=1.0026 value=0.2740
+epoch=0 iter=100/2720 loss=3.1036 policy=1.5635 distill=4.2107 type=0.9223 value=0.3665
+epoch=0 iter=150/2720 loss=2.7015 policy=1.3823 distill=3.5853 type=0.8656 value=0.4145
+epoch=0 iter=200/2720 loss=2.5337 policy=1.3182 distill=3.2906 type=0.8516 value=0.4218
+epoch=0 iter=250/2720 loss=2.4281 policy=1.2901 distill=3.0785 type=0.8180 value=0.3800
+epoch=0 iter=300/2720 loss=2.2623 policy=1.2133 distill=2.8192 type=0.8695 value=0.3366
+epoch=0 iter=350/2720 loss=2.1054 policy=1.1050 distill=2.6901 type=0.8362 value=0.2884
+epoch=0 iter=400/2720 loss=2.0793 policy=1.1041 distill=2.6218 type=0.8149 value=0.2907
+epoch=0 iter=450/2720 loss=2.0249 policy=1.0917 distill=2.5117 type=0.7637 value=0.2753
+epoch=0 iter=500/2720 loss=1.9760 policy=1.0668 distill=2.4430 type=0.7708 value=0.2638
+epoch=0 iter=550/2720 loss=1.8785 policy=1.0387 distill=2.2560 type=0.7145 value=0.2447
+epoch=0 iter=600/2720 loss=1.7770 policy=0.9928 distill=2.0861 type=0.7810 value=0.2394
+epoch=0 iter=650/2720 loss=1.8173 policy=1.0223 distill=2.1238 type=0.7456 value=0.2323
+epoch=0 iter=700/2720 loss=1.7718 policy=0.9913 distill=2.0875 type=0.7250 value=0.2154
+epoch=0 iter=750/2720 loss=1.7271 policy=0.9600 distill=2.0454 type=0.7433 value=0.2199
+epoch=0 iter=800/2720 loss=1.7080 policy=0.9664 distill=1.9719 type=0.7476 value=0.2214
+epoch=0 iter=850/2720 loss=1.6428 policy=0.9111 distill=1.9486 type=0.7101 value=0.2353
+epoch=0 iter=900/2720 loss=1.6151 policy=0.9122 distill=1.8670 type=0.7169 value=0.2147
+epoch=0 iter=950/2720 loss=1.5806 policy=0.8909 distill=1.8303 type=0.7152 value=0.2082
+epoch=0 iter=1000/2720 loss=1.5144 policy=0.8545 distill=1.7490 type=0.6957 value=0.2015
+epoch=0 iter=1050/2720 loss=1.5722 policy=0.8882 distill=1.8245 type=0.6486 value=0.2171
+epoch=0 iter=1100/2720 loss=1.5586 policy=0.8851 distill=1.7887 type=0.6885 value=0.2031
+epoch=0 iter=1150/2720 loss=1.5452 policy=0.8848 distill=1.7541 type=0.6753 value=0.2003
+epoch=0 iter=1200/2720 loss=1.5277 policy=0.8717 distill=1.7415 type=0.6749 value=0.1995
+epoch=0 iter=1250/2720 loss=1.5283 policy=0.8583 distill=1.7743 type=0.7212 value=0.1903
+epoch=0 iter=1300/2720 loss=1.4589 policy=0.8303 distill=1.6637 type=0.6820 value=0.1821
+epoch=0 iter=1350/2720 loss=1.4406 policy=0.8315 distill=1.6032 type=0.7054 value=0.1884
+epoch=0 iter=1400/2720 loss=1.5023 policy=0.8674 distill=1.6782 type=0.6994 value=0.1843
+epoch=0 iter=1450/2720 loss=1.4645 policy=0.8422 distill=1.6483 type=0.6596 value=0.1942
+epoch=0 iter=1500/2720 loss=1.4069 policy=0.7988 distill=1.6088 type=0.6542 value=0.1894
+epoch=0 iter=1550/2720 loss=1.4232 policy=0.8160 distill=1.6011 type=0.6836 value=0.1926
+epoch=0 iter=1600/2720 loss=1.4593 policy=0.8554 distill=1.5952 type=0.6699 value=0.1795
+epoch=0 iter=1650/2720 loss=1.3829 policy=0.7862 distill=1.5753 type=0.6646 value=0.1800
+epoch=0 iter=1700/2720 loss=1.4065 policy=0.8143 distill=1.5667 type=0.6395 value=0.1851
+epoch=0 iter=1750/2720 loss=1.3700 policy=0.7816 distill=1.5514 type=0.6661 value=0.1826
+epoch=0 iter=1800/2720 loss=1.3677 policy=0.7880 distill=1.5207 type=0.6901 value=0.1996
+epoch=0 iter=1850/2720 loss=1.3614 policy=0.7865 distill=1.5151 type=0.6463 value=0.1964
+epoch=0 iter=1900/2720 loss=1.3605 policy=0.7840 distill=1.5180 type=0.6555 value=0.1924
+epoch=0 iter=1950/2720 loss=1.3312 policy=0.7715 distill=1.4704 type=0.6484 value=0.2044
+epoch=0 iter=2000/2720 loss=1.2701 policy=0.7282 distill=1.4217 type=0.6502 value=0.1768
+epoch=0 iter=2050/2720 loss=1.3640 policy=0.7953 distill=1.4954 type=0.6605 value=0.1897
+epoch=0 iter=2100/2720 loss=1.3602 policy=0.7929 distill=1.4966 type=0.6387 value=0.1733
+epoch=0 iter=2150/2720 loss=1.3886 policy=0.8215 distill=1.4947 type=0.6385 value=0.1905
+epoch=0 iter=2200/2720 loss=1.3154 policy=0.7696 distill=1.4331 type=0.6420 value=0.1879
+epoch=0 iter=2250/2720 loss=1.3684 policy=0.8071 distill=1.4755 type=0.6516 value=0.1934
+epoch=0 iter=2300/2720 loss=1.3485 policy=0.7985 distill=1.4457 type=0.6447 value=0.1777
+epoch=0 iter=2350/2720 loss=1.2963 policy=0.7565 distill=1.4112 type=0.6652 value=0.1971
+epoch=0 iter=2400/2720 loss=1.3249 policy=0.7906 distill=1.4009 type=0.6425 value=0.1802
+epoch=0 iter=2450/2720 loss=1.3150 policy=0.7845 distill=1.3957 type=0.6050 value=0.1885
+epoch=0 iter=2500/2720 loss=1.3184 policy=0.7822 distill=1.4138 type=0.5933 value=0.1922
+epoch=0 iter=2550/2720 loss=1.3420 policy=0.8074 distill=1.4090 type=0.5942 value=0.1936
+epoch=0 iter=2600/2720 loss=1.2527 policy=0.7415 distill=1.3404 type=0.6102 value=0.1817
+epoch=0 iter=2650/2720 loss=1.3430 policy=0.7947 distill=1.4487 type=0.5867 value=0.2028
+epoch=0 iter=2700/2720 loss=1.2992 policy=0.7684 distill=1.3967 type=0.6078 value=0.1835
+epoch=0 avg_loss=1.6691 policy=0.9314 distill=1.9650 type=0.7068 value=0.2511 val_acc=0.7511 top3=0.9491 top5=0.9833 value_mse=0.1919 value_l1=0.3446 select_score=0.793711
+group_acc: {"lose": 0.7383241043008951, "win": 0.7888045489901564}
+type_acc: {"AnGang": 0.5826446280991735, "BuGang": 0.8827292110874201, "Chi": 0.6642857142857143, "Gang": 0.6590909090909091, "Hu": 1.0, "Pass": 0.9042885466742714, "Peng": 0.7486893474623536, "Play": 0.7262013240800321}
+honor_discard_label_acc: 0.8460510141364475 total: 65080
+saved: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_epoch_0.pkl
+saved best: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_best.pkl select_score: 0.7937111531607992
+epoch=1 iter=0/2720 loss=1.1939 policy=0.6760 distill=1.3663 type=0.5710 value=0.1827
+epoch=1 iter=50/2720 loss=1.1803 policy=0.6808 distill=1.3156 type=0.5525 value=0.1972
+epoch=1 iter=100/2720 loss=1.2441 policy=0.7303 distill=1.3516 type=0.5866 value=0.1857
+epoch=1 iter=150/2720 loss=1.2617 policy=0.7467 distill=1.3533 type=0.5884 value=0.2003
+epoch=1 iter=200/2720 loss=1.2417 policy=0.7366 distill=1.3278 type=0.5751 value=0.1949
+epoch=1 iter=250/2720 loss=1.2420 policy=0.7173 distill=1.3849 type=0.5668 value=0.2017
+epoch=1 iter=300/2720 loss=1.2022 policy=0.7107 distill=1.2880 type=0.5849 value=0.1876
+epoch=1 iter=350/2720 loss=1.1923 policy=0.7065 distill=1.2776 type=0.5541 value=0.1792
+epoch=1 iter=400/2720 loss=1.2522 policy=0.7515 distill=1.3321 type=0.4794 value=0.1888
+epoch=1 iter=450/2720 loss=1.1398 policy=0.6708 distill=1.2319 type=0.5328 value=0.1944
+epoch=1 iter=500/2720 loss=1.1296 policy=0.6621 distill=1.2304 type=0.5169 value=0.1935
+epoch=1 iter=550/2720 loss=1.1500 policy=0.6840 distill=1.2331 type=0.4753 value=0.1940
+epoch=1 iter=600/2720 loss=1.1829 policy=0.7009 distill=1.2698 type=0.5293 value=0.1916
+epoch=1 iter=650/2720 loss=1.1113 policy=0.6561 distill=1.1928 type=0.5279 value=0.2017
+epoch=1 iter=700/2720 loss=1.2104 policy=0.7343 distill=1.2630 type=0.4701 value=0.1923
+epoch=1 iter=750/2720 loss=1.1307 policy=0.6628 distill=1.2315 type=0.5200 value=0.1913
+epoch=1 iter=800/2720 loss=1.1896 policy=0.7102 distill=1.2748 type=0.4640 value=0.1774
+epoch=1 iter=850/2720 loss=1.2169 policy=0.7434 distill=1.2538 type=0.4843 value=0.1870
+epoch=1 iter=900/2720 loss=1.1820 policy=0.6921 distill=1.3040 type=0.4679 value=0.1803
+epoch=1 iter=950/2720 loss=1.1930 policy=0.7034 distill=1.3025 type=0.4687 value=0.1874
+epoch=1 iter=1000/2720 loss=1.1682 policy=0.7118 distill=1.2164 type=0.4166 value=0.1879
+epoch=1 iter=1050/2720 loss=1.1710 policy=0.6999 distill=1.2523 type=0.4576 value=0.1788
+epoch=1 iter=1100/2720 loss=1.1530 policy=0.6810 distill=1.2508 type=0.4775 value=0.1851
+epoch=1 iter=1150/2720 loss=1.1097 policy=0.6597 distill=1.1942 type=0.4433 value=0.1815
+epoch=1 iter=1200/2720 loss=1.0960 policy=0.6416 distill=1.2063 type=0.4436 value=0.1847
+epoch=1 iter=1250/2720 loss=1.1974 policy=0.7192 distill=1.2720 type=0.4554 value=0.1915
+epoch=1 iter=1300/2720 loss=1.1510 policy=0.6892 distill=1.2272 type=0.4457 value=0.1856
+epoch=1 iter=1350/2720 loss=1.1137 policy=0.6631 distill=1.2038 type=0.3971 value=0.1813
+epoch=1 iter=1400/2720 loss=1.1628 policy=0.7084 distill=1.2110 type=0.4151 value=0.1871
+epoch=1 iter=1450/2720 loss=1.1178 policy=0.6829 distill=1.1538 type=0.4211 value=0.1933
+epoch=1 iter=1500/2720 loss=1.1406 policy=0.6876 distill=1.2087 type=0.4020 value=0.1963
+epoch=1 iter=1550/2720 loss=1.0772 policy=0.6552 distill=1.1161 type=0.4283 value=0.1882
+epoch=1 iter=1600/2720 loss=1.1019 policy=0.6587 distill=1.1776 type=0.4237 value=0.1844
+epoch=1 iter=1650/2720 loss=1.1518 policy=0.6977 distill=1.2139 type=0.3993 value=0.1765
+epoch=1 iter=1700/2720 loss=1.1651 policy=0.7005 distill=1.2438 type=0.3967 value=0.1832
+epoch=1 iter=1750/2720 loss=1.1492 policy=0.7081 distill=1.1724 type=0.4214 value=0.1837
+epoch=1 iter=1800/2720 loss=1.0782 policy=0.6548 distill=1.1291 type=0.3780 value=0.1838
+epoch=1 iter=1850/2720 loss=1.1502 policy=0.6971 distill=1.2133 type=0.3880 value=0.1751
+epoch=1 iter=1900/2720 loss=1.0792 policy=0.6566 distill=1.1285 type=0.3607 value=0.1985
+epoch=1 iter=1950/2720 loss=1.1454 policy=0.7061 distill=1.1716 type=0.3940 value=0.1883
+epoch=1 iter=2000/2720 loss=1.1554 policy=0.7181 distill=1.1647 type=0.4043 value=0.1823
+epoch=1 iter=2050/2720 loss=1.0723 policy=0.6412 distill=1.1525 type=0.3654 value=0.1939
+epoch=1 iter=2100/2720 loss=1.1182 policy=0.6690 distill=1.2010 type=0.3896 value=0.1837
+epoch=1 iter=2150/2720 loss=1.0626 policy=0.6588 distill=1.0713 type=0.3832 value=0.1957
+epoch=1 iter=2200/2720 loss=1.0575 policy=0.6471 distill=1.0977 type=0.3474 value=0.1781
+epoch=1 iter=2250/2720 loss=1.0662 policy=0.6418 distill=1.1378 type=0.3453 value=0.1838
+epoch=1 iter=2300/2720 loss=1.1367 policy=0.7091 distill=1.1447 type=0.3563 value=0.1861
+epoch=1 iter=2350/2720 loss=1.0756 policy=0.6464 distill=1.1501 type=0.3499 value=0.1890
+epoch=1 iter=2400/2720 loss=1.0535 policy=0.6435 distill=1.0929 type=0.3632 value=0.1877
+epoch=1 iter=2450/2720 loss=1.1200 policy=0.6843 distill=1.1670 type=0.3512 value=0.2064
+epoch=1 iter=2500/2720 loss=0.9991 policy=0.5938 distill=1.0788 type=0.3682 value=0.1853
+epoch=1 iter=2550/2720 loss=1.0684 policy=0.6623 distill=1.0839 type=0.3567 value=0.1746
+epoch=1 iter=2600/2720 loss=1.1306 policy=0.7084 distill=1.1319 type=0.3381 value=0.1915
+epoch=1 iter=2650/2720 loss=1.0750 policy=0.6616 distill=1.1100 type=0.3275 value=0.1723
+epoch=1 iter=2700/2720 loss=1.0899 policy=0.6768 distill=1.1070 type=0.3298 value=0.1944
+epoch=1 avg_loss=1.1472 policy=0.6902 distill=1.2143 type=0.4372 value=0.1895 val_acc=0.7778 top3=0.9619 top5=0.9893 value_mse=0.1899 value_l1=0.3359 select_score=0.821423
+group_acc: {"lose": 0.7661425059200131, "win": 0.8123809779255962}
+type_acc: {"AnGang": 0.6735537190082644, "BuGang": 0.9040511727078892, "Chi": 0.6897372742200328, "Gang": 0.7357954545454546, "Hu": 1.0, "Pass": 0.9080366115320894, "Peng": 0.8331288343558282, "Play": 0.7548681318206748}
+honor_discard_label_acc: 0.8620928088506453 total: 65080
+saved: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_epoch_1.pkl
+saved best: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_best.pkl select_score: 0.8214231544678339
+epoch=2 iter=0/2720 loss=1.0030 policy=0.6111 distill=1.0409 type=0.3655 value=0.1877
+epoch=2 iter=50/2720 loss=0.9909 policy=0.5939 distill=1.0558 type=0.3528 value=0.2124
+epoch=2 iter=100/2720 loss=1.0647 policy=0.6534 distill=1.1066 type=0.3122 value=0.1731
+epoch=2 iter=150/2720 loss=1.0487 policy=0.6432 distill=1.0833 type=0.3411 value=0.1968
+epoch=2 iter=200/2720 loss=1.0810 policy=0.6604 distill=1.1214 type=0.3711 value=0.1957
+epoch=2 iter=250/2720 loss=0.9814 policy=0.5991 distill=1.0230 type=0.3155 value=0.1786
+epoch=2 iter=300/2720 loss=1.0614 policy=0.6684 distill=1.0539 type=0.3082 value=0.1875
+epoch=2 iter=350/2720 loss=1.0114 policy=0.6214 distill=1.0381 type=0.3425 value=0.2031
+epoch=2 iter=400/2720 loss=1.0088 policy=0.6192 distill=1.0350 type=0.3602 value=0.1903
+epoch=2 iter=450/2720 loss=1.0123 policy=0.6243 distill=1.0406 type=0.3081 value=0.1780
+epoch=2 iter=500/2720 loss=0.9983 policy=0.5995 distill=1.0689 type=0.3199 value=0.1833
+epoch=2 iter=550/2720 loss=0.9972 policy=0.6042 distill=1.0551 type=0.3003 value=0.1894
+epoch=2 iter=600/2720 loss=0.9943 policy=0.6126 distill=1.0213 type=0.3114 value=0.1846
+epoch=2 iter=650/2720 loss=0.9963 policy=0.6163 distill=1.0106 type=0.3489 value=0.1813
+epoch=2 iter=700/2720 loss=1.0708 policy=0.6759 distill=1.0592 type=0.3027 value=0.1997
+epoch=2 iter=750/2720 loss=1.0362 policy=0.6450 distill=1.0444 type=0.3350 value=0.1872
+epoch=2 iter=800/2720 loss=0.9974 policy=0.6049 distill=1.0487 type=0.3311 value=0.1865
+epoch=2 iter=850/2720 loss=1.0012 policy=0.6111 distill=1.0393 type=0.3406 value=0.1976
+epoch=2 iter=900/2720 loss=1.0479 policy=0.6481 distill=1.0715 type=0.3172 value=0.1919
+epoch=2 iter=950/2720 loss=0.9897 policy=0.6084 distill=1.0222 type=0.3005 value=0.1825
+epoch=2 iter=1000/2720 loss=0.9817 policy=0.6076 distill=1.0016 type=0.3075 value=0.1703
+epoch=2 iter=1050/2720 loss=1.0255 policy=0.6455 distill=1.0149 type=0.3240 value=0.1782
+epoch=2 iter=1100/2720 loss=1.0405 policy=0.6580 distill=1.0212 type=0.3239 value=0.1886
+epoch=2 iter=1150/2720 loss=1.0113 policy=0.6310 distill=1.0171 type=0.3077 value=0.1947
+epoch=2 iter=1200/2720 loss=1.0203 policy=0.6259 distill=1.0636 type=0.2766 value=0.1838
+epoch=2 iter=1250/2720 loss=0.9985 policy=0.6247 distill=1.0045 type=0.2801 value=0.1797
+epoch=2 iter=1300/2720 loss=0.9873 policy=0.6045 distill=1.0292 type=0.2833 value=0.1873
+epoch=2 iter=1350/2720 loss=0.9653 policy=0.5976 distill=0.9836 type=0.3070 value=0.1692
+epoch=2 iter=1400/2720 loss=0.9376 policy=0.5764 distill=0.9657 type=0.2933 value=0.1873
+epoch=2 iter=1450/2720 loss=0.9706 policy=0.6097 distill=0.9602 type=0.3191 value=0.1900
+epoch=2 iter=1500/2720 loss=0.9656 policy=0.6076 distill=0.9551 type=0.3031 value=0.1820
+epoch=2 iter=1550/2720 loss=0.9421 policy=0.5928 distill=0.9288 type=0.3042 value=0.1995
+epoch=2 iter=1600/2720 loss=0.9792 policy=0.6154 distill=0.9695 type=0.3187 value=0.1784
+epoch=2 iter=1650/2720 loss=1.0212 policy=0.6400 distill=1.0228 type=0.2890 value=0.1981
+epoch=2 iter=1700/2720 loss=0.9810 policy=0.6050 distill=1.0078 type=0.2964 value=0.1834
+epoch=2 iter=1750/2720 loss=0.9241 policy=0.5686 distill=0.9511 type=0.2766 value=0.2006
+epoch=2 iter=1800/2720 loss=1.0088 policy=0.6235 distill=1.0344 type=0.2888 value=0.1977
+epoch=2 iter=1850/2720 loss=0.9816 policy=0.6098 distill=1.0003 type=0.2634 value=0.1970
+epoch=2 iter=1900/2720 loss=0.9863 policy=0.6188 distill=0.9843 type=0.2845 value=0.1968
+epoch=2 iter=1950/2720 loss=0.9674 policy=0.5986 distill=0.9927 type=0.2697 value=0.1747
+epoch=2 iter=2000/2720 loss=0.9961 policy=0.6301 distill=0.9840 type=0.2683 value=0.1820
+epoch=2 iter=2050/2720 loss=0.9548 policy=0.6001 distill=0.9528 type=0.2619 value=0.1835
+epoch=2 iter=2100/2720 loss=0.9580 policy=0.5981 distill=0.9625 type=0.2970 value=0.1759
+epoch=2 iter=2150/2720 loss=0.9923 policy=0.6184 distill=1.0057 type=0.2702 value=0.1912
+epoch=2 iter=2200/2720 loss=0.9582 policy=0.6041 distill=0.9485 type=0.2686 value=0.1988
+epoch=2 iter=2250/2720 loss=0.9754 policy=0.6050 distill=0.9956 type=0.2698 value=0.1921
+epoch=2 iter=2300/2720 loss=0.9781 policy=0.6087 distill=0.9934 type=0.2665 value=0.1916
+epoch=2 iter=2350/2720 loss=0.9716 policy=0.6037 distill=0.9848 type=0.2909 value=0.1914
+epoch=2 iter=2400/2720 loss=0.9119 policy=0.5824 distill=0.8801 type=0.2623 value=0.1899
+epoch=2 iter=2450/2720 loss=0.9529 policy=0.5885 distill=0.9759 type=0.2826 value=0.1969
+epoch=2 iter=2500/2720 loss=0.9611 policy=0.6148 distill=0.9265 type=0.2755 value=0.1829
+epoch=2 iter=2550/2720 loss=0.9012 policy=0.5643 distill=0.8992 type=0.2779 value=0.1822
+epoch=2 iter=2600/2720 loss=0.9940 policy=0.6345 distill=0.9651 type=0.2649 value=0.1960
+epoch=2 iter=2650/2720 loss=0.9157 policy=0.5664 distill=0.9364 type=0.2641 value=0.1888
+epoch=2 iter=2700/2720 loss=0.9430 policy=0.5896 distill=0.9481 type=0.2709 value=0.1755
+epoch=2 avg_loss=0.9965 policy=0.6192 distill=1.0096 type=0.3053 value=0.1882 val_acc=0.7911 top3=0.9682 top5=0.9920 value_mse=0.1874 value_l1=0.3435 select_score=0.835261
+group_acc: {"lose": 0.7788020519693382, "win": 0.8274280503178393}
+type_acc: {"AnGang": 0.768595041322314, "BuGang": 0.9040511727078892, "Chi": 0.7447454844006568, "Gang": 0.7130681818181818, "Hu": 1.0, "Pass": 0.8981775713626117, "Peng": 0.8496374790853318, "Play": 0.7697586339432624}
+honor_discard_label_acc: 0.8809157959434543 total: 65080
+saved: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_epoch_2.pkl
+saved best: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_best.pkl select_score: 0.8352611562201067
+epoch=3 iter=0/2720 loss=0.9116 policy=0.5773 distill=0.8936 type=0.2714 value=0.1753
+epoch=3 iter=50/2720 loss=0.9133 policy=0.5765 distill=0.9021 type=0.2649 value=0.1723
+epoch=3 iter=100/2720 loss=0.9141 policy=0.5730 distill=0.9105 type=0.2688 value=0.2078
+epoch=3 iter=150/2720 loss=0.9444 policy=0.5947 distill=0.9368 type=0.2745 value=0.1779
+epoch=3 iter=200/2720 loss=0.9367 policy=0.5916 distill=0.9308 type=0.2287 value=0.1864
+epoch=3 iter=250/2720 loss=0.9579 policy=0.6129 distill=0.9257 type=0.2572 value=0.1862
+epoch=3 iter=300/2720 loss=0.9361 policy=0.5972 distill=0.9090 type=0.2509 value=0.1871
+epoch=3 iter=350/2720 loss=0.8959 policy=0.5592 distill=0.9001 type=0.2591 value=0.2027
+epoch=3 iter=400/2720 loss=0.9142 policy=0.5780 distill=0.8985 type=0.2624 value=0.1997
+epoch=3 iter=450/2720 loss=0.9144 policy=0.5757 distill=0.9069 type=0.2607 value=0.1879
+epoch=3 iter=500/2720 loss=0.9284 policy=0.5885 distill=0.9070 type=0.2796 value=0.1881
+epoch=3 iter=550/2720 loss=0.9236 policy=0.5953 distill=0.8767 type=0.2700 value=0.1757
+epoch=3 iter=600/2720 loss=0.9348 policy=0.5882 distill=0.9272 type=0.2773 value=0.1823
+epoch=3 iter=650/2720 loss=0.9200 policy=0.5873 distill=0.8823 type=0.3007 value=0.1939
+epoch=3 iter=700/2720 loss=0.8952 policy=0.5602 distill=0.8925 type=0.2877 value=0.1772
+epoch=3 iter=750/2720 loss=0.9255 policy=0.5853 distill=0.9101 type=0.2648 value=0.1930
+epoch=3 iter=800/2720 loss=0.8987 policy=0.5661 distill=0.8972 type=0.2170 value=0.1826
+epoch=3 iter=850/2720 loss=0.9051 policy=0.5708 distill=0.8991 type=0.2355 value=0.1818
+epoch=3 iter=900/2720 loss=0.8776 policy=0.5442 distill=0.8948 type=0.2498 value=0.1743
+epoch=3 iter=950/2720 loss=0.8771 policy=0.5509 distill=0.8667 type=0.2883 value=0.1844
+epoch=3 iter=1000/2720 loss=0.9395 policy=0.6002 distill=0.9134 type=0.2321 value=0.1895
+epoch=3 iter=1050/2720 loss=0.8983 policy=0.5735 distill=0.8686 type=0.2601 value=0.1749
+epoch=3 iter=1100/2720 loss=0.8891 policy=0.5702 distill=0.8442 type=0.2907 value=0.1986
+epoch=3 iter=1150/2720 loss=0.9421 policy=0.6086 distill=0.8896 type=0.2679 value=0.2003
+epoch=3 iter=1200/2720 loss=0.9372 policy=0.5968 distill=0.9129 type=0.2525 value=0.1934
+epoch=3 iter=1250/2720 loss=0.9282 policy=0.5889 distill=0.9118 type=0.2427 value=0.1878
+epoch=3 iter=1300/2720 loss=0.9056 policy=0.5701 distill=0.8971 type=0.2661 value=0.1842
+epoch=3 iter=1350/2720 loss=0.8780 policy=0.5546 distill=0.8654 type=0.2476 value=0.1907
+epoch=3 iter=1400/2720 loss=0.9265 policy=0.5952 distill=0.8861 type=0.2575 value=0.1909
+epoch=3 iter=1450/2720 loss=0.8894 policy=0.5616 distill=0.8746 type=0.2667 value=0.1912
+epoch=3 iter=1500/2720 loss=0.8741 policy=0.5522 distill=0.8607 type=0.2500 value=0.1887
+epoch=3 iter=1550/2720 loss=0.9061 policy=0.5913 distill=0.8371 type=0.2655 value=0.1941
+epoch=3 iter=1600/2720 loss=0.8866 policy=0.5602 distill=0.8676 type=0.2797 value=0.1972
+epoch=3 iter=1650/2720 loss=0.9334 policy=0.5917 distill=0.9114 type=0.2852 value=0.1850
+epoch=3 iter=1700/2720 loss=0.9493 policy=0.6127 distill=0.8985 type=0.2694 value=0.1977
+epoch=3 iter=1750/2720 loss=0.9041 policy=0.5776 distill=0.8710 type=0.2615 value=0.2002
+epoch=3 iter=1800/2720 loss=0.8910 policy=0.5681 distill=0.8680 type=0.2217 value=0.1948
+epoch=3 iter=1850/2720 loss=0.8713 policy=0.5493 distill=0.8685 type=0.2066 value=0.1889
+epoch=3 iter=1900/2720 loss=0.9225 policy=0.5985 distill=0.8703 type=0.2358 value=0.1760
+epoch=3 iter=1950/2720 loss=0.8793 policy=0.5599 distill=0.8528 type=0.2517 value=0.1954
+epoch=3 iter=2000/2720 loss=0.8579 policy=0.5391 distill=0.8520 type=0.2481 value=0.1888
+epoch=3 iter=2050/2720 loss=0.9278 policy=0.5907 distill=0.9029 type=0.2635 value=0.1764
+epoch=3 iter=2100/2720 loss=0.8694 policy=0.5487 distill=0.8580 type=0.2375 value=0.2064
+epoch=3 iter=2150/2720 loss=0.8919 policy=0.5606 distill=0.8878 type=0.2467 value=0.1929
+epoch=3 iter=2200/2720 loss=0.8418 policy=0.5322 distill=0.8290 type=0.2322 value=0.1855
+epoch=3 iter=2250/2720 loss=0.8893 policy=0.5703 distill=0.8578 type=0.2233 value=0.1791
+epoch=3 iter=2300/2720 loss=0.8710 policy=0.5564 distill=0.8427 type=0.2406 value=0.1743
+epoch=3 iter=2350/2720 loss=0.9118 policy=0.5789 distill=0.8916 type=0.2507 value=0.1924
+epoch=3 iter=2400/2720 loss=0.8291 policy=0.5228 distill=0.8210 type=0.2204 value=0.1912
+epoch=3 iter=2450/2720 loss=0.8310 policy=0.5175 distill=0.8385 type=0.2406 value=0.1865
+epoch=3 iter=2500/2720 loss=0.8722 policy=0.5632 distill=0.8263 type=0.2399 value=0.1804
+epoch=3 iter=2550/2720 loss=0.8870 policy=0.5702 distill=0.8453 type=0.2546 value=0.1884
+epoch=3 iter=2600/2720 loss=0.8984 policy=0.5693 distill=0.8829 type=0.2358 value=0.1988
+epoch=3 iter=2650/2720 loss=0.8607 policy=0.5502 distill=0.8308 type=0.2353 value=0.1881
+epoch=3 iter=2700/2720 loss=0.9127 policy=0.5957 distill=0.8542 type=0.2074 value=0.1848
+epoch=3 avg_loss=0.9049 policy=0.5745 distill=0.8844 type=0.2543 value=0.1871 val_acc=0.8022 top3=0.9721 top5=0.9931 value_mse=0.1868 value_l1=0.3352 select_score=0.846816
+group_acc: {"lose": 0.790139499504213, "win": 0.8380495131829521}
+type_acc: {"AnGang": 0.7396694214876033, "BuGang": 0.908315565031983, "Chi": 0.7506568144499179, "Gang": 0.7897727272727273, "Hu": 1.0, "Pass": 0.9042342268937233, "Peng": 0.8669269380925823, "Play": 0.7819543352176785}
+honor_discard_label_acc: 0.8748924400737553 total: 65080
+saved: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_epoch_3.pkl
+saved best: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_best.pkl select_score: 0.8468161461407826
+epoch=4 iter=0/2720 loss=0.9544 policy=0.6227 distill=0.8913 type=0.2297 value=0.1991
+epoch=4 iter=50/2720 loss=0.8434 policy=0.5334 distill=0.8293 type=0.2357 value=0.1860
+epoch=4 iter=100/2720 loss=0.8439 policy=0.5467 distill=0.7958 type=0.2255 value=0.1712
+epoch=4 iter=150/2720 loss=0.8449 policy=0.5485 distill=0.7912 type=0.2300 value=0.1889
+epoch=4 iter=200/2720 loss=0.8265 policy=0.5173 distill=0.8269 type=0.2412 value=0.1783
+epoch=4 iter=250/2720 loss=0.9068 policy=0.5912 distill=0.8418 type=0.2458 value=0.2085
+epoch=4 iter=300/2720 loss=0.8587 policy=0.5508 distill=0.8274 type=0.2108 value=0.1872
+epoch=4 iter=350/2720 loss=0.9320 policy=0.6082 distill=0.8714 type=0.2241 value=0.1812
+epoch=4 iter=400/2720 loss=0.8392 policy=0.5351 distill=0.8172 type=0.2066 value=0.1910
+epoch=4 iter=450/2720 loss=0.9229 policy=0.6092 distill=0.8381 type=0.2464 value=0.1845
+epoch=4 iter=500/2720 loss=0.8736 policy=0.5730 distill=0.8024 type=0.2370 value=0.1854
+epoch=4 iter=550/2720 loss=0.8903 policy=0.5786 distill=0.8330 type=0.2392 value=0.1939
+epoch=4 iter=600/2720 loss=0.8302 policy=0.5292 distill=0.8036 type=0.2310 value=0.1942
+epoch=4 iter=650/2720 loss=0.8436 policy=0.5448 distill=0.7961 type=0.2400 value=0.1928
+epoch=4 iter=700/2720 loss=0.8525 policy=0.5441 distill=0.8270 type=0.2257 value=0.1782
+epoch=4 iter=750/2720 loss=0.8451 policy=0.5414 distill=0.8077 type=0.2576 value=0.1841
+epoch=4 iter=800/2720 loss=0.8636 policy=0.5712 distill=0.7777 type=0.2373 value=0.2001
+epoch=4 iter=850/2720 loss=0.8829 policy=0.5686 distill=0.8391 type=0.2586 value=0.1715
+epoch=4 iter=900/2720 loss=0.8171 policy=0.5222 distill=0.7891 type=0.2246 value=0.1745
+epoch=4 iter=950/2720 loss=0.8867 policy=0.5639 distill=0.8720 type=0.2077 value=0.1704
+epoch=4 iter=1000/2720 loss=0.8571 policy=0.5586 distill=0.7954 type=0.2457 value=0.1804
+epoch=4 iter=1050/2720 loss=0.8556 policy=0.5501 distill=0.8190 type=0.2231 value=0.1830
+epoch=4 iter=1100/2720 loss=0.8279 policy=0.5307 distill=0.7978 type=0.2062 value=0.1901
+epoch=4 iter=1150/2720 loss=0.8491 policy=0.5499 distill=0.8014 type=0.2188 value=0.1873
+epoch=4 iter=1200/2720 loss=0.8382 policy=0.5440 distill=0.7883 type=0.2126 value=0.1843
+epoch=4 iter=1250/2720 loss=0.8001 policy=0.5046 distill=0.7864 type=0.2390 value=0.1974
+epoch=4 iter=1300/2720 loss=0.8528 policy=0.5525 distill=0.8056 type=0.2161 value=0.1770
+epoch=4 iter=1350/2720 loss=0.8566 policy=0.5478 distill=0.8310 type=0.2025 value=0.1944
+epoch=4 iter=1400/2720 loss=0.7773 policy=0.4903 distill=0.7657 type=0.2261 value=0.1811
+epoch=4 iter=1450/2720 loss=0.8631 policy=0.5646 distill=0.7971 type=0.2223 value=0.2085
+epoch=4 iter=1500/2720 loss=0.8245 policy=0.5295 distill=0.7850 type=0.2376 value=0.1981
+epoch=4 iter=1550/2720 loss=0.8425 policy=0.5485 distill=0.7878 type=0.2097 value=0.1908
+epoch=4 iter=1600/2720 loss=0.8262 policy=0.5389 distill=0.7666 type=0.2223 value=0.1878
+epoch=4 iter=1650/2720 loss=0.8203 policy=0.5216 distill=0.7978 type=0.2363 value=0.1783
+epoch=4 iter=1700/2720 loss=0.8058 policy=0.5150 distill=0.7808 type=0.1971 value=0.1905
+epoch=4 iter=1750/2720 loss=0.7973 policy=0.5120 distill=0.7565 type=0.2499 value=0.1864
+epoch=4 iter=1800/2720 loss=0.8816 policy=0.5755 distill=0.8219 type=0.2136 value=0.1879
+epoch=4 iter=1850/2720 loss=0.8869 policy=0.5744 distill=0.8394 type=0.2192 value=0.1867
+epoch=4 iter=1900/2720 loss=0.8580 policy=0.5556 distill=0.8077 type=0.2391 value=0.1780
+epoch=4 iter=1950/2720 loss=0.8562 policy=0.5510 distill=0.8202 type=0.2165 value=0.1726
+epoch=4 iter=2000/2720 loss=0.8395 policy=0.5398 distill=0.8020 type=0.2325 value=0.1700
+epoch=4 iter=2050/2720 loss=0.8389 policy=0.5330 distill=0.8237 type=0.2048 value=0.1763
+epoch=4 iter=2100/2720 loss=0.8494 policy=0.5504 distill=0.8005 type=0.2190 value=0.1904
+epoch=4 iter=2150/2720 loss=0.8399 policy=0.5426 distill=0.7926 type=0.2402 value=0.1861
+epoch=4 iter=2200/2720 loss=0.7953 policy=0.5150 distill=0.7504 type=0.1985 value=0.1905
+epoch=4 iter=2250/2720 loss=0.8147 policy=0.5243 distill=0.7772 type=0.2107 value=0.1892
+epoch=4 iter=2300/2720 loss=0.8120 policy=0.5255 distill=0.7664 type=0.2135 value=0.1810
+epoch=4 iter=2350/2720 loss=0.8402 policy=0.5410 distill=0.8022 type=0.2160 value=0.1852
+epoch=4 iter=2400/2720 loss=0.8104 policy=0.5219 distill=0.7739 type=0.2014 value=0.1866
+epoch=4 iter=2450/2720 loss=0.7879 policy=0.5167 distill=0.7248 type=0.2021 value=0.1811
+epoch=4 iter=2500/2720 loss=0.8043 policy=0.5308 distill=0.7264 type=0.2347 value=0.1742
+epoch=4 iter=2550/2720 loss=0.8629 policy=0.5642 distill=0.8012 type=0.2161 value=0.1773
+epoch=4 iter=2600/2720 loss=0.8817 policy=0.5812 distill=0.8047 type=0.2112 value=0.2082
+epoch=4 iter=2650/2720 loss=0.8378 policy=0.5408 distill=0.7969 type=0.2132 value=0.1770
+epoch=4 iter=2700/2720 loss=0.8252 policy=0.5376 distill=0.7639 type=0.2336 value=0.2052
+epoch=4 avg_loss=0.8454 policy=0.5447 distill=0.8046 type=0.2244 value=0.1865 val_acc=0.8082 top3=0.9744 top5=0.9942 value_mse=0.1866 value_l1=0.3409 select_score=0.852958
+group_acc: {"lose": 0.7965462440177306, "win": 0.8426762867794974}
+type_acc: {"AnGang": 0.78099173553719, "BuGang": 0.906183368869936, "Chi": 0.7116584564860426, "Gang": 0.7897727272727273, "Hu": 1.0, "Pass": 0.9256633803199436, "Peng": 0.8653653095370887, "Play": 0.7882206109078974}
+honor_discard_label_acc: 0.8832974800245851 total: 65080
+saved: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_epoch_4.pkl
+saved best: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_best.pkl select_score: 0.852957989016685
+epoch=5 iter=0/2720 loss=0.7891 policy=0.5048 distill=0.7577 type=0.2270 value=0.1838
+epoch=5 iter=50/2720 loss=0.8343 policy=0.5470 distill=0.7691 type=0.2130 value=0.1750
+epoch=5 iter=100/2720 loss=0.8333 policy=0.5363 distill=0.7946 type=0.2178 value=0.1940
+epoch=5 iter=150/2720 loss=0.8358 policy=0.5428 distill=0.7844 type=0.2163 value=0.1816
+epoch=5 iter=200/2720 loss=0.7965 policy=0.5178 distill=0.7454 type=0.2040 value=0.1874
+epoch=5 iter=250/2720 loss=0.7896 policy=0.5035 distill=0.7685 type=0.1962 value=0.1797
+epoch=5 iter=300/2720 loss=0.7646 policy=0.4900 distill=0.7355 type=0.1980 value=0.1765
+epoch=5 iter=350/2720 loss=0.7950 policy=0.5121 distill=0.7571 type=0.2023 value=0.1906
+epoch=5 iter=400/2720 loss=0.7972 policy=0.5146 distill=0.7550 type=0.2139 value=0.1824
+epoch=5 iter=450/2720 loss=0.8217 policy=0.5401 distill=0.7570 type=0.1844 value=0.1846
+epoch=5 iter=500/2720 loss=0.8418 policy=0.5438 distill=0.8022 type=0.1921 value=0.1879
+epoch=5 iter=550/2720 loss=0.8098 policy=0.5230 distill=0.7710 type=0.1884 value=0.1887
+epoch=5 iter=600/2720 loss=0.7910 policy=0.5168 distill=0.7335 type=0.1973 value=0.1895
+epoch=5 iter=650/2720 loss=0.7580 policy=0.4803 distill=0.7374 type=0.2340 value=0.1828
+epoch=5 iter=700/2720 loss=0.8039 policy=0.5220 distill=0.7549 type=0.2026 value=0.1841
+epoch=5 iter=750/2720 loss=0.7966 policy=0.5136 distill=0.7572 type=0.2109 value=0.1756
+epoch=5 iter=800/2720 loss=0.8136 policy=0.5236 distill=0.7755 type=0.2095 value=0.2000
+epoch=5 iter=850/2720 loss=0.7975 policy=0.5208 distill=0.7420 type=0.1905 value=0.1856
+epoch=5 iter=900/2720 loss=0.8407 policy=0.5429 distill=0.7934 type=0.2340 value=0.2014
+epoch=5 iter=950/2720 loss=0.8276 policy=0.5494 distill=0.7420 type=0.2118 value=0.1929
+epoch=5 iter=1000/2720 loss=0.8339 policy=0.5442 distill=0.7734 type=0.2204 value=0.1919
+epoch=5 iter=1050/2720 loss=0.8256 policy=0.5279 distill=0.8002 type=0.1947 value=0.1953
+epoch=5 iter=1100/2720 loss=0.8162 policy=0.5321 distill=0.7598 type=0.2082 value=0.1908
+epoch=5 iter=1150/2720 loss=0.7801 policy=0.4962 distill=0.7590 type=0.2143 value=0.1783
+epoch=5 iter=1200/2720 loss=0.8236 policy=0.5389 distill=0.7617 type=0.2133 value=0.1781
+epoch=5 iter=1250/2720 loss=0.8312 policy=0.5455 distill=0.7690 type=0.1878 value=0.1774
+epoch=5 iter=1300/2720 loss=0.8141 policy=0.5226 distill=0.7834 type=0.1926 value=0.1921
+epoch=5 iter=1350/2720 loss=0.7933 policy=0.5090 distill=0.7575 type=0.2298 value=0.1802
+epoch=5 iter=1400/2720 loss=0.8120 policy=0.5341 distill=0.7413 type=0.2170 value=0.1805
+epoch=5 iter=1450/2720 loss=0.7741 policy=0.4983 distill=0.7353 type=0.2143 value=0.1868
+epoch=5 iter=1500/2720 loss=0.8341 policy=0.5376 distill=0.7921 type=0.2218 value=0.1993
+epoch=5 iter=1550/2720 loss=0.7898 policy=0.5245 distill=0.7076 type=0.1949 value=0.1989
+epoch=5 iter=1600/2720 loss=0.7548 policy=0.4868 distill=0.7153 type=0.2073 value=0.1750
+epoch=5 iter=1650/2720 loss=0.8338 policy=0.5502 distill=0.7609 type=0.2026 value=0.1724
+epoch=5 iter=1700/2720 loss=0.8229 policy=0.5562 distill=0.7122 type=0.1960 value=0.1901
+epoch=5 iter=1750/2720 loss=0.7958 policy=0.5235 distill=0.7277 type=0.2011 value=0.1827
+epoch=5 iter=1800/2720 loss=0.7824 policy=0.5118 distill=0.7221 type=0.2029 value=0.1914
+epoch=5 iter=1850/2720 loss=0.7944 policy=0.5158 distill=0.7456 type=0.2034 value=0.1788
+epoch=5 iter=1900/2720 loss=0.7876 policy=0.5069 distill=0.7540 type=0.1816 value=0.1960
+epoch=5 iter=1950/2720 loss=0.8425 policy=0.5567 distill=0.7679 type=0.1868 value=0.1920
+epoch=5 iter=2000/2720 loss=0.8078 policy=0.5335 distill=0.7331 type=0.1976 value=0.1966
+epoch=5 iter=2050/2720 loss=0.8426 policy=0.5595 distill=0.7592 type=0.2020 value=0.1734
+epoch=5 iter=2100/2720 loss=0.7478 policy=0.4778 distill=0.7212 type=0.1983 value=0.1897
+epoch=5 iter=2150/2720 loss=0.8302 policy=0.5438 distill=0.7695 type=0.1884 value=0.1923
+epoch=5 iter=2200/2720 loss=0.7801 policy=0.4980 distill=0.7539 type=0.2159 value=0.1777
+epoch=5 iter=2250/2720 loss=0.8508 policy=0.5710 distill=0.7490 type=0.1983 value=0.1900
+epoch=5 iter=2300/2720 loss=0.7787 policy=0.5015 distill=0.7353 type=0.2402 value=0.1824
+epoch=5 iter=2350/2720 loss=0.8371 policy=0.5520 distill=0.7638 type=0.2037 value=0.1854
+epoch=5 iter=2400/2720 loss=0.7985 policy=0.5236 distill=0.7360 type=0.1964 value=0.1833
+epoch=5 iter=2450/2720 loss=0.8502 policy=0.5649 distill=0.7615 type=0.2178 value=0.1884
+epoch=5 iter=2500/2720 loss=0.7540 policy=0.4794 distill=0.7368 type=0.1849 value=0.1879
+epoch=5 iter=2550/2720 loss=0.8041 policy=0.5326 distill=0.7251 type=0.2056 value=0.1782
+epoch=5 iter=2600/2720 loss=0.7778 policy=0.5110 distill=0.7107 type=0.2109 value=0.1805
+epoch=5 iter=2650/2720 loss=0.7556 policy=0.4846 distill=0.7163 type=0.2385 value=0.2000
+epoch=5 iter=2700/2720 loss=0.8127 policy=0.5379 distill=0.7353 type=0.1927 value=0.1973
+epoch=5 avg_loss=0.8011 policy=0.5219 distill=0.7465 type=0.2056 value=0.1860 val_acc=0.8132 top3=0.9764 top5=0.9946 value_mse=0.1870 value_l1=0.3367 select_score=0.858175
+group_acc: {"lose": 0.8018663322180014, "win": 0.8469275541131347}
+type_acc: {"AnGang": 0.8016528925619835, "BuGang": 0.8912579957356077, "Chi": 0.7881773399014779, "Gang": 0.7727272727272727, "Hu": 1.0, "Pass": 0.8981504114723377, "Peng": 0.8751812604573341, "Play": 0.7946682674244354}
+honor_discard_label_acc: 0.8807006760909649 total: 65080
+saved: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_epoch_5.pkl
+saved best: model/checkpoint/v7_small1d_distill_refine2_095/mahjong_v7_small_best.pkl select_score: 0.8581749738374267
+epoch=6 iter=0/2720 loss=0.7710 policy=0.4948 distill=0.7379 type=0.1974 value=0.2031
+epoch=6 iter=50/2720 loss=0.7646 policy=0.5007 distill=0.7049 type=0.1943 value=0.1835

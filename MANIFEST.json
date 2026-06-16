@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-06-16T15:02:34",
+  "purpose": "V7 related source code and small metadata only; no model weights included.",
+  "excluded": [
+    "*.pkl",
+    "*with_model*.zip",
+    "datasets",
+    "__pycache__"
+  ],
+  "main_v7_model_weight_expected_separately": "model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_best.pkl",
+  "botzone_storage_model_path": "data/mahjong_v7_calibrated_best.pkl",
+  "source_files": [
+    "agent.py",
+    "feature_v2.py",
+    "dataset_v2.py",
+    "model_v6.py",
+    "model_v7_small1d.py",
+    "train_distill_v6.py",
+    "eval_v7_diagnostics.py",
+    "selfplay_arena_v2.py",
+    "selfplay_fourway_v2.py",
+    "__main_v7_friendstyle.py"
+  ]
+}

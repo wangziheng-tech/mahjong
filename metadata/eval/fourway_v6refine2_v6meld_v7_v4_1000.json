@@ -1,0 +1,242 @@
+{
+  "config": {
+    "device": "cuda",
+    "games": 1000,
+    "players": [
+      {
+        "ckpt": "model/checkpoint/v6_refine2_095/mahjong_v6_best.pkl",
+        "module": "model_v6",
+        "name": "v6_refine2"
+      },
+      {
+        "ckpt": "model/checkpoint/v6_meld_ft_095/mahjong_v6_meld_ft_best.pkl",
+        "module": "model_v6",
+        "name": "v6_meld_ft"
+      },
+      {
+        "ckpt": "model/checkpoint/v7_calibrated_095/mahjong_v7_calibrated_best.pkl",
+        "module": "model_v6",
+        "name": "v7_calibrated"
+      },
+      {
+        "ckpt": "model/checkpoint/v4_se_aug_095_long/best.pkl",
+        "module": "model_v4",
+        "name": "v4_long"
+      }
+    ],
+    "rotation_count": 24,
+    "seed": 14000
+  },
+  "games": null,
+  "global": {
+    "avg_turns": 43.196,
+    "draw_rate": 0.017,
+    "draws": 17,
+    "games": 1000,
+    "reasons": {
+      "huang": 17,
+      "rob_kong": 3,
+      "ron": 690,
+      "tsumo": 290
+    },
+    "wins": 983
+  },
+  "players": {
+    "v4_long": {
+      "action_counts": {
+        "AnGang": 12,
+        "BuGang": 22,
+        "Chi": 627,
+        "Gang": 21,
+        "Hu": 265,
+        "Pass": 34077,
+        "Peng": 464,
+        "Play": 11765
+      },
+      "avg_final_shanten": 0.336,
+      "avg_non_win_final_shanten": 0.8152173913043478,
+      "avg_turns": 43.196,
+      "best_shanten_rate": 0.264,
+      "calls": 1112,
+      "calls_per_game": 1.112,
+      "deal_in": 171,
+      "deal_in_rate": 0.171,
+      "draw_rate": 0.017,
+      "draws": 17,
+      "expected_non_draw_share": 0.25,
+      "games": 1000,
+      "non_draw_win_share": 0.2685656154628688,
+      "rob_kong_wins": 0,
+      "ron_wins": 189,
+      "seat_games": {
+        "0": 246,
+        "1": 250,
+        "2": 252,
+        "3": 252
+      },
+      "seat_win_rates": {
+        "0": 0.2886178861788618,
+        "1": 0.288,
+        "2": 0.2698412698412698,
+        "3": 0.21031746031746032
+      },
+      "seat_wins": {
+        "0": 71,
+        "1": 72,
+        "2": 68,
+        "3": 53
+      },
+      "tied_best_shanten_rate": 0.275,
+      "tsumo_wins": 75,
+      "win_rate": 0.264,
+      "wins": 264
+    },
+    "v6_meld_ft": {
+      "action_counts": {
+        "AnGang": 11,
+        "BuGang": 34,
+        "Chi": 685,
+        "Gang": 17,
+        "Hu": 256,
+        "Pass": 33937,
+        "Peng": 533,
+        "Play": 11782
+      },
+      "avg_final_shanten": 0.332,
+      "avg_non_win_final_shanten": 0.7783711615487316,
+      "avg_turns": 43.196,
+      "best_shanten_rate": 0.252,
+      "calls": 1235,
+      "calls_per_game": 1.235,
+      "deal_in": 174,
+      "deal_in_rate": 0.174,
+      "draw_rate": 0.017,
+      "draws": 17,
+      "expected_non_draw_share": 0.25,
+      "games": 1000,
+      "non_draw_win_share": 0.25534079348931843,
+      "rob_kong_wins": 0,
+      "ron_wins": 171,
+      "seat_games": {
+        "0": 252,
+        "1": 250,
+        "2": 249,
+        "3": 249
+      },
+      "seat_win_rates": {
+        "0": 0.2619047619047619,
+        "1": 0.276,
+        "2": 0.28112449799196787,
+        "3": 0.18473895582329317
+      },
+      "seat_wins": {
+        "0": 66,
+        "1": 69,
+        "2": 70,
+        "3": 46
+      },
+      "tied_best_shanten_rate": 0.263,
+      "tsumo_wins": 80,
+      "win_rate": 0.251,
+      "wins": 251
+    },
+    "v6_refine2": {
+      "action_counts": {
+        "AnGang": 15,
+        "BuGang": 24,
+        "Chi": 598,
+        "Gang": 9,
+        "Hu": 238,
+        "Pass": 34175,
+        "Peng": 431,
+        "Play": 11757
+      },
+      "avg_final_shanten": 0.413,
+      "avg_non_win_final_shanten": 0.8446475195822454,
+      "avg_turns": 43.196,
+      "best_shanten_rate": 0.234,
+      "calls": 1038,
+      "calls_per_game": 1.038,
+      "deal_in": 176,
+      "deal_in_rate": 0.176,
+      "draw_rate": 0.017,
+      "draws": 17,
+      "expected_non_draw_share": 0.25,
+      "games": 1000,
+      "non_draw_win_share": 0.2380467955239064,
+      "rob_kong_wins": 1,
+      "ron_wins": 166,
+      "seat_games": {
+        "0": 252,
+        "1": 250,
+        "2": 249,
+        "3": 249
+      },
+      "seat_win_rates": {
+        "0": 0.2777777777777778,
+        "1": 0.24,
+        "2": 0.26506024096385544,
+        "3": 0.15261044176706828
+      },
+      "seat_wins": {
+        "0": 70,
+        "1": 60,
+        "2": 66,
+        "3": 38
+      },
+      "tied_best_shanten_rate": 0.241,
+      "tsumo_wins": 67,
+      "win_rate": 0.234,
+      "wins": 234
+    },
+    "v7_calibrated": {
+      "action_counts": {
+        "AnGang": 13,
+        "BuGang": 19,
+        "Chi": 669,
+        "Gang": 32,
+        "Hu": 240,
+        "Pass": 34072,
+        "Peng": 438,
+        "Play": 11763
+      },
+      "avg_final_shanten": 0.371,
+      "avg_non_win_final_shanten": 0.7898172323759791,
+      "avg_turns": 43.196,
+      "best_shanten_rate": 0.235,
+      "calls": 1139,
+      "calls_per_game": 1.139,
+      "deal_in": 172,
+      "deal_in_rate": 0.172,
+      "draw_rate": 0.017,
+      "draws": 17,
+      "expected_non_draw_share": 0.25,
+      "games": 1000,
+      "non_draw_win_share": 0.2380467955239064,
+      "rob_kong_wins": 2,
+      "ron_wins": 164,
+      "seat_games": {
+        "0": 250,
+        "1": 250,
+        "2": 250,
+        "3": 250
+      },
+      "seat_win_rates": {
+        "0": 0.264,
+        "1": 0.236,
+        "2": 0.22,
+        "3": 0.216
+      },
+      "seat_wins": {
+        "0": 66,
+        "1": 59,
+        "2": 55,
+        "3": 54
+      },
+      "tied_best_shanten_rate": 0.243,
+      "tsumo_wins": 68,
+      "win_rate": 0.234,
+      "wins": 234
+    }
+  }
+}
