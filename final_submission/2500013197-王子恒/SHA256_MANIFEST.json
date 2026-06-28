@@ -1,0 +1,186 @@
+{
+  "01_botzone_agent_without_model/botzone_final_source/__main__.py": {
+    "bytes": 9628,
+    "sha256": "866A005D161B84A9CDB3E99108EDE3A263AF61B81D25CD93EA131B1B37430701"
+  },
+  "01_botzone_agent_without_model/botzone_final_source/agent.py": {
+    "bytes": 738,
+    "sha256": "FC01137F7436600074421ADF06F4865EEB3663580DA1E2515EAF3591588D8417"
+  },
+  "01_botzone_agent_without_model/botzone_final_source/feature_v2.py": {
+    "bytes": 14904,
+    "sha256": "6F5A34E21E5B8F4F0FBE69AC5210D0BDB27EE94248153A039F604775CE17FA29"
+  },
+  "01_botzone_agent_without_model/botzone_final_source/model_v6.py": {
+    "bytes": 3191,
+    "sha256": "1582B523FEA84F6F9E50528642AD45233BC83DBF5567076D291DF14729C52F50"
+  },
+  "01_botzone_agent_without_model/mahjong_v7_call150_friendstyle_storage_bot.zip": {
+    "bytes": 7012,
+    "sha256": "ED9EE50FB83E1275391A7A4F50E713AA7E74A41A81CCA6A8E9DE92D899D11305"
+  },
+  "01_botzone_agent_without_model/README_botzone_without_model.md": {
+    "bytes": 543,
+    "sha256": "E24D28D99429BBAC661586901DE2838636784C993931A9BA4FC22B7878D552BC"
+  },
+  "02_research_report/2500013197-王子恒-研究性报告.pdf": {
+    "bytes": 187281,
+    "sha256": "2DE1EAE34FF2D5DECA4CC64B24E2D8311A53D3026AFC551F0C0FA71808CEBA8F"
+  },
+  "03_full_code_and_model/README_full_code_and_model.md": {
+    "bytes": 542,
+    "sha256": "485DB01F52526C8599AB0C0075401B220E15030BE24436B292DF50F8B1155B61"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/botzone/mahjong_v7_call150_friendstyle_storage_bot.zip": {
+    "bytes": 7012,
+    "sha256": "ED9EE50FB83E1275391A7A4F50E713AA7E74A41A81CCA6A8E9DE92D899D11305"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/botzone_final/__main__.py": {
+    "bytes": 9628,
+    "sha256": "866A005D161B84A9CDB3E99108EDE3A263AF61B81D25CD93EA131B1B37430701"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/botzone_final/agent.py": {
+    "bytes": 738,
+    "sha256": "FC01137F7436600074421ADF06F4865EEB3663580DA1E2515EAF3591588D8417"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/botzone_final/feature_v2.py": {
+    "bytes": 14904,
+    "sha256": "6F5A34E21E5B8F4F0FBE69AC5210D0BDB27EE94248153A039F604775CE17FA29"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/botzone_final/model_v6.py": {
+    "bytes": 3191,
+    "sha256": "1582B523FEA84F6F9E50528642AD45233BC83DBF5567076D291DF14729C52F50"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/configs/best_metrics.json": {
+    "bytes": 685,
+    "sha256": "1A074166FF678EFD6E9ED5D54D74839F923272155D4B395606A84133B7CF6B1A"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/configs/run_config.json": {
+    "bytes": 713,
+    "sha256": "0F7F17A048D930D8C96E0A701C79015826357165EFBA06CD9457EB433E0F0E78"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/configs/v7_training_summary.json": {
+    "bytes": 2780,
+    "sha256": "81BD1CA461DAE85B332F4205B774D37CF97B0BFBCC604A194F6D388BE9CBC27A"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/eval_results/v7_call150_vs_base_2v2_r40_p24_npu.json": {
+    "bytes": 72758,
+    "sha256": "C04E26907361B6E1439114300564C18A460114FA5E4D2C22F862BAEE537FF914"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/eval_results/v8a_vs_v7base_2v2_r20_p24_npu.json": {
+    "bytes": 36033,
+    "sha256": "E605426563385761553440DEDD2BED7E93A3523FA7206A449FDC0521DC6BCE5B"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/eval_results/v8a_vs_v7call150_2v2_r20_p24_npu.json": {
+    "bytes": 38746,
+    "sha256": "D923DBF66416B768DF9110C3120FAA54E8DC98D506C65DA026CC7A72BF9042DA"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/models/mahjong_v7_calibrated_best.pkl": {
+    "bytes": 39729330,
+    "sha256": "E2A62BD155EA298C14E7ED758CFC5824629DAD6E6A5C07E2756B66226B5098E6"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/models/mahjong_v7_calibrated_best.pt": {
+    "bytes": 39729330,
+    "sha256": "E2A62BD155EA298C14E7ED758CFC5824629DAD6E6A5C07E2756B66226B5098E6"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/README.md": {
+    "bytes": 5393,
+    "sha256": "1F9B6563DE8E0BB6B5EC312768C638202D378482B78DF6879AF23083126DE6B3"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/requirements.txt": {
+    "bytes": 32,
+    "sha256": "120F682B1DD42D498248726F6F7ADAB9ADAAA65EC9ED664726D3CFDB257135A4"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/__main_v7_friendstyle.py": {
+    "bytes": 8631,
+    "sha256": "29F287C407A2D4B604235EEE287E5A9E351D99FA88B545FC92D6CEA707C01C99"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/agent.py": {
+    "bytes": 738,
+    "sha256": "FC01137F7436600074421ADF06F4865EEB3663580DA1E2515EAF3591588D8417"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/dataset_v2.py": {
+    "bytes": 3531,
+    "sha256": "AA203098DADC7FB2EA39F4D3D284EC622729AEC3F8294575DDF8344486E5519B"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/eval_v7_diagnostics.py": {
+    "bytes": 19072,
+    "sha256": "19EF390A8F270D1224BF170DB2432B9604747461F5863BC2CAE7BCE93C264267"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/feature_v2.py": {
+    "bytes": 14904,
+    "sha256": "6F5A34E21E5B8F4F0FBE69AC5210D0BDB27EE94248153A039F604775CE17FA29"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/model_v6.py": {
+    "bytes": 3191,
+    "sha256": "1582B523FEA84F6F9E50528642AD45233BC83DBF5567076D291DF14729C52F50"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/model_v7_small1d.py": {
+    "bytes": 4312,
+    "sha256": "942B3FDB9E2B109F7B6BC87181CA0C1EC17EB8D5A4C1642F7C80664721C29CE0"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/selfplay_arena_v2.py": {
+    "bytes": 14817,
+    "sha256": "C8866C81974045DD9CFDEAFD85A5EFD386588178D901A0A150058C12385AB8CF"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/selfplay_fourway_v2.py": {
+    "bytes": 9246,
+    "sha256": "0D156C6CD0DE79571E6F56955F5A58FD33118A66EC70FCD416A41EC253F94499"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/source_v7/train_distill_v6.py": {
+    "bytes": 11883,
+    "sha256": "81C4FA7575E44E35AEA188ECB20494E86C97DB572192EA9E2AE7A05BEC8D49A4"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/__main_v6_friendstyle.py": {
+    "bytes": 8620,
+    "sha256": "01C266B6ED9E4BBC91C3B7C1E142D683D9085703657FCCB2AAD2A2F69A1AA92F"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/agent.py": {
+    "bytes": 738,
+    "sha256": "FC01137F7436600074421ADF06F4865EEB3663580DA1E2515EAF3591588D8417"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/dataset_rl_v2.py": {
+    "bytes": 1426,
+    "sha256": "E8D58A35470CA2844B8122B3AE7802A4A66848F59F3179C9B1E2BC96B5A5A6BE"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/dataset_v2.py": {
+    "bytes": 1488,
+    "sha256": "9DE30AF36B9B1348DEB2DE36692BFA0AB82BE04F903B522C4D3A7A4A9C047533"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/eval_special_v6.py": {
+    "bytes": 23378,
+    "sha256": "C44D0610CD9001EBBB2474BF0F728F9D81E244579E3FD17FFE0F1ED95706D412"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/feature_v2.py": {
+    "bytes": 14904,
+    "sha256": "6F5A34E21E5B8F4F0FBE69AC5210D0BDB27EE94248153A039F604775CE17FA29"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/model_v6.py": {
+    "bytes": 3191,
+    "sha256": "1582B523FEA84F6F9E50528642AD45233BC83DBF5567076D291DF14729C52F50"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/preprocess_v2.py": {
+    "bytes": 5832,
+    "sha256": "3CBD4501503523073CF9832D4CAE84AEAAA9BD0714C361B55447B9F928C80FA5"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/selfplay_arena_v2.py": {
+    "bytes": 14817,
+    "sha256": "C8866C81974045DD9CFDEAFD85A5EFD386588178D901A0A150058C12385AB8CF"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/supervised.py": {
+    "bytes": 5340,
+    "sha256": "78C55717DBFCDF69E6F1541F9A71DAFEA38C087990922E718275EDAB3CF5E866"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/train_cnn_v2.py": {
+    "bytes": 3265,
+    "sha256": "BB2C87398A05800B771826FDC4F048383E70F18654EAE6B8ED55717F90A7B5C1"
+  },
+  "03_full_code_and_model/v7_call150_code_model_submission/training_code/training_support/train_distill_v6.py": {
+    "bytes": 11883,
+    "sha256": "81C4FA7575E44E35AEA188ECB20494E86C97DB572192EA9E2AE7A05BEC8D49A4"
+  },
+  "README.md": {
+    "bytes": 575,
+    "sha256": "FA0B24CA44CD91ABB6EFDE8FFF4EECE19AD6351C4B748FB91D933ED757B1EFF3"
+  }
+}

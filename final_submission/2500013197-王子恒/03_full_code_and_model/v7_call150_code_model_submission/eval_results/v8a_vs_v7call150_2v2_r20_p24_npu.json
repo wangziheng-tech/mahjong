@@ -1,0 +1,1520 @@
+{
+  "config": {
+    "permutation_limit": 24,
+    "players": [
+      {
+        "ckpt": "/home/ma-user/work/mahjong_eval/model/checkpoint/v8a_call_distill_095/mahjong_v8a_call_distill_best.pkl",
+        "module": "model_v6",
+        "name": "V8a_A"
+      },
+      {
+        "ckpt": "/home/ma-user/work/mahjong_eval/model/checkpoint/v8a_call_distill_095/mahjong_v8a_call_distill_best.pkl",
+        "module": "model_v6",
+        "name": "V8a_B"
+      },
+      {
+        "ckpt": "/home/ma-user/work/mahjong_eval/bots/v7/data/mahjong_v7_calibrated_best.pkl",
+        "module": "model_v6",
+        "name": "V7_call150_A"
+      },
+      {
+        "ckpt": "/home/ma-user/work/mahjong_eval/bots/v7/data/mahjong_v7_calibrated_best.pkl",
+        "module": "model_v6",
+        "name": "V7_call150_B"
+      }
+    ],
+    "policies": {
+      "V7_call150_A": {
+        "call_bias": 1.5,
+        "chi_bias": 0.35,
+        "peng_bias": 0.35
+      },
+      "V7_call150_B": {
+        "call_bias": 1.5,
+        "chi_bias": 0.35,
+        "peng_bias": 0.35
+      }
+    },
+    "rounds": 20,
+    "score_mode": "fan",
+    "seed": 20260705,
+    "walls_per_round": 1
+  },
+  "global": {
+    "draws": 16,
+    "games": 480,
+    "reasons": {
+      "huang": 16,
+      "rob_kong": 0,
+      "ron": 364,
+      "tsumo": 100
+    },
+    "rounds": 20,
+    "score_fallbacks": 0,
+    "wins": 464
+  },
+  "leaderboard": [
+    {
+      "action_counts": {
+        "BuGang": 14,
+        "Chi": 338,
+        "Gang": 42,
+        "Hu": 148,
+        "Pass": 16580,
+        "Peng": 284,
+        "Play": 5750
+      },
+      "avg_fan_on_win": 13.555555555555555,
+      "avg_final_shanten": 0.24583333333333332,
+      "avg_non_win_final_shanten": 0.7797619047619048,
+      "calls": 664,
+      "calls_per_game": 1.3833333333333333,
+      "deal_in": 84,
+      "deal_in_rate": 0.175,
+      "draws": 16,
+      "elo": 1569.8123919457216,
+      "games": 480,
+      "name": "V7_call150_A",
+      "non_draw_win_share": 0.3103448275862069,
+      "rank": 1,
+      "rank_points": 58.0,
+      "rob_kong_wins": 0,
+      "ron_wins": 112,
+      "score_fallbacks": 0,
+      "seat_games": {
+        "0": 120,
+        "1": 120,
+        "2": 120,
+        "3": 120
+      },
+      "seat_win_rates": {
+        "0": 0.38333333333333336,
+        "1": 0.4,
+        "2": 0.23333333333333334,
+        "3": 0.18333333333333332
+      },
+      "seat_wins": {
+        "0": 46,
+        "1": 48,
+        "2": 28,
+        "3": 22
+      },
+      "small_score": 1494.0,
+      "tsumo_wins": 32,
+      "win_rate": 0.3,
+      "wins": 144
+    },
+    {
+      "action_counts": {
+        "BuGang": 14,
+        "Chi": 338,
+        "Gang": 42,
+        "Hu": 148,
+        "Pass": 16580,
+        "Peng": 284,
+        "Play": 5750
+      },
+      "avg_fan_on_win": 13.555555555555555,
+      "avg_final_shanten": 0.24583333333333332,
+      "avg_non_win_final_shanten": 0.7797619047619048,
+      "calls": 664,
+      "calls_per_game": 1.3833333333333333,
+      "deal_in": 84,
+      "deal_in_rate": 0.175,
+      "draws": 16,
+      "elo": 1569.8123919457216,
+      "games": 480,
+      "name": "V7_call150_B",
+      "non_draw_win_share": 0.3103448275862069,
+      "rank": 2,
+      "rank_points": 58.0,
+      "rob_kong_wins": 0,
+      "ron_wins": 112,
+      "score_fallbacks": 0,
+      "seat_games": {
+        "0": 120,
+        "1": 120,
+        "2": 120,
+        "3": 120
+      },
+      "seat_win_rates": {
+        "0": 0.38333333333333336,
+        "1": 0.4,
+        "2": 0.23333333333333334,
+        "3": 0.18333333333333332
+      },
+      "seat_wins": {
+        "0": 46,
+        "1": 48,
+        "2": 28,
+        "3": 22
+      },
+      "small_score": 1494.0,
+      "tsumo_wins": 32,
+      "win_rate": 0.3,
+      "wins": 144
+    },
+    {
+      "action_counts": {
+        "BuGang": 20,
+        "Chi": 342,
+        "Gang": 28,
+        "Hu": 94,
+        "Pass": 16600,
+        "Peng": 280,
+        "Play": 5778
+      },
+      "avg_fan_on_win": 15.477272727272727,
+      "avg_final_shanten": 0.42083333333333334,
+      "avg_non_win_final_shanten": 0.7397959183673469,
+      "calls": 650,
+      "calls_per_game": 1.3541666666666667,
+      "deal_in": 98,
+      "deal_in_rate": 0.20416666666666666,
+      "draws": 16,
+      "elo": 1430.1876080542784,
+      "games": 480,
+      "name": "V8a_A",
+      "non_draw_win_share": 0.1896551724137931,
+      "rank": 3,
+      "rank_points": 42.0,
+      "rob_kong_wins": 0,
+      "ron_wins": 70,
+      "score_fallbacks": 0,
+      "seat_games": {
+        "0": 120,
+        "1": 120,
+        "2": 120,
+        "3": 120
+      },
+      "seat_win_rates": {
+        "0": 0.21666666666666667,
+        "1": 0.23333333333333334,
+        "2": 0.15,
+        "3": 0.13333333333333333
+      },
+      "seat_wins": {
+        "0": 26,
+        "1": 28,
+        "2": 18,
+        "3": 16
+      },
+      "small_score": -1494.0,
+      "tsumo_wins": 18,
+      "win_rate": 0.18333333333333332,
+      "wins": 88
+    },
+    {
+      "action_counts": {
+        "BuGang": 20,
+        "Chi": 342,
+        "Gang": 28,
+        "Hu": 94,
+        "Pass": 16600,
+        "Peng": 280,
+        "Play": 5778
+      },
+      "avg_fan_on_win": 15.477272727272727,
+      "avg_final_shanten": 0.42083333333333334,
+      "avg_non_win_final_shanten": 0.7397959183673469,
+      "calls": 650,
+      "calls_per_game": 1.3541666666666667,
+      "deal_in": 98,
+      "deal_in_rate": 0.20416666666666666,
+      "draws": 16,
+      "elo": 1430.1876080542784,
+      "games": 480,
+      "name": "V8a_B",
+      "non_draw_win_share": 0.1896551724137931,
+      "rank": 4,
+      "rank_points": 42.0,
+      "rob_kong_wins": 0,
+      "ron_wins": 70,
+      "score_fallbacks": 0,
+      "seat_games": {
+        "0": 120,
+        "1": 120,
+        "2": 120,
+        "3": 120
+      },
+      "seat_win_rates": {
+        "0": 0.21666666666666667,
+        "1": 0.23333333333333334,
+        "2": 0.15,
+        "3": 0.13333333333333333
+      },
+      "seat_wins": {
+        "0": 26,
+        "1": 28,
+        "2": 18,
+        "3": 16
+      },
+      "small_score": -1494.0,
+      "tsumo_wins": 18,
+      "win_rate": 0.18333333333333332,
+      "wins": 88
+    }
+  ],
+  "rounds": [
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -16.0,
+            "V7_call150_B": -16.0,
+            "V8a_A": 16.0,
+            "V8a_B": 16.0
+          },
+          "group": 0,
+          "players": [
+            "V8a_A",
+            "V8a_B",
+            "V7_call150_B",
+            "V7_call150_A"
+          ],
+          "round_score": {
+            "V7_call150_A": -164.0,
+            "V7_call150_B": -164.0,
+            "V8a_A": 164.0,
+            "V8a_B": 164.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 1.5,
+                "V7_call150_B": 1.5,
+                "V8a_A": 3.5,
+                "V8a_B": 3.5
+              },
+              "ranking": [
+                {
+                  "name": "V8a_A",
+                  "small_score": 164.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 164.0
+                },
+                {
+                  "name": "V7_call150_A",
+                  "small_score": -164.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": -164.0
+                }
+              ],
+              "seed": 20260705,
+              "small_score": {
+                "V7_call150_A": -164.0,
+                "V7_call150_B": -164.0,
+                "V8a_A": 164.0,
+                "V8a_B": 164.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 0
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 17.469501528975478,
+            "V7_call150_B": 17.469501528975478,
+            "V8a_A": -17.469501528975478,
+            "V8a_B": -17.469501528975478
+          },
+          "group": 0,
+          "players": [
+            "V8a_A",
+            "V8a_B",
+            "V7_call150_A",
+            "V7_call150_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 84.0,
+            "V7_call150_B": 84.0,
+            "V8a_A": -84.0,
+            "V8a_B": -84.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 84.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 84.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -84.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -84.0
+                }
+              ],
+              "seed": 20360705,
+              "small_score": {
+                "V7_call150_A": 84.0,
+                "V7_call150_B": 84.0,
+                "V8a_A": -84.0,
+                "V8a_B": -84.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 1
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -16.135342864367125,
+            "V7_call150_B": -16.135342864367125,
+            "V8a_A": 16.135342864367125,
+            "V8a_B": 16.135342864367125
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": -116.0,
+            "V7_call150_B": -116.0,
+            "V8a_A": 116.0,
+            "V8a_B": 116.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 1.5,
+                "V7_call150_B": 1.5,
+                "V8a_A": 3.5,
+                "V8a_B": 3.5
+              },
+              "ranking": [
+                {
+                  "name": "V8a_A",
+                  "small_score": 116.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 116.0
+                },
+                {
+                  "name": "V7_call150_A",
+                  "small_score": -116.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": -116.0
+                }
+              ],
+              "seed": 20460705,
+              "small_score": {
+                "V7_call150_A": -116.0,
+                "V7_call150_B": -116.0,
+                "V8a_A": 116.0,
+                "V8a_B": 116.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 2
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 1.3475739020725577,
+            "V7_call150_B": 1.3475739020725577,
+            "V8a_A": -1.3475739020725577,
+            "V8a_B": -1.3475739020725577
+          },
+          "group": 0,
+          "players": [
+            "V8a_A",
+            "V8a_B",
+            "V7_call150_A",
+            "V7_call150_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 0.0,
+            "V7_call150_B": 0.0,
+            "V8a_A": 0.0,
+            "V8a_B": 0.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 2.5,
+                "V7_call150_B": 2.5,
+                "V8a_A": 2.5,
+                "V8a_B": 2.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 0.0
+                }
+              ],
+              "seed": 20560705,
+              "small_score": {
+                "V7_call150_A": 0.0,
+                "V7_call150_B": 0.0,
+                "V8a_A": 0.0,
+                "V8a_B": 0.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 3
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 17.224260093517845,
+            "V7_call150_B": 17.224260093517845,
+            "V8a_A": -17.224260093517845,
+            "V8a_B": -17.224260093517845
+          },
+          "group": 0,
+          "players": [
+            "V8a_A",
+            "V8a_B",
+            "V7_call150_A",
+            "V7_call150_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 208.0,
+            "V7_call150_B": 208.0,
+            "V8a_A": -208.0,
+            "V8a_B": -208.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 208.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 208.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -208.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -208.0
+                }
+              ],
+              "seed": 20660705,
+              "small_score": {
+                "V7_call150_A": 208.0,
+                "V7_call150_B": 208.0,
+                "V8a_A": -208.0,
+                "V8a_B": -208.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 4
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 15.640305394997501,
+            "V7_call150_B": 15.640305394997501,
+            "V8a_A": -15.640305394997501,
+            "V8a_B": -15.640305394997501
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 48.0,
+            "V7_call150_B": 48.0,
+            "V8a_A": -48.0,
+            "V8a_B": -48.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 48.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 48.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -48.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -48.0
+                }
+              ],
+              "seed": 20760705,
+              "small_score": {
+                "V7_call150_A": 48.0,
+                "V7_call150_B": 48.0,
+                "V8a_A": -48.0,
+                "V8a_B": -48.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 5
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 14.207278443466329,
+            "V7_call150_B": 14.207278443466329,
+            "V8a_A": -14.207278443466329,
+            "V8a_B": -14.207278443466329
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 296.0,
+            "V7_call150_B": 296.0,
+            "V8a_A": -296.0,
+            "V8a_B": -296.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 296.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 296.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -296.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -296.0
+                }
+              ],
+              "seed": 20860705,
+              "small_score": {
+                "V7_call150_A": 296.0,
+                "V7_call150_B": 296.0,
+                "V8a_A": -296.0,
+                "V8a_B": -296.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 6
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 12.929721189435195,
+            "V7_call150_B": 12.929721189435195,
+            "V8a_A": -12.929721189435195,
+            "V8a_B": -12.929721189435195
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 186.0,
+            "V7_call150_B": 186.0,
+            "V8a_A": -186.0,
+            "V8a_B": -186.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 186.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 186.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -186.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -186.0
+                }
+              ],
+              "seed": 20960705,
+              "small_score": {
+                "V7_call150_A": 186.0,
+                "V7_call150_B": 186.0,
+                "V8a_A": -186.0,
+                "V8a_B": -186.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 7
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -20.199093128551567,
+            "V7_call150_B": -20.199093128551567,
+            "V8a_A": 20.199093128551567,
+            "V8a_B": 20.199093128551567
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": -86.0,
+            "V7_call150_B": -86.0,
+            "V8a_A": 86.0,
+            "V8a_B": 86.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 1.5,
+                "V7_call150_B": 1.5,
+                "V8a_A": 3.5,
+                "V8a_B": 3.5
+              },
+              "ranking": [
+                {
+                  "name": "V8a_A",
+                  "small_score": 86.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 86.0
+                },
+                {
+                  "name": "V7_call150_A",
+                  "small_score": -86.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": -86.0
+                }
+              ],
+              "seed": 21060705,
+              "small_score": {
+                "V7_call150_A": -86.0,
+                "V7_call150_B": -86.0,
+                "V8a_A": 86.0,
+                "V8a_B": 86.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 8
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 13.579439021654622,
+            "V7_call150_B": 13.579439021654622,
+            "V8a_A": -13.579439021654622,
+            "V8a_B": -13.579439021654622
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 138.0,
+            "V7_call150_B": 138.0,
+            "V8a_A": -138.0,
+            "V8a_B": -138.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 138.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 138.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -138.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -138.0
+                }
+              ],
+              "seed": 21160705,
+              "small_score": {
+                "V7_call150_A": 138.0,
+                "V7_call150_B": 138.0,
+                "V8a_A": -138.0,
+                "V8a_B": -138.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 9
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 12.374060548174008,
+            "V7_call150_B": 12.374060548174008,
+            "V8a_A": -12.374060548174008,
+            "V8a_B": -12.374060548174008
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 38.0,
+            "V7_call150_B": 38.0,
+            "V8a_A": -38.0,
+            "V8a_B": -38.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 38.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 38.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -38.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -38.0
+                }
+              ],
+              "seed": 21260705,
+              "small_score": {
+                "V7_call150_A": 38.0,
+                "V7_call150_B": 38.0,
+                "V8a_A": -38.0,
+                "V8a_B": -38.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 10
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 11.311841550195489,
+            "V7_call150_B": 11.311841550195489,
+            "V8a_A": -11.311841550195489,
+            "V8a_B": -11.311841550195489
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 164.0,
+            "V7_call150_B": 164.0,
+            "V8a_A": -164.0,
+            "V8a_B": -164.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 164.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 164.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -164.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -164.0
+                }
+              ],
+              "seed": 21360705,
+              "small_score": {
+                "V7_call150_A": 164.0,
+                "V7_call150_B": 164.0,
+                "V8a_A": -164.0,
+                "V8a_B": -164.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 11
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -5.621443454604574,
+            "V7_call150_B": -5.621443454604574,
+            "V8a_A": 5.621443454604574,
+            "V8a_B": 5.621443454604574
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 0.0,
+            "V7_call150_B": 0.0,
+            "V8a_A": 0.0,
+            "V8a_B": 0.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 2.5,
+                "V7_call150_B": 2.5,
+                "V8a_A": 2.5,
+                "V8a_B": 2.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 0.0
+                }
+              ],
+              "seed": 21460705,
+              "small_score": {
+                "V7_call150_A": 0.0,
+                "V7_call150_B": 0.0,
+                "V8a_A": 0.0,
+                "V8a_B": 0.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 12
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -5.1625437409165755,
+            "V7_call150_B": -5.1625437409165755,
+            "V8a_A": 5.1625437409165755,
+            "V8a_B": 5.1625437409165755
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 0.0,
+            "V7_call150_B": 0.0,
+            "V8a_A": 0.0,
+            "V8a_B": 0.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 2.5,
+                "V7_call150_B": 2.5,
+                "V8a_A": 2.5,
+                "V8a_B": 2.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 0.0
+                }
+              ],
+              "seed": 21560705,
+              "small_score": {
+                "V7_call150_A": 0.0,
+                "V7_call150_B": 0.0,
+                "V8a_A": 0.0,
+                "V8a_B": 0.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 13
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 11.26743805664374,
+            "V7_call150_B": 11.26743805664374,
+            "V8a_A": -11.26743805664374,
+            "V8a_B": -11.26743805664374
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 276.0,
+            "V7_call150_B": 276.0,
+            "V8a_A": -276.0,
+            "V8a_B": -276.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 276.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 276.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -276.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -276.0
+                }
+              ],
+              "seed": 21660705,
+              "small_score": {
+                "V7_call150_A": 276.0,
+                "V7_call150_B": 276.0,
+                "V8a_A": -276.0,
+                "V8a_B": -276.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 14
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -5.660436229354463,
+            "V7_call150_B": -5.660436229354463,
+            "V8a_A": 5.660436229354463,
+            "V8a_B": 5.660436229354463
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 0.0,
+            "V7_call150_B": 0.0,
+            "V8a_A": 0.0,
+            "V8a_B": 0.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 2.5,
+                "V7_call150_B": 2.5,
+                "V8a_A": 2.5,
+                "V8a_B": 2.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": 0.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 0.0
+                }
+              ],
+              "seed": 21760705,
+              "small_score": {
+                "V7_call150_A": 0.0,
+                "V7_call150_B": 0.0,
+                "V8a_A": 0.0,
+                "V8a_B": 0.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 15
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 10.80081229631114,
+            "V7_call150_B": 10.80081229631114,
+            "V8a_A": -10.80081229631114,
+            "V8a_B": -10.80081229631114
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 248.0,
+            "V7_call150_B": 248.0,
+            "V8a_A": -248.0,
+            "V8a_B": -248.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 248.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 248.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -248.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -248.0
+                }
+              ],
+              "seed": 21860705,
+              "small_score": {
+                "V7_call150_A": 248.0,
+                "V7_call150_B": 248.0,
+                "V8a_A": -248.0,
+                "V8a_B": -248.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 16
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": -22.07021727641335,
+            "V7_call150_B": -22.07021727641335,
+            "V8a_A": 22.07021727641335,
+            "V8a_B": 22.07021727641335
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": -86.0,
+            "V7_call150_B": -86.0,
+            "V8a_A": 86.0,
+            "V8a_B": 86.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 1.5,
+                "V7_call150_B": 1.5,
+                "V8a_A": 3.5,
+                "V8a_B": 3.5
+              },
+              "ranking": [
+                {
+                  "name": "V8a_A",
+                  "small_score": 86.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": 86.0
+                },
+                {
+                  "name": "V7_call150_A",
+                  "small_score": -86.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": -86.0
+                }
+              ],
+              "seed": 21960705,
+              "small_score": {
+                "V7_call150_A": -86.0,
+                "V7_call150_B": -86.0,
+                "V8a_A": 86.0,
+                "V8a_B": 86.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 17
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 11.747798059647238,
+            "V7_call150_B": 11.747798059647238,
+            "V8a_A": -11.747798059647238,
+            "V8a_B": -11.747798059647238
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 132.0,
+            "V7_call150_B": 132.0,
+            "V8a_A": -132.0,
+            "V8a_B": -132.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 132.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 132.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -132.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -132.0
+                }
+              ],
+              "seed": 22060705,
+              "small_score": {
+                "V7_call150_A": 132.0,
+                "V7_call150_B": 132.0,
+                "V8a_A": -132.0,
+                "V8a_B": -132.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 18
+    },
+    {
+      "groups": [
+        {
+          "elo_delta": {
+            "V7_call150_A": 10.761438554838062,
+            "V7_call150_B": 10.761438554838062,
+            "V8a_A": -10.761438554838062,
+            "V8a_B": -10.761438554838062
+          },
+          "group": 0,
+          "players": [
+            "V7_call150_A",
+            "V7_call150_B",
+            "V8a_A",
+            "V8a_B"
+          ],
+          "round_score": {
+            "V7_call150_A": 128.0,
+            "V7_call150_B": 128.0,
+            "V8a_A": -128.0,
+            "V8a_B": -128.0
+          },
+          "walls": [
+            {
+              "fallback_count": 0,
+              "rank_points": {
+                "V7_call150_A": 3.5,
+                "V7_call150_B": 3.5,
+                "V8a_A": 1.5,
+                "V8a_B": 1.5
+              },
+              "ranking": [
+                {
+                  "name": "V7_call150_A",
+                  "small_score": 128.0
+                },
+                {
+                  "name": "V7_call150_B",
+                  "small_score": 128.0
+                },
+                {
+                  "name": "V8a_A",
+                  "small_score": -128.0
+                },
+                {
+                  "name": "V8a_B",
+                  "small_score": -128.0
+                }
+              ],
+              "seed": 22160705,
+              "small_score": {
+                "V7_call150_A": 128.0,
+                "V7_call150_B": 128.0,
+                "V8a_A": -128.0,
+                "V8a_B": -128.0
+              },
+              "wall": 0
+            }
+          ]
+        }
+      ],
+      "round": 19
+    }
+  ]
+}

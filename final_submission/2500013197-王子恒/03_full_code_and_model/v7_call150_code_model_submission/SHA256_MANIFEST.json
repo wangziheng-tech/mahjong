@@ -1,0 +1,187 @@
+[
+  {
+    "path": "botzone/mahjong_v7_call150_friendstyle_storage_bot.zip",
+    "size": 7012,
+    "sha256": "ed9ee50fb83e1275391a7a4f50e713aa7e74a41a81cca6a8e9de92d899d11305"
+  },
+  {
+    "path": "botzone_final/__main__.py",
+    "size": 9628,
+    "sha256": "866a005d161b84a9cdb3e99108ede3a263af61b81d25cd93ea131b1b37430701"
+  },
+  {
+    "path": "botzone_final/agent.py",
+    "size": 738,
+    "sha256": "fc01137f7436600074421adf06f4865eeb3663580da1e2515eaf3591588d8417"
+  },
+  {
+    "path": "botzone_final/feature_v2.py",
+    "size": 14904,
+    "sha256": "6f5a34e21e5b8f4f0fbe69ac5210d0bdb27ee94248153a039f604775ce17fa29"
+  },
+  {
+    "path": "botzone_final/model_v6.py",
+    "size": 3191,
+    "sha256": "1582b523fea84f6f9e50528642ad45233bc83dbf5567076d291df14729c52f50"
+  },
+  {
+    "path": "configs/best_metrics.json",
+    "size": 685,
+    "sha256": "1a074166ff678efd6e9ed5d54d74839f923272155d4b395606a84133b7cf6b1a"
+  },
+  {
+    "path": "configs/run_config.json",
+    "size": 713,
+    "sha256": "0f7f17a048d930d8c96e0a701c79015826357165efba06cd9457eb433e0f0e78"
+  },
+  {
+    "path": "configs/v7_training_summary.json",
+    "size": 2780,
+    "sha256": "81bd1ca461dae85b332f4205b774d37cf97b0bfbcc604a194f6d388be9cbc27a"
+  },
+  {
+    "path": "eval_results/v7_call150_vs_base_2v2_r40_p24_npu.json",
+    "size": 72758,
+    "sha256": "c04e26907361b6e1439114300564c18a460114fa5e4d2c22f862baee537ff914"
+  },
+  {
+    "path": "eval_results/v8a_vs_v7base_2v2_r20_p24_npu.json",
+    "size": 36033,
+    "sha256": "e605426563385761553440dedd2bed7e93a3523fa7206a449fdc0521dc6bce5b"
+  },
+  {
+    "path": "eval_results/v8a_vs_v7call150_2v2_r20_p24_npu.json",
+    "size": 38746,
+    "sha256": "d923dbf66416b768df9110c3120faa54e8dc98d506c65da026cc7a72bf9042da"
+  },
+  {
+    "path": "models/mahjong_v7_calibrated_best.pkl",
+    "size": 39729330,
+    "sha256": "e2a62bd155ea298c14e7ed758cfc5824629dad6e6a5c07e2756b66226b5098e6"
+  },
+  {
+    "path": "models/mahjong_v7_calibrated_best.pt",
+    "size": 39729330,
+    "sha256": "e2a62bd155ea298c14e7ed758cfc5824629dad6e6a5c07e2756b66226b5098e6"
+  },
+  {
+    "path": "README.md",
+    "size": 5393,
+    "sha256": "1f9b6563de8e0bb6b5ec312768c638202d378482b78df6879af23083126de6b3"
+  },
+  {
+    "path": "requirements.txt",
+    "size": 32,
+    "sha256": "120f682b1dd42d498248726f6f7adab9adaaa65ec9ed664726d3cfdb257135a4"
+  },
+  {
+    "path": "training_code/source_v7/__main_v7_friendstyle.py",
+    "size": 8631,
+    "sha256": "29f287c407a2d4b604235eee287e5a9e351d99fa88b545fc92d6cea707c01c99"
+  },
+  {
+    "path": "training_code/source_v7/agent.py",
+    "size": 738,
+    "sha256": "fc01137f7436600074421adf06f4865eeb3663580da1e2515eaf3591588d8417"
+  },
+  {
+    "path": "training_code/source_v7/dataset_v2.py",
+    "size": 3531,
+    "sha256": "aa203098dadc7fb2ea39f4d3d284ec622729aec3f8294575ddf8344486e5519b"
+  },
+  {
+    "path": "training_code/source_v7/eval_v7_diagnostics.py",
+    "size": 19072,
+    "sha256": "19ef390a8f270d1224bf170db2432b9604747461f5863bc2cae7bce93c264267"
+  },
+  {
+    "path": "training_code/source_v7/feature_v2.py",
+    "size": 14904,
+    "sha256": "6f5a34e21e5b8f4f0fbe69ac5210d0bdb27ee94248153a039f604775ce17fa29"
+  },
+  {
+    "path": "training_code/source_v7/model_v6.py",
+    "size": 3191,
+    "sha256": "1582b523fea84f6f9e50528642ad45233bc83dbf5567076d291df14729c52f50"
+  },
+  {
+    "path": "training_code/source_v7/model_v7_small1d.py",
+    "size": 4312,
+    "sha256": "942b3fdb9e2b109f7b6bc87181ca0c1ec17eb8d5a4c1642f7c80664721c29ce0"
+  },
+  {
+    "path": "training_code/source_v7/selfplay_arena_v2.py",
+    "size": 14817,
+    "sha256": "c8866c81974045dd9cfdeafd85a5efd386588178d901a0a150058c12385ab8cf"
+  },
+  {
+    "path": "training_code/source_v7/selfplay_fourway_v2.py",
+    "size": 9246,
+    "sha256": "0d156c6cd0de79571e6f56955f5a58fd33118a66ec70fcd416a41ec253f94499"
+  },
+  {
+    "path": "training_code/source_v7/train_distill_v6.py",
+    "size": 11883,
+    "sha256": "81c4fa7575e44e35aea188ecb20494e86c97db572192ea9e2ae7a05bec8d49a4"
+  },
+  {
+    "path": "training_code/training_support/__main_v6_friendstyle.py",
+    "size": 8620,
+    "sha256": "01c266b6ed9e4bbc91c3b7c1e142d683d9085703657fccb2aad2a2f69a1aa92f"
+  },
+  {
+    "path": "training_code/training_support/agent.py",
+    "size": 738,
+    "sha256": "fc01137f7436600074421adf06f4865eeb3663580da1e2515eaf3591588d8417"
+  },
+  {
+    "path": "training_code/training_support/dataset_rl_v2.py",
+    "size": 1426,
+    "sha256": "e8d58a35470ca2844b8122b3ae7802a4a66848f59f3179c9b1e2bc96b5a5a6be"
+  },
+  {
+    "path": "training_code/training_support/dataset_v2.py",
+    "size": 1488,
+    "sha256": "9de30af36b9b1348deb2de36692bfa0ab82be04f903b522c4d3a7a4a9c047533"
+  },
+  {
+    "path": "training_code/training_support/eval_special_v6.py",
+    "size": 23378,
+    "sha256": "c44d0610cd9001ebbb2474bf0f728f9d81e244579e3fd17ffe0f1ed95706d412"
+  },
+  {
+    "path": "training_code/training_support/feature_v2.py",
+    "size": 14904,
+    "sha256": "6f5a34e21e5b8f4f0fbe69ac5210d0bdb27ee94248153a039f604775ce17fa29"
+  },
+  {
+    "path": "training_code/training_support/model_v6.py",
+    "size": 3191,
+    "sha256": "1582b523fea84f6f9e50528642ad45233bc83dbf5567076d291df14729c52f50"
+  },
+  {
+    "path": "training_code/training_support/preprocess_v2.py",
+    "size": 5832,
+    "sha256": "3cbd4501503523073cf9832d4cae84aeaaa9bd0714c361b55447b9f928c80fa5"
+  },
+  {
+    "path": "training_code/training_support/selfplay_arena_v2.py",
+    "size": 14817,
+    "sha256": "c8866c81974045dd9cfdeafd85a5efd386588178d901a0a150058c12385ab8cf"
+  },
+  {
+    "path": "training_code/training_support/supervised.py",
+    "size": 5340,
+    "sha256": "78c55717dbfcdf69e6f1541f9a71dafea38c087990922e718275edab3cf5e866"
+  },
+  {
+    "path": "training_code/training_support/train_cnn_v2.py",
+    "size": 3265,
+    "sha256": "bb2c87398a05800b771826fdc4f048383e70f18654eae6b8ed55717f90a7b5c1"
+  },
+  {
+    "path": "training_code/training_support/train_distill_v6.py",
+    "size": 11883,
+    "sha256": "81c4fa7575e44e35aea188ecb20494e86c97db572192ea9e2ae7a05bec8d49a4"
+  }
+]

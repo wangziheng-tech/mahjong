@@ -15,3 +15,7 @@ model/checkpoint/
 log/*.pid
 .DS_Store
 Thumbs.db
+
+# Keep the curated final V7+call150 submission artifacts under version control.
+!final_submission/
+!final_submission/**
